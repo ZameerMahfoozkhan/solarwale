@@ -2615,6 +2615,34 @@ function buildLegalPages() {
     `
   });
   writeHtml('disclaimer/index.html', disclaimerHtml);
+
+  const notFoundHtml = renderPage({
+    title: '404 - Page Not Found | Solar Wale',
+    metaDescription: 'The page you requested could not be found. Explore Solar Wale for rooftop solar installation across Uttar Pradesh.',
+    canonicalUrl: '/404.html',
+    breadcrumbs: [{ title: '404 Not Found', url: '/404.html' }],
+    bodyContent: `
+    <section class="section" style="padding: 80px 0; text-align: center;">
+      <div class="container" style="max-width: 680px;">
+        <div style="font-size: 5rem; font-weight: 900; color: var(--color-primary); line-height: 1; margin-bottom: 16px;">404</div>
+        <h1 style="font-size: 2rem; margin-bottom: 16px;">Page Not Found</h1>
+        <p class="text-lead" style="margin-bottom: 32px; color: var(--color-text-muted);">
+          The page you are looking for doesn't exist, has been removed, or is temporarily unavailable.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="/" class="btn btn-primary btn-lg">
+            <span>Return to Homepage</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </a>
+          <a href="/solar-calculator/" class="btn btn-secondary btn-lg">
+            <span>Solar Calculator</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    `
+  });
+  writeHtml('404.html', notFoundHtml);
 }
 
 // ==========================================================================
