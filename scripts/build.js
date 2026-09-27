@@ -2646,6 +2646,380 @@ function buildLegalPages() {
 }
 
 // ==========================================================================
+// 4.B VISUAL SITEMAP PAGE (/sitemap/)
+// ==========================================================================
+function buildVisualSitemapPage() {
+  registerUrl('/sitemap/', '0.7', 'monthly');
+
+  const sitemapGroups = [
+    {
+      id: 'core',
+      category: 'Core Portal & Tools',
+      icon: ICONS.sun,
+      badge: '3 Hubs',
+      pages: [
+        {
+          title: 'Solar Wale Homepage',
+          url: '/',
+          priority: '1.0',
+          desc: 'Main portal with rooftop solar capacity calculator, core service pillars, project showcase, and free quote consultation.'
+        },
+        {
+          title: 'Solar Savings Calculator',
+          url: '/solar-calculator/',
+          priority: '0.9',
+          desc: 'Interactive tool calculating estimated kW requirements, monthly unit generation, financial savings, and required roof area.'
+        },
+        {
+          title: 'Solar Installation Engineering',
+          url: '/solar-panel-installation/',
+          priority: '0.9',
+          desc: 'End-to-end engineering methodology, site shadow survey, earthing safety, and DISCOM meter synchronization process.'
+        }
+      ]
+    },
+    {
+      id: 'solutions',
+      category: 'Rooftop Solar Solutions',
+      icon: ICONS.zap,
+      badge: '9 Solutions',
+      pages: [
+        {
+          title: 'Residential Rooftop Solar',
+          url: '/residential-solar/',
+          priority: '0.9',
+          desc: 'Complete rooftop solar systems for independent homes and villas with PM Surya Ghar subsidy application support.'
+        },
+        {
+          title: 'Commercial & Industrial Solar',
+          url: '/commercial-solar/',
+          priority: '0.9',
+          desc: 'High-yield solar installations for factories, schools, hospitals, and offices with 40% accelerated tax depreciation.'
+        },
+        {
+          title: 'On-Grid Solar Systems',
+          url: '/on-grid-solar/',
+          priority: '0.9',
+          desc: 'Grid-connected solar power systems with bidirectional net metering to export surplus electricity to state DISCOMs.'
+        },
+        {
+          title: 'Hybrid Solar Systems',
+          url: '/hybrid-solar/',
+          priority: '0.8',
+          desc: 'Dual-benefit systems combining net-metered savings with battery storage to provide uninterrupted power during outages.'
+        },
+        {
+          title: 'Off-Grid Standalone Solar',
+          url: '/off-grid-solar/',
+          priority: '0.8',
+          desc: 'Self-sufficient solar systems with dedicated battery banks designed for rural residences, farmhouses, and remote sites.'
+        },
+        {
+          title: 'PM Surya Ghar Subsidy Guide',
+          url: '/solar-subsidy/',
+          priority: '0.9',
+          desc: 'Complete subsidy breakdown under the PM Surya Ghar scheme (up to ₹78,000) and UP State Solar Policy (up to ₹30,000).'
+        },
+        {
+          title: 'Solar Inverters & Technology',
+          url: '/solar-inverter/',
+          priority: '0.8',
+          desc: 'On-grid string inverters, hybrid inverters, and microinverter technologies featuring high MPPT efficiency and cloud monitoring.'
+        },
+        {
+          title: 'Solar Batteries & Energy Storage',
+          url: '/solar-battery/',
+          priority: '0.8',
+          desc: 'High-cycle tubular and lithium-ion (LiFePO4) solar storage banks engineered for North Indian extreme temperatures.'
+        },
+        {
+          title: 'Solar Maintenance & Cleaning',
+          url: '/solar-maintenance/',
+          priority: '0.8',
+          desc: 'System maintenance guide, robotic/manual dust cleaning procedures, generation audits, and inverter health servicing.'
+        }
+      ]
+    },
+    {
+      id: 'cities',
+      category: 'Uttar Pradesh Regional Coverage',
+      icon: ICONS.mapPin,
+      badge: '9 Locations',
+      pages: [
+        {
+          title: 'All Service Cities Hub',
+          url: '/cities/',
+          priority: '0.9',
+          desc: 'Service coverage directory detailing operations across Central and Eastern Uttar Pradesh district centers.'
+        },
+        {
+          title: 'Solar Panel Installation in Ayodhya',
+          url: '/cities/ayodhya/',
+          priority: '0.9',
+          desc: 'Turnkey residential and commercial rooftop solar under MVVNL with elevated structure support across Ayodhya and Faizabad.'
+        },
+        {
+          title: 'Solar Panel Installation in Lucknow',
+          url: '/cities/lucknow/',
+          priority: '0.9',
+          desc: 'Professional rooftop installations, net metering liaison, and housing society solar solutions across Lucknow.'
+        },
+        {
+          title: 'Solar Panel Installation in Sultanpur',
+          url: '/cities/sultanpur/',
+          priority: '0.8',
+          desc: 'On-grid and hybrid solar installations tailored for independent residences and commercial retail stores in Sultanpur.'
+        },
+        {
+          title: 'Solar Panel Installation in Gonda',
+          url: '/cities/gonda/',
+          priority: '0.8',
+          desc: 'Customized on-grid and hybrid solar installations, site surveys, and DISCOM application assistance in Gonda.'
+        },
+        {
+          title: 'Solar Panel Installation in Barabanki',
+          url: '/cities/barabanki/',
+          priority: '0.8',
+          desc: 'Rooftop solar for residences, agro-industries, and commercial establishments along the Lucknow-Barabanki corridor.'
+        },
+        {
+          title: 'Solar Panel Installation in Amethi',
+          url: '/cities/amethi/',
+          priority: '0.8',
+          desc: 'Clean energy solutions for homes, small industries, and institutions across Amethi and Gauriganj.'
+        },
+        {
+          title: 'Solar Panel Installation in Prayagraj',
+          url: '/cities/prayagraj/',
+          priority: '0.8',
+          desc: 'High-efficiency monocrystalline solar systems engineered for high generation in Prayagraj (Allahabad).'
+        },
+        {
+          title: 'Solar Panel Installation in Gorakhpur',
+          url: '/cities/gorakhpur/',
+          priority: '0.8',
+          desc: 'Purvanchal DISCOM (PVVNL) compliant solar installations with rapid net metering processing in Gorakhpur.'
+        }
+      ]
+    },
+    {
+      id: 'company',
+      category: 'Company, Proof & Contact',
+      icon: ICONS.shield,
+      badge: '5 Pages',
+      pages: [
+        {
+          title: 'About Solar Wale',
+          url: '/about/',
+          priority: '0.8',
+          desc: 'Our engineering-first mission, transparent quality commitments, installation standards, and local team in UP.'
+        },
+        {
+          title: 'Recent Installation Projects',
+          url: '/projects/',
+          priority: '0.8',
+          desc: 'Showcase of executed residential, commercial, and hybrid solar installations with real system specifications.'
+        },
+        {
+          title: 'Frequently Asked Questions',
+          url: '/faq/',
+          priority: '0.8',
+          desc: 'Comprehensive answers to common questions about solar panel efficiency, net meters, payback periods, and costs.'
+        },
+        {
+          title: 'Contact Solar Wale',
+          url: '/contact/',
+          priority: '0.8',
+          desc: 'Direct consultation booking, site survey scheduling, phone helpline, email contact, and official WhatsApp assistance.'
+        },
+        {
+          title: 'Enquiry Received Confirmation',
+          url: '/thank-you/',
+          priority: '0.5',
+          desc: 'Quote request confirmation page providing immediate callback information and direct engineer WhatsApp escalation.'
+        }
+      ]
+    },
+    {
+      id: 'legal',
+      category: 'Legal, Compliance & Machine Sitemaps',
+      icon: ICONS.tool,
+      badge: '4 Resources',
+      pages: [
+        {
+          title: 'Privacy Policy',
+          url: '/privacy-policy/',
+          priority: '0.5',
+          desc: 'Clear disclosure on user data protection, contact confidentiality, and lead inquiry security.'
+        },
+        {
+          title: 'Terms & Conditions',
+          url: '/terms-and-conditions/',
+          priority: '0.5',
+          desc: 'Operational terms governing site usage, engineering proposals, quotation disclaimers, and intellectual property.'
+        },
+        {
+          title: 'Disclaimer & Subsidy Notice',
+          url: '/disclaimer/',
+          priority: '0.5',
+          desc: 'Regulatory notice outlining independent business operations, MNRE guidelines, and seasonal generation factors.'
+        },
+        {
+          title: 'Machine XML Sitemap',
+          url: '/sitemap.xml',
+          priority: '0.7',
+          desc: 'Structured XML protocol sitemap for search engines (Google, Bing) specifying last modified dates and crawling priorities.'
+        }
+      ]
+    }
+  ];
+
+  const totalPages = sitemapGroups.reduce((acc, g) => acc + g.pages.length, 0);
+
+  const bodyContent = `
+  <section class="section" style="padding-top: clamp(40px, 5vw, 60px);">
+    <div class="container">
+      <div class="section-header text-left" style="max-width: 860px; margin-bottom: 24px;">
+        <div class="eyebrow eyebrow-accent">Site Architecture & Directory</div>
+        <h1>Visual Sitemap of Solar Wale</h1>
+        <p class="text-lead">
+          Explore the complete structural hierarchy of Solar Wale. Browse all <strong>${totalPages}</strong> pages across our residential and commercial solar solutions, regional Uttar Pradesh city guides, solar calculator tools, company background, and regulatory notices.
+        </p>
+
+        <div class="sitemap-stats-bar">
+          <div class="sitemap-stat-pill">
+            <span class="dot"></span>
+            <span><strong>${totalPages}</strong> Production Pages</span>
+          </div>
+          <div class="sitemap-stat-pill">
+            <span class="dot"></span>
+            <span><strong>8</strong> UP Cities Covered</span>
+          </div>
+          <div class="sitemap-stat-pill">
+            <span class="dot"></span>
+            <span><strong>100%</strong> Mobile & Desktop Responsive</span>
+          </div>
+          <div class="sitemap-stat-pill">
+            <span class="dot"></span>
+            <span>Clean Canonical URLs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Filter Nav -->
+      <div class="sitemap-filter-nav" role="tablist" aria-label="Sitemap Category Filter">
+        <button type="button" class="sitemap-filter-btn active" data-filter="all">
+          <span>All Pages</span>
+          <span class="count">${totalPages}</span>
+        </button>
+        <button type="button" class="sitemap-filter-btn" data-filter="core">
+          <span>Core & Tools</span>
+          <span class="count">3</span>
+        </button>
+        <button type="button" class="sitemap-filter-btn" data-filter="solutions">
+          <span>Solar Solutions</span>
+          <span class="count">9</span>
+        </button>
+        <button type="button" class="sitemap-filter-btn" data-filter="cities">
+          <span>UP Cities</span>
+          <span class="count">9</span>
+        </button>
+        <button type="button" class="sitemap-filter-btn" data-filter="company">
+          <span>Company & Proof</span>
+          <span class="count">5</span>
+        </button>
+        <button type="button" class="sitemap-filter-btn" data-filter="legal">
+          <span>Legal & Technical</span>
+          <span class="count">4</span>
+        </button>
+      </div>
+
+      <!-- Groups -->
+      <div id="sitemap-groups-container">
+        ${sitemapGroups.map(group => `
+          <div class="sitemap-group" data-group-id="${group.id}">
+            <div class="sitemap-group-header">
+              <div class="sitemap-group-icon">${group.icon}</div>
+              <h2 class="sitemap-group-title">${group.category}</h2>
+              <span class="sitemap-group-badge">${group.badge}</span>
+            </div>
+
+            <div class="sitemap-grid">
+              ${group.pages.map(p => `
+                <a href="${p.url}" class="sitemap-node-card">
+                  <div class="sitemap-node-top">
+                    <div class="sitemap-node-title">${p.title}</div>
+                    <span class="sitemap-node-priority">Priority ${p.priority}</span>
+                  </div>
+                  <div class="sitemap-node-desc">${p.desc}</div>
+                  <div class="sitemap-node-footer">
+                    <span class="sitemap-node-path">${p.url}</span>
+                    <span class="sitemap-node-action">Visit Page →</span>
+                  </div>
+                </a>
+              `).join('')}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+
+      <!-- Client-side Interactive Filter Script -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const filterBtns = document.querySelectorAll('.sitemap-filter-btn');
+          const groups = document.querySelectorAll('.sitemap-group');
+
+          filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+              filterBtns.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              const filter = btn.getAttribute('data-filter');
+
+              groups.forEach(group => {
+                if (filter === 'all' || group.getAttribute('data-group-id') === filter) {
+                  group.style.display = 'block';
+                } else {
+                  group.style.display = 'none';
+                }
+              });
+            });
+          });
+        });
+      </script>
+
+      <!-- Bottom Conversion Callout -->
+      <div style="margin-top: 60px; padding: 36px; background: var(--color-bg-surface); border-radius: var(--radius-xl); border: 1px solid var(--color-border); text-align: center;">
+        <h3 style="margin-bottom: 10px;">Looking for a Solar Solution for Your Property?</h3>
+        <p style="max-width: 640px; margin: 0 auto 20px; font-size: 0.95rem;">
+          Use our interactive calculator to check expected energy generation and subsidies, or speak with an experienced solar engineer for a free site assessment.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/solar-calculator/" class="btn btn-primary">
+            <span>Try Solar Calculator</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </a>
+          <button type="button" class="btn btn-secondary" data-open-modal="quote-modal">
+            <span>Request Free Site Survey</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+
+  const sitemapHtml = renderPage({
+    title: 'Visual Sitemap & Directory | Solar Wale Uttar Pradesh',
+    metaDescription: 'Complete visual sitemap of Solar Wale. Graphical directory of all rooftop solar solutions, Uttar Pradesh city guides, solar calculator, and company resources.',
+    canonicalUrl: '/sitemap/',
+    breadcrumbs: [{ title: 'Visual Sitemap', url: '/sitemap/' }],
+    bodyContent
+  });
+
+  writeHtml('sitemap/index.html', sitemapHtml);
+}
+
+// ==========================================================================
 // 5. XML SITEMAP & ROBOTS.TXT
 // ==========================================================================
 function buildTechnicalSeoFiles() {
@@ -2682,5 +3056,6 @@ buildHomePage();
 buildCityPages();
 buildServicePages();
 buildCompanyPages();
+buildVisualSitemapPage();
 buildTechnicalSeoFiles();
 console.log('--- Solar Wale Build Completed Successfully! ---');
