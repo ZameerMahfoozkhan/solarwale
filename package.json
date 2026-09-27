@@ -1,0 +1,22 @@
+{
+  "name": "solarwale",
+  "version": "1.0.0",
+  "description": "Solar Wale - Official Website for Rooftop Solar Panel Installation in Uttar Pradesh",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/server.js",
+    "start": "node scripts/server.js"
+  },
+  "keywords": [
+    "solar",
+    "rooftop-solar",
+    "solar-installation",
+    "uttar-pradesh",
+    "ayodhya",
+    "lucknow"
+  ],
+  "author": "Solar Wale",
+  "license": "ISC"
+}
