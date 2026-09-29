@@ -119,13 +119,16 @@ function buildHomePage() {
 
         <div class="hero-visual-wrapper">
           <div class="hero-image-frame">
-            <img src="/assets/images/hero-rooftop-solar.jpg" 
-                 alt="Residential elevated rooftop solar panel installation on a modern home terrace in Uttar Pradesh" 
-                 width="720" 
-                 height="480"
-                 fetchpriority="high">
-            
-            <div class="hero-tag-badge badge-top-left">
+            <picture>
+              <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+              <img src="/assets/images/hero-rooftop-solar.jpg" 
+                   alt="Residential elevated rooftop solar panel installation on a modern home terrace in Uttar Pradesh" 
+                   width="720" 
+                   height="480"
+                   fetchpriority="high"
+                   decoding="async">
+            </picture>
+<div class="hero-tag-badge badge-top-left">
               <span class="hero-tag-dot green"></span>
               <span>Rooftop Solar • Clean Energy</span>
             </div>
@@ -782,7 +785,10 @@ function buildHomePage() {
         <!-- Project 1 -->
         <div class="project-card">
           <div class="project-card-image">
-            <img src="/assets/images/project-ayodhya-residential.jpg" alt="3 kW Residential Rooftop Solar installation in Ayodhya, Uttar Pradesh" loading="lazy" width="600" height="340">
+            <picture>
+                <source srcset="/assets/images/project-ayodhya-residential.webp" type="image/webp">
+                <img src="/assets/images/project-ayodhya-residential.jpg" alt="3 kW Residential Rooftop Solar installation in Ayodhya, Uttar Pradesh" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
             <div class="project-card-badges">
               <span class="badge badge-solar">3 kW On-Grid</span>
               <span class="badge badge-navy">Residential</span>
@@ -802,7 +808,10 @@ function buildHomePage() {
         <!-- Project 2 -->
         <div class="project-card">
           <div class="project-card-image">
-            <img src="/assets/images/hero-rooftop-solar.jpg" alt="5 kW Home Solar Installation in Lucknow, Uttar Pradesh" loading="lazy" width="600" height="340">
+            <picture>
+                <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+                <img src="/assets/images/hero-rooftop-solar.jpg" alt="5 kW Home Solar Installation in Lucknow, Uttar Pradesh" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
             <div class="project-card-badges">
               <span class="badge badge-solar">5 kW System</span>
               <span class="badge badge-navy">Residential</span>
@@ -822,7 +831,10 @@ function buildHomePage() {
         <!-- Project 3 -->
         <div class="project-card">
           <div class="project-card-image">
-            <img src="/assets/images/commercial-solar-rooftop.jpg" alt="15 kW Commercial Rooftop Solar Plant in Gorakhpur, Uttar Pradesh" loading="lazy" width="600" height="340">
+            <picture>
+                <source srcset="/assets/images/commercial-solar-rooftop.webp" type="image/webp">
+                <img src="/assets/images/commercial-solar-rooftop.jpg" alt="15 kW Commercial Rooftop Solar Plant in Gorakhpur, Uttar Pradesh" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
             <div class="project-card-badges">
               <span class="badge badge-solar">15 kW Commercial</span>
               <span class="badge badge-navy">Institutional</span>
@@ -1276,12 +1288,16 @@ function buildCityPages() {
 
           <div class="hero-visual-wrapper">
             <div class="hero-image-frame">
-              <img src="${city.slug === 'ayodhya' ? '/assets/images/project-ayodhya-residential.jpg' : '/assets/images/hero-rooftop-solar.jpg'}" 
-                   alt="Rooftop solar panel installation project in ${city.name}, Uttar Pradesh" 
-                   width="720" 
-                   height="480">
-              
-              <div class="hero-tag-badge badge-top-left">
+              <picture>
+                <source srcset="${city.slug === 'ayodhya' ? '/assets/images/project-ayodhya-residential.webp' : '/assets/images/hero-rooftop-solar.webp'}" type="image/webp">
+                <img src="${city.slug === 'ayodhya' ? '/assets/images/project-ayodhya-residential.jpg' : '/assets/images/hero-rooftop-solar.jpg'}" 
+                     alt="Rooftop solar panel installation project in ${city.name}, Uttar Pradesh" 
+                     width="720" 
+                     height="480"
+                     fetchpriority="high"
+                     decoding="async">
+              </picture>
+<div class="hero-tag-badge badge-top-left">
                 <span class="hero-tag-dot green"></span>
                 <span>Active in ${city.shortName}</span>
               </div>
@@ -1573,7 +1589,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar engineer conducting rooftop assessment in Uttar Pradesh" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-engineer-survey.webp" type="image/webp">
+              <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar engineer conducting rooftop assessment in Uttar Pradesh" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
 
@@ -1623,7 +1642,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/hero-rooftop-solar.jpg" alt="Residential rooftop solar panels on an Indian home" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+              <img src="/assets/images/hero-rooftop-solar.jpg" alt="Residential rooftop solar panels on an Indian home" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1655,7 +1677,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/commercial-solar-rooftop.jpg" alt="Commercial rooftop solar installation on an institution in Lucknow" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/commercial-solar-rooftop.webp" type="image/webp">
+              <img src="/assets/images/commercial-solar-rooftop.jpg" alt="Commercial rooftop solar installation on an institution in Lucknow" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1687,7 +1712,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-inverter-installation.jpg" alt="Grid-tied solar inverter installation on wall with conduits" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-inverter-installation.webp" type="image/webp">
+              <img src="/assets/images/solar-inverter-installation.jpg" alt="Grid-tied solar inverter installation on wall with conduits" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1719,7 +1747,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-battery-hybrid.jpg" alt="Solar battery and off-grid power setup" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-battery-hybrid.webp" type="image/webp">
+              <img src="/assets/images/solar-battery-hybrid.jpg" alt="Solar battery and off-grid power setup" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1751,7 +1782,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-battery-hybrid.jpg" alt="Hybrid solar inverter and wall battery setup in utility room" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-battery-hybrid.webp" type="image/webp">
+              <img src="/assets/images/solar-battery-hybrid.jpg" alt="Hybrid solar inverter and wall battery setup in utility room" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1783,7 +1817,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-inverter-installation.jpg" alt="Solar inverter neatly wall mounted with distribution boxes" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-inverter-installation.webp" type="image/webp">
+              <img src="/assets/images/solar-inverter-installation.jpg" alt="Solar inverter neatly wall mounted with distribution boxes" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1815,7 +1852,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-battery-hybrid.jpg" alt="Lithium wall battery and hybrid inverter" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-battery-hybrid.webp" type="image/webp">
+              <img src="/assets/images/solar-battery-hybrid.jpg" alt="Lithium wall battery and hybrid inverter" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -1847,7 +1887,10 @@ function buildServicePages() {
             </button>
           </div>
           <div>
-            <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar engineer testing electrical parameters" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="380">
+            <picture>
+              <source srcset="/assets/images/solar-engineer-survey.webp" type="image/webp">
+              <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar engineer testing electrical parameters" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="380">
+            </picture>
           </div>
         </div>
       `,
@@ -2149,7 +2192,10 @@ function buildCompanyPages() {
         <div class="grid-cols-3">
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/project-ayodhya-residential.jpg" alt="3 kW Residential Rooftop Solar installation in Ayodhya" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/project-ayodhya-residential.webp" type="image/webp">
+                <img src="/assets/images/project-ayodhya-residential.jpg" alt="3 kW Residential Rooftop Solar installation in Ayodhya" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">3 kW On-Grid</span><span class="badge badge-navy">Residential</span></div>
             </div>
             <div class="project-card-body">
@@ -2161,7 +2207,10 @@ function buildCompanyPages() {
 
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/hero-rooftop-solar.jpg" alt="5 kW Home Solar Installation in Gomti Nagar, Lucknow" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+                <img src="/assets/images/hero-rooftop-solar.jpg" alt="5 kW Home Solar Installation in Gomti Nagar, Lucknow" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">5 kW System</span><span class="badge badge-navy">Residential</span></div>
             </div>
             <div class="project-card-body">
@@ -2173,7 +2222,10 @@ function buildCompanyPages() {
 
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/commercial-solar-rooftop.jpg" alt="15 kW Commercial Rooftop Solar Plant in Gorakhpur" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/commercial-solar-rooftop.webp" type="image/webp">
+                <img src="/assets/images/commercial-solar-rooftop.jpg" alt="15 kW Commercial Rooftop Solar Plant in Gorakhpur" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">15 kW Commercial</span><span class="badge badge-navy">Institutional</span></div>
             </div>
             <div class="project-card-body">
@@ -2185,7 +2237,10 @@ function buildCompanyPages() {
 
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/solar-battery-hybrid.jpg" alt="5 kW Hybrid Solar with Storage in Sultanpur" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/solar-battery-hybrid.webp" type="image/webp">
+                <img src="/assets/images/solar-battery-hybrid.jpg" alt="5 kW Hybrid Solar with Storage in Sultanpur" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">5 kW Hybrid</span><span class="badge badge-navy">Storage Backup</span></div>
             </div>
             <div class="project-card-body">
@@ -2197,7 +2252,10 @@ function buildCompanyPages() {
 
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/solar-inverter-installation.jpg" alt="10 kW Commercial Solar Project in Gonda" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/solar-inverter-installation.webp" type="image/webp">
+                <img src="/assets/images/solar-inverter-installation.jpg" alt="10 kW Commercial Solar Project in Gonda" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">10 kW On-Grid</span><span class="badge badge-navy">Commercial</span></div>
             </div>
             <div class="project-card-body">
@@ -2209,7 +2267,10 @@ function buildCompanyPages() {
 
           <div class="project-card">
             <div class="project-card-image">
-              <img src="/assets/images/solar-engineer-survey.jpg" alt="Site Engineering and Survey in Prayagraj" loading="lazy" width="600" height="340">
+              <picture>
+                <source srcset="/assets/images/solar-engineer-survey.webp" type="image/webp">
+                <img src="/assets/images/solar-engineer-survey.jpg" alt="Site Engineering and Survey in Prayagraj" loading="lazy" decoding="async" width="600" height="340">
+              </picture>
               <div class="project-card-badges"><span class="badge badge-solar">Custom Survey</span><span class="badge badge-navy">Engineering</span></div>
             </div>
             <div class="project-card-body">
@@ -2273,7 +2334,10 @@ function buildCompanyPages() {
             </div>
           </div>
           <div>
-            <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar Wallah engineering team surveying rooftop" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="420">
+            <picture>
+              <source srcset="/assets/images/solar-engineer-survey.webp" type="image/webp">
+              <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar Wallah engineering team surveying rooftop" loading="lazy" decoding="async" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg); width:100%; height:auto;" width="640" height="420">
+            </picture>
           </div>
         </div>
 

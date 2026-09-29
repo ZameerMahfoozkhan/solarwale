@@ -22,9 +22,18 @@
   <meta name="twitter:description" content="Looking for rooftop solar panel installation in Sultanpur? Solar Wallah offers turnkey residential & commercial solar systems with Madhyanchal Vidyut Vitran Nigam Ltd (MVVNL) net metering & PM Surya Ghar subsidy support.">
   <meta name="twitter:image" content="https://solarwallah.online/assets/images/hero-rooftop-solar.jpg">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <!-- Multi-Device Favicons & PWA Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1B3D">
+  <meta name="msapplication-TileColor" content="#0B1B3D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Solar Wallah">
 
   <!-- Preload Critical Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,7 +118,10 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="/" class="site-logo" aria-label="Solar Wallah Homepage">
-        <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <picture>
+          <source srcset="/assets/images/logo.webp" type="image/webp">
+          <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        </picture>
         <div class="site-logo-text" style="display: none;">
           <div class="brand-name">Solar <span>Wallah</span></div>
           <div class="brand-tagline">Clean Energy • Uttar Pradesh</div>
@@ -265,7 +277,10 @@
   <div class="mobile-menu-drawer" id="mobile-menu-drawer" aria-label="Mobile Navigation Menu">
     <div class="mobile-drawer-topbar">
       <a href="/" class="mobile-drawer-brand">
-        <img src="/assets/images/logo.png" alt="Solar Wallah Logo" height="34" width="120" style="height:34px; width:auto; object-fit:contain;">
+        <picture>
+          <source srcset="/assets/images/logo.webp" type="image/webp">
+          <img src="/assets/images/logo.png" alt="Solar Wallah Logo" height="34" width="120" style="height:34px; width:auto; object-fit:contain;">
+        </picture>
       </a>
       <button type="button" class="mobile-drawer-close-btn" id="mobile-drawer-close" aria-label="Close menu">
         <span>Close</span>
@@ -396,12 +411,16 @@
 
           <div class="hero-visual-wrapper">
             <div class="hero-image-frame">
-              <img src="/assets/images/hero-rooftop-solar.jpg" 
-                   alt="Rooftop solar panel installation project in Sultanpur, Uttar Pradesh" 
-                   width="720" 
-                   height="480">
-              
-              <div class="hero-tag-badge badge-top-left">
+              <picture>
+                <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+                <img src="/assets/images/hero-rooftop-solar.jpg" 
+                     alt="Rooftop solar panel installation project in Sultanpur, Uttar Pradesh" 
+                     width="720" 
+                     height="480"
+                     fetchpriority="high"
+                     decoding="async">
+              </picture>
+<div class="hero-tag-badge badge-top-left">
                 <span class="hero-tag-dot green"></span>
                 <span>Active in Sultanpur</span>
               </div>
@@ -697,7 +716,10 @@
         <!-- Col 1: Brand & Identity -->
         <div class="footer-brand">
           <a href="/" class="site-logo" style="color:#FFFFFF;">
-            <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <picture>
+              <source srcset="/assets/images/logo.webp" type="image/webp">
+              <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            </picture>
             <div style="display:none; font-size:1.35rem; font-weight:800; color:#FFFFFF;">Solar <span style="color:var(--color-accent);">Wallah</span></div>
           </a>
           <p>
