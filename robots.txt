@@ -1,6 +1,6 @@
-# Solar Wale Robots.txt
+# Solar Wallah Robots.txt
 User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://solarwale.online/sitemap.xml
+Sitemap: https://solarwallah.online/sitemap.xml

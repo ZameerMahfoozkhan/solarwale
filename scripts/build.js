@@ -1,5 +1,5 @@
 /**
- * SOLAR WALE - MASTER STATIC SITE GENERATOR & SEO ENGINE
+ * SOLAR WALLAH - MASTER STATIC SITE GENERATOR & SEO ENGINE
  * Generates all 28 production-ready HTML pages, sitemap.xml, and robots.txt
  */
 
@@ -40,7 +40,7 @@ function registerUrl(url, priority = '0.8', changefreq = 'weekly') {
 // 1. HOMEPAGE BUILDER
 // ==========================================================================
 function buildHomePage() {
-  const metaTitle = "Solar Panel Installation in Uttar Pradesh | Solar Wale";
+  const metaTitle = "Solar Panel Installation in Uttar Pradesh | Solar Wallah";
   const metaDesc = "Complete rooftop solar solutions for homes & businesses across Uttar Pradesh. Site survey, engineering design, professional installation & after-sales support. Get a free solar quote today.";
   
   registerUrl('/', '1.0', 'daily');
@@ -52,7 +52,7 @@ function buildHomePage() {
     },
     {
       question: "How does the PM Surya Ghar Muft Bijli Yojana subsidy work in UP?",
-      answer: "Under the PM Surya Ghar program, eligible residential consumers receive up to ₹30,000 subsidy for 1 kW, ₹60,000 for 2 kW, and up to ₹78,000 for 3 kW and higher systems from the Central Government. In addition, the Uttar Pradesh state government provides supplementary financial assistance under the UP Solar Policy (up to ₹15,000/kW, capped at ₹30,000). Solar Wale assists with all documentation and DISCOM portal applications."
+      answer: "Under the PM Surya Ghar program, eligible residential consumers receive up to ₹30,000 subsidy for 1 kW, ₹60,000 for 2 kW, and up to ₹78,000 for 3 kW and higher systems from the Central Government. In addition, the Uttar Pradesh state government provides supplementary financial assistance under the UP Solar Policy (up to ₹15,000/kW, capped at ₹30,000). Solar Wallah assists with all documentation and DISCOM portal applications."
     },
     {
       question: "What is net metering and does UP electricity board support it?",
@@ -67,8 +67,8 @@ function buildHomePage() {
       answer: "Once site survey and DISCOM approvals are completed, physical rooftop installation typically takes 2 to 4 days for residential systems (1 kW to 10 kW). Meter testing and official net meter commissioning by your local electricity division usually takes 2 to 3 weeks."
     },
     {
-      question: "Which cities in Uttar Pradesh does Solar Wale serve?",
-      answer: "Solar Wale currently serves Ayodhya / Faizabad, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur, with ongoing expansion to surrounding districts in Uttar Pradesh."
+      question: "Which cities in Uttar Pradesh does Solar Wallah serve?",
+      answer: "Solar Wallah currently serves Ayodhya / Faizabad, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur, with ongoing expansion to surrounding districts in Uttar Pradesh."
     }
   ];
 
@@ -98,7 +98,7 @@ function buildHomePage() {
               <span class="btn-icon-circle">${ICONS.arrowRight}</span>
             </button>
 
-            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
                class="btn btn-whatsapp btn-lg" 
                target="_blank" 
                rel="noopener noreferrer"
@@ -220,7 +220,7 @@ function buildHomePage() {
             <div style="width:40px; height:40px; border-radius:50%; background:rgba(37, 211, 102, 0.1); color:var(--color-whatsapp); display:flex; align-items:center; justify-content:center; flex-shrink:0;">${ICONS.whatsapp}</div>
             <div>
               <div style="font-size:0.85rem; font-weight:700; color:var(--color-primary);">Prefer instant WhatsApp consultation?</div>
-              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20would%20like%20a%20free%20solar%20consultation." target="_blank" rel="noopener noreferrer" style="color:var(--color-whatsapp); font-size:0.85rem; font-weight:700;">Chat directly with an engineer →</a>
+              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20would%20like%20a%20free%20solar%20consultation." target="_blank" rel="noopener noreferrer" style="color:var(--color-whatsapp); font-size:0.85rem; font-weight:700;">Chat directly with an engineer →</a>
             </div>
           </div>
         </div>
@@ -549,12 +549,12 @@ function buildHomePage() {
     </div>
   </section>
 
-  <!-- Why Choose Solar Wale -->
-  <section class="section" id="why-solar-wale">
+  <!-- Why Choose Solar Wallah -->
+  <section class="section" id="why-solar-wallah">
     <div class="container">
       <div class="section-header">
         <div class="eyebrow">Our Commitment</div>
-        <h2>Why Choose Solar Wale?</h2>
+        <h2>Why Choose Solar Wallah?</h2>
         <p>
           We take a transparent, engineering-led approach to solar power. No inflated savings projections, no shortcuts in electrical safety, and dedicated local presence.
         </p>
@@ -772,7 +772,7 @@ function buildHomePage() {
     <div class="container">
       <div class="section-header">
         <div class="eyebrow">Real Installations</div>
-        <h2>Solar Wale Projects</h2>
+        <h2>Solar Wallah Projects</h2>
         <p>
           A selection of rooftop solar installations across residential, commercial, and institutional properties in Uttar Pradesh.
         </p>
@@ -911,7 +911,7 @@ function buildHomePage() {
         <div class="eyebrow">Local Presence</div>
         <h2>Solar Panel Installation Across Uttar Pradesh</h2>
         <p>
-          Solar Wale provides rooftop solar consultation, engineering, and installation services across selected key cities and nearby districts in Uttar Pradesh.
+          Solar Wallah provides rooftop solar consultation, engineering, and installation services across selected key cities and nearby districts in Uttar Pradesh.
         </p>
       </div>
 
@@ -1008,7 +1008,7 @@ function buildHomePage() {
         <div class="eyebrow">Customer Feedback</div>
         <h2>What Our Customers Value</h2>
         <p>
-          Read genuine feedback from residential and commercial property owners who transitioned to rooftop solar with Solar Wale.
+          Read genuine feedback from residential and commercial property owners who transitioned to rooftop solar with Solar Wallah.
         </p>
       </div>
 
@@ -1017,7 +1017,7 @@ function buildHomePage() {
           <div class="card-bezel-inner">
             <div style="color:#F59E0B; margin-bottom:10px; font-size:1.1rem;">★★★★★</div>
             <p style="font-size:0.925rem; line-height:1.6; margin-bottom:16px;">
-              "The Solar Wale team did an exceptional job with our 3 kW home installation in Ayodhya. The elevated structure gives us full use of our roof, and our electricity bill dropped drastically."
+              "The Solar Wallah team did an exceptional job with our 3 kW home installation in Ayodhya. The elevated structure gives us full use of our roof, and our electricity bill dropped drastically."
             </p>
             <div style="border-top:1px solid var(--color-border); padding-top:12px; margin-top:auto;">
               <strong style="color:var(--color-primary); font-size:0.9rem; display:block;">Anand K. Shukla</strong>
@@ -1055,7 +1055,7 @@ function buildHomePage() {
 
       <div style="text-align:center; margin-top:28px;">
         <span style="font-size:0.8rem; color:var(--color-text-subtle);">
-          * Testimonials reflect customer experiences with Solar Wale installations in Uttar Pradesh.
+          * Testimonials reflect customer experiences with Solar Wallah installations in Uttar Pradesh.
         </span>
       </div>
     </div>
@@ -1085,7 +1085,7 @@ function buildHomePage() {
       <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 64px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
         <h2 style="color:#FFFFFF; margin-bottom:16px;">Ready to Power Your Property with Solar?</h2>
         <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
-          Schedule your free rooftop site survey with Solar Wale. We analyze your electricity usage and engineer a customized solar proposal.
+          Schedule your free rooftop site survey with Solar Wallah. We analyze your electricity usage and engineer a customized solar proposal.
         </p>
 
         <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
@@ -1094,7 +1094,7 @@ function buildHomePage() {
             <span class="btn-icon-circle">${ICONS.arrowRight}</span>
           </button>
           
-          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20would%20like%20to%20schedule%20a%20site%20survey." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20would%20like%20to%20schedule%20a%20site%20survey." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
             ${ICONS.whatsapp}
             <span>WhatsApp Us Now</span>
           </a>
@@ -1112,7 +1112,7 @@ function buildHomePage() {
     schema: {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Solar Wale",
+      "name": "Solar Wallah",
       "url": SITE_DOMAIN,
       "potentialAction": {
         "@type": "SearchAction",
@@ -1131,8 +1131,8 @@ function buildHomePage() {
 // ==========================================================================
 function buildCityPages() {
   // 2.A Cities Hub Page (/cities/)
-  const hubTitle = "Solar Panel Installation Cities in Uttar Pradesh | Solar Wale";
-  const hubDesc = "Solar Wale provides rooftop solar panel consultation, net metering assistance & turnkey installations across Ayodhya, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur.";
+  const hubTitle = "Solar Panel Installation Cities in Uttar Pradesh | Solar Wallah";
+  const hubDesc = "Solar Wallah provides rooftop solar panel consultation, net metering assistance & turnkey installations across Ayodhya, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur.";
   registerUrl('/cities/', '0.9', 'weekly');
 
   const hubBody = `
@@ -1142,7 +1142,7 @@ function buildCityPages() {
         <div class="eyebrow eyebrow-accent">Uttar Pradesh Service Coverage</div>
         <h1>Solar Panel Installation Across Selected Cities in Uttar Pradesh</h1>
         <p class="text-lead">
-          Solar Wale operates dedicated local consultation and engineering installation teams across primary urban and industrial centers in Uttar Pradesh. Select your city below to learn about local DISCOM procedures, net metering, solar irradiance, and tailored rooftop solutions.
+          Solar Wallah operates dedicated local consultation and engineering installation teams across primary urban and industrial centers in Uttar Pradesh. Select your city below to learn about local DISCOM procedures, net metering, solar irradiance, and tailored rooftop solutions.
         </p>
       </div>
 
@@ -1174,7 +1174,7 @@ function buildCityPages() {
       <div style="margin-top:60px; padding:32px; background:var(--color-bg-surface); border-radius:var(--radius-xl); border:1px solid var(--color-border); text-align:center;">
         <h3 style="margin-bottom:10px;">Expanding to More Cities Across Uttar Pradesh</h3>
         <p style="max-width:680px; margin:0 auto 20px; font-size:0.95rem;">
-          Solar Wale is progressively expanding operations to neighboring districts including Basti, Rae Bareli, Pratapgarh, and Jaunpur. If your property is near our serviceable cities, our team can arrange a dedicated technical site survey.
+          Solar Wallah is progressively expanding operations to neighboring districts including Basti, Rae Bareli, Pratapgarh, and Jaunpur. If your property is near our serviceable cities, our team can arrange a dedicated technical site survey.
         </p>
         <button type="button" class="btn btn-secondary" data-open-modal="quote-modal">
           <span>Inquire About Feasibility in Your Area</span>
@@ -1199,12 +1199,12 @@ function buildCityPages() {
     const route = `/cities/${city.slug}/`;
     registerUrl(route, '0.9', 'weekly');
 
-    let pageTitle = `Solar Panel Installation in ${city.name} | Solar Wale`;
+    let pageTitle = `Solar Panel Installation in ${city.name} | Solar Wallah`;
     if (city.slug === 'ayodhya') {
-      pageTitle = `Solar Panel Installation in Ayodhya & Faizabad | Solar Wale`;
+      pageTitle = `Solar Panel Installation in Ayodhya & Faizabad | Solar Wallah`;
     }
 
-    const pageDesc = `Looking for rooftop solar panel installation in ${city.shortName}? Solar Wale offers turnkey residential & commercial solar systems with ${city.discom} net metering & PM Surya Ghar subsidy support.`;
+    const pageDesc = `Looking for rooftop solar panel installation in ${city.shortName}? Solar Wallah offers turnkey residential & commercial solar systems with ${city.discom} net metering & PM Surya Ghar subsidy support.`;
 
     const cityFaqs = [
       {
@@ -1216,15 +1216,15 @@ function buildCityPages() {
         answer: `In ${city.shortName}, net metering is facilitated through ${city.discom}. Once your solar system is installed, a joint inspection is performed and a bidirectional meter is installed. Units produced by your panels are first consumed by your building, and any surplus units are fed back into the grid, offsetting your electricity bill.`
       },
       {
-        question: `Can Solar Wale help with the PM Surya Ghar subsidy application in ${city.shortName}?`,
-        answer: `Yes. Solar Wale manages the complete documentation process on the national portal for consumers in ${city.shortName}, including consumer number validation, feasibility submission, vendor agreement, net meter application, and final subsidy disbursement paperwork.`
+        question: `Can Solar Wallah help with the PM Surya Ghar subsidy application in ${city.shortName}?`,
+        answer: `Yes. Solar Wallah manages the complete documentation process on the national portal for consumers in ${city.shortName}, including consumer number validation, feasibility submission, vendor agreement, net meter application, and final subsidy disbursement paperwork.`
       },
       {
         question: `How long does an installation take in ${city.shortName}?`,
         answer: `Site surveys in ${city.shortName} are typically scheduled within 24 to 48 hours. Physical mounting on your terrace takes 2 to 3 days, followed by DISCOM net meter processing.`
       },
       {
-        question: `Which neighborhoods in ${city.shortName} does Solar Wale cover?`,
+        question: `Which neighborhoods in ${city.shortName} does Solar Wallah cover?`,
         answer: `We serve all primary localities across ${city.shortName} including ${city.areas}, as well as immediate peripheral residential and industrial hubs.`
       }
     ];
@@ -1246,7 +1246,7 @@ function buildCityPages() {
             </h1>
 
             <p class="hero-subtitle">
-              Solar Wale provides rooftop solar consultation, customized engineering, and complete turnkey installation services for homes and businesses in ${city.name} and nearby areas.
+              Solar Wallah provides rooftop solar consultation, customized engineering, and complete turnkey installation services for homes and businesses in ${city.name} and nearby areas.
             </p>
 
             <div class="hero-ctas">
@@ -1255,7 +1255,7 @@ function buildCityPages() {
                 <span class="btn-icon-circle">${ICONS.arrowRight}</span>
               </button>
 
-              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20${encodeURIComponent(city.shortName)}." 
+              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20${encodeURIComponent(city.shortName)}." 
                  class="btn btn-whatsapp btn-lg" 
                  target="_blank" 
                  rel="noopener noreferrer"
@@ -1307,7 +1307,7 @@ function buildCityPages() {
               ${city.shortName} receives approximately 300 days of bright sunshine annually, with an average solar irradiance of 4.5 to 5.0 kWh/m²/day. With domestic and commercial power tariffs in Uttar Pradesh, switching to rooftop solar provides an immediate monthly reduction in electricity bills while protecting against seasonal power outages.
             </p>
             <p style="margin-bottom:20px;">
-              Whether you own an independent house in a residential colony or operate a commercial showroom, school, or workshop, Solar Wale engineers system layouts that maximize terrace space utility through elevated galvanized structures.
+              Whether you own an independent house in a residential colony or operate a commercial showroom, school, or workshop, Solar Wallah engineers system layouts that maximize terrace space utility through elevated galvanized structures.
             </p>
 
             <div style="padding:16px; background:#FFFFFF; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-bottom:24px;">
@@ -1488,7 +1488,7 @@ function buildCityPages() {
         <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
           <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in ${city.name}?</h2>
           <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
-            Connect directly with Solar Wale's engineering team for an on-site survey and customized quotation for your property.
+            Connect directly with Solar Wallah's engineering team for an on-site survey and customized quotation for your property.
           </p>
 
           <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
@@ -1497,7 +1497,7 @@ function buildCityPages() {
               <span>Call: ${PHONE_NUMBER}</span>
             </a>
 
-            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20${encodeURIComponent(city.shortName)}." 
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20${encodeURIComponent(city.shortName)}." 
                class="btn btn-whatsapp btn-lg" 
                target="_blank" 
                rel="noopener noreferrer">
@@ -1528,9 +1528,9 @@ function buildCityPages() {
       schema: {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": `Solar Wale - Solar Panel Installation ${city.shortName}`,
+        "name": `Solar Wallah - Solar Panel Installation ${city.shortName}`,
         "telephone": "+91-9580659559",
-        "email": "hello@solarwale.online",
+        "email": "hello@solarwallah.online",
         "url": `${SITE_DOMAIN}${route}`,
         "areaServed": {
           "@type": "City",
@@ -1562,7 +1562,7 @@ function buildServicePages() {
             <div class="eyebrow">End-to-End Service</div>
             <h2>Engineering-Led Rooftop Solar</h2>
             <p style="margin-bottom:16px;">
-              Solar panel installation is a 25-year structural and electrical investment. At Solar Wale, we engineer every installation to maximize solar kilowatt-hour yield while safeguarding the structural integrity of your terrace roof.
+              Solar panel installation is a 25-year structural and electrical investment. At Solar Wallah, we engineer every installation to maximize solar kilowatt-hour yield while safeguarding the structural integrity of your terrace roof.
             </p>
             <p style="margin-bottom:20px;">
               Our installation teams use hot-dip galvanized mounting structures that can be elevated to preserve your open terrace space for everyday family use. All electrical connections feature dual-protective DC switchgear, dedicated chemical earthing pits, and Class-II surge protection devices.
@@ -1602,7 +1602,7 @@ function buildServicePages() {
     },
     {
       slug: 'residential-solar',
-      title: 'Residential Rooftop Solar Panel Systems in Uttar Pradesh | Solar Wale',
+      title: 'Residential Rooftop Solar Panel Systems in Uttar Pradesh | Solar Wallah',
       metaDesc: 'Residential solar panel installation for independent homes in Uttar Pradesh. Slash power bills by up to 90% and claim up to ₹1,08,000 in PM Surya Ghar & UP State subsidies.',
       h1: 'Residential Rooftop Solar for Homes in Uttar Pradesh',
       lead: 'Clean, reliable solar power for independent houses and duplexes. Generate your own electricity, protect against rising tariffs, and benefit from government rooftop subsidies.',
@@ -1634,7 +1634,7 @@ function buildServicePages() {
     },
     {
       slug: 'commercial-solar',
-      title: 'Commercial & Industrial Solar Solutions in Uttar Pradesh | Solar Wale',
+      title: 'Commercial & Industrial Solar Solutions in Uttar Pradesh | Solar Wallah',
       metaDesc: 'Commercial rooftop solar systems for offices, schools, shops, and factories in Uttar Pradesh. Lower operational power costs and claim 40% accelerated tax depreciation.',
       h1: 'Commercial & Industrial Solar Solutions in Uttar Pradesh',
       lead: 'Engineered solar plants for commercial buildings, retail showrooms, schools, hospitals, and manufacturing units. High ROI, peak demand reduction, and accelerated tax depreciation benefits.',
@@ -1666,7 +1666,7 @@ function buildServicePages() {
     },
     {
       slug: 'on-grid-solar',
-      title: 'On-Grid Solar Systems with Net Metering in Uttar Pradesh | Solar Wale',
+      title: 'On-Grid Solar Systems with Net Metering in Uttar Pradesh | Solar Wallah',
       metaDesc: 'On-grid rooftop solar systems connected to the Uttar Pradesh power grid. Learn how bidirectional net metering cuts your electricity bill with zero battery maintenance.',
       h1: 'On-Grid Rooftop Solar Systems with Net Metering',
       lead: 'The most cost-effective and popular solar solution for homes and businesses connected to the electrical grid. Zero battery expenses, automatic surplus power export, and maximum financial ROI.',
@@ -1698,7 +1698,7 @@ function buildServicePages() {
     },
     {
       slug: 'off-grid-solar',
-      title: 'Off-Grid Solar Systems with Battery Storage | Solar Wale',
+      title: 'Off-Grid Solar Systems with Battery Storage | Solar Wallah',
       metaDesc: 'Off-grid solar energy systems with battery banks in Uttar Pradesh. Reliable standalone power for farmhouses, rural properties, and locations without dependable grid access.',
       h1: 'Off-Grid Standalone Solar Systems with Battery Storage',
       lead: 'Total energy independence. Engineered for properties located in areas with unreliable electricity grid availability, agricultural setups, farmhouses, and standalone sites.',
@@ -1762,7 +1762,7 @@ function buildServicePages() {
     },
     {
       slug: 'solar-inverter',
-      title: 'Solar Inverters: On-Grid, Hybrid & Micro Inverters | Solar Wale',
+      title: 'Solar Inverters: On-Grid, Hybrid & Micro Inverters | Solar Wallah',
       metaDesc: 'High-efficiency solar inverters for rooftop installations in Uttar Pradesh. Learn about string inverters, hybrid inverters, dual-MPPT technology, and remote monitoring.',
       h1: 'High-Efficiency Solar Inverter Technology',
       lead: 'The brain of your solar installation. We deploy reliable, high-efficiency solar inverters with dual-MPPT tracking, IP65 weatherproofing, and live smartphone generation monitoring.',
@@ -1775,7 +1775,7 @@ function buildServicePages() {
               Solar panels generate direct current (DC), which cannot be used directly by standard Indian household appliances or fed into the AC electricity grid. The solar inverter converts DC into clean 230V single-phase or 415V three-phase alternating current (AC).
             </p>
             <p style="margin-bottom:20px;">
-              Solar Wale specifies inverters with >98% peak conversion efficiency, dual independent Maximum Power Point Trackers (MPPT) to manage multiple roof orientations, and built-in Wi-Fi communication for real-time mobile app tracking.
+              Solar Wallah specifies inverters with >98% peak conversion efficiency, dual independent Maximum Power Point Trackers (MPPT) to manage multiple roof orientations, and built-in Wi-Fi communication for real-time mobile app tracking.
             </p>
             <button type="button" class="btn btn-primary" data-open-modal="quote-modal">
               <span>Explore Inverter Options</span>
@@ -1794,7 +1794,7 @@ function buildServicePages() {
     },
     {
       slug: 'solar-battery',
-      title: 'Solar Batteries & Energy Storage Solutions | Solar Wale UP',
+      title: 'Solar Batteries & Energy Storage Solutions | Solar Wallah UP',
       metaDesc: 'Solar battery storage options in Uttar Pradesh: Lithium Iron Phosphate (LiFePO4) & C10 solar tubular batteries. Long cycle life, reliable backup, and safe energy storage.',
       h1: 'Solar Batteries & Energy Storage Solutions',
       lead: 'Reliable, long-cycle energy storage for hybrid and off-grid solar systems in Uttar Pradesh. Compare Lithium (LiFePO4) and Tubular battery technologies for your backup needs.',
@@ -1839,7 +1839,7 @@ function buildServicePages() {
               Dust accumulation, vehicular soot, and seasonal bird droppings common across Uttar Pradesh can reduce solar panel electricity generation by 15% to 25% if left uncleaned for several weeks.
             </p>
             <p style="margin-bottom:20px;">
-              Solar Wale provides both homeowner maintenance guidelines and comprehensive annual health checks covering module washing techniques, torque inspection of structure bolts, earthing resistance testing, and string voltage audits.
+              Solar Wallah provides both homeowner maintenance guidelines and comprehensive annual health checks covering module washing techniques, torque inspection of structure bolts, earthing resistance testing, and string voltage audits.
             </p>
             <button type="button" class="btn btn-primary" data-open-modal="quote-modal">
               <span>Book Solar Maintenance Check</span>
@@ -1858,7 +1858,7 @@ function buildServicePages() {
     },
     {
       slug: 'solar-subsidy',
-      title: 'PM Surya Ghar & Uttar Pradesh Solar Subsidy Guide | Solar Wale',
+      title: 'PM Surya Ghar & Uttar Pradesh Solar Subsidy Guide | Solar Wallah',
       metaDesc: 'Complete guide to rooftop solar subsidies in Uttar Pradesh under PM Surya Ghar Muft Bijli Yojana. Check eligibility, subsidy rates up to ₹1,08,000, documentation, and application steps.',
       h1: 'PM Surya Ghar & Uttar Pradesh Solar Subsidy Guide',
       lead: 'Comprehensive, transparent guidance on Central and State government solar subsidies for residential homeowners in Uttar Pradesh. Understand eligibility, documentation, and the application process.',
@@ -1871,7 +1871,7 @@ function buildServicePages() {
               The Government of India has launched the landmark <strong>PM Surya Ghar: Muft Bijli Yojana</strong> to support 1 crore households across the country with rooftop solar installations. Residential homeowners in Uttar Pradesh can claim both Central financial assistance and State policy support.
             </p>
             <p style="margin-bottom:20px;">
-              Solar Wale assists you through the entire official workflow: portal registration, DISCOM consumer number link, technical feasibility clearance, commissioning, and final subsidy disbursement directly into your bank account.
+              Solar Wallah assists you through the entire official workflow: portal registration, DISCOM consumer number link, technical feasibility clearance, commissioning, and final subsidy disbursement directly into your bank account.
             </p>
             <button type="button" class="btn btn-primary" data-open-modal="quote-modal">
               <span>Check Your Subsidy Eligibility</span>
@@ -1956,7 +1956,7 @@ function buildServicePages() {
 
         <!-- Conversion Banner -->
         <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; box-shadow:var(--shadow-lg);">
-          <h2 style="color:#FFFFFF; margin-bottom:14px;">Plan Your Solar Installation with Solar Wale</h2>
+          <h2 style="color:#FFFFFF; margin-bottom:14px;">Plan Your Solar Installation with Solar Wallah</h2>
           <p style="color:#CBD5E1; max-width:600px; margin:0 auto 24px; font-size:1.05rem;">
             Schedule a free site survey in Uttar Pradesh. Transparent technical guidance and competitive project pricing.
           </p>
@@ -1965,7 +1965,7 @@ function buildServicePages() {
               <span>Get Free Solar Quote</span>
               <span class="btn-icon-circle">${ICONS.arrowRight}</span>
             </button>
-            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20am%20interested%20in%20${encodeURIComponent(sp.h1)}." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20interested%20in%20${encodeURIComponent(sp.h1)}." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
               ${ICONS.whatsapp}
               <span>Chat on WhatsApp</span>
             </a>
@@ -1990,7 +1990,7 @@ function buildServicePages() {
         "name": sp.h1,
         "provider": {
           "@type": "Organization",
-          "name": "Solar Wale",
+          "name": "Solar Wallah",
           "url": SITE_DOMAIN
         },
         "areaServed": {
@@ -2014,7 +2014,7 @@ function buildCompanyPages() {
   registerUrl('/solar-calculator/', '0.8', 'monthly');
   const calcHtml = renderPage({
     title: 'Solar Calculator Uttar Pradesh | Solar Savings & Sizing Estimate',
-    metaDescription: 'Calculate your rooftop solar capacity, monthly electricity generation, annual bill savings, and PM Surya Ghar subsidy in Uttar Pradesh with Solar Wale calculator.',
+    metaDescription: 'Calculate your rooftop solar capacity, monthly electricity generation, annual bill savings, and PM Surya Ghar subsidy in Uttar Pradesh with Solar Wallah calculator.',
     canonicalUrl: '/solar-calculator/',
     activeNav: '/solar-calculator/',
     breadcrumbs: [{ title: 'Solar Calculator', url: '/solar-calculator/' }],
@@ -2130,8 +2130,8 @@ function buildCompanyPages() {
   // 4.B Projects Gallery Page (/projects/)
   registerUrl('/projects/', '0.8', 'weekly');
   const projectsHtml = renderPage({
-    title: 'Solar Wale Projects | Rooftop Solar Installations in Uttar Pradesh',
-    metaDescription: 'Explore real residential and commercial rooftop solar installations by Solar Wale in Ayodhya, Lucknow, Gorakhpur, and other cities across Uttar Pradesh.',
+    title: 'Solar Wallah Projects | Rooftop Solar Installations in Uttar Pradesh',
+    metaDescription: 'Explore real residential and commercial rooftop solar installations by Solar Wallah in Ayodhya, Lucknow, Gorakhpur, and other cities across Uttar Pradesh.',
     canonicalUrl: '/projects/',
     activeNav: '/projects/',
     breadcrumbs: [{ title: 'Projects', url: '/projects/' }],
@@ -2235,8 +2235,8 @@ function buildCompanyPages() {
   // 4.C About Page (/about/)
   registerUrl('/about/', '0.8', 'monthly');
   const aboutHtml = renderPage({
-    title: 'About Solar Wale | Professional Solar Energy Company in Uttar Pradesh',
-    metaDescription: 'Learn about Solar Wale: our mission, transparent engineering philosophy, customer support, and rooftop solar installation standards across Uttar Pradesh.',
+    title: 'About Solar Wallah | Professional Solar Energy Company in Uttar Pradesh',
+    metaDescription: 'Learn about Solar Wallah: our mission, transparent engineering philosophy, customer support, and rooftop solar installation standards across Uttar Pradesh.',
     canonicalUrl: '/about/',
     activeNav: '/about/',
     breadcrumbs: [{ title: 'About Us', url: '/about/' }],
@@ -2245,9 +2245,9 @@ function buildCompanyPages() {
       <div class="container">
         <div class="section-header text-left" style="max-width:820px; margin-bottom:48px;">
           <div class="eyebrow eyebrow-accent">Our Story & Mission</div>
-          <h1>About Solar Wale</h1>
+          <h1>About Solar Wallah</h1>
           <p class="text-lead">
-            Solar Wale is a dedicated renewable energy solutions company focused on helping homeowners and businesses across Uttar Pradesh transition smoothly toward clean, cost-effective rooftop solar energy.
+            Solar Wallah is a dedicated renewable energy solutions company focused on helping homeowners and businesses across Uttar Pradesh transition smoothly toward clean, cost-effective rooftop solar energy.
           </p>
         </div>
 
@@ -2256,7 +2256,7 @@ function buildCompanyPages() {
             <div class="eyebrow">Our Mission</div>
             <h2>Making Clean Solar Power Transparent & Accessible</h2>
             <p style="margin-bottom:16px;">
-              The rooftop solar market in India is frequently complicated by misleading savings claims, substandard wiring practices, and poor after-sales coordination. Solar Wale was founded on a simple principle: deliver high-quality, transparent engineering that clients can rely on for 25 years.
+              The rooftop solar market in India is frequently complicated by misleading savings claims, substandard wiring practices, and poor after-sales coordination. Solar Wallah was founded on a simple principle: deliver high-quality, transparent engineering that clients can rely on for 25 years.
             </p>
             <p style="margin-bottom:20px;">
               From our initial launch market covering Ayodhya, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur, we take complete responsibility for your solar journey — from initial structural survey and portal documentation to physical installation, DISCOM net metering, and ongoing support.
@@ -2266,14 +2266,14 @@ function buildCompanyPages() {
                 <span>Contact Our Team</span>
                 <span class="btn-icon-circle">${ICONS.arrowRight}</span>
               </a>
-              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
                 ${ICONS.whatsapp}
                 <span>WhatsApp Us</span>
               </a>
             </div>
           </div>
           <div>
-            <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar Wale engineering team surveying rooftop" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="420">
+            <img src="/assets/images/solar-engineer-survey.jpg" alt="Solar Wallah engineering team surveying rooftop" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-lg);" width="640" height="420">
           </div>
         </div>
 
@@ -2303,8 +2303,8 @@ function buildCompanyPages() {
   // 4.D Contact Page (/contact/)
   registerUrl('/contact/', '0.8', 'monthly');
   const contactHtml = renderPage({
-    title: 'Contact Solar Wale | Solar Panel Enquiries in Uttar Pradesh',
-    metaDescription: 'Get in touch with Solar Wale for rooftop solar panel installations in Uttar Pradesh. Call or WhatsApp +91 95806 59559 or request an on-site survey online.',
+    title: 'Contact Solar Wallah | Solar Panel Enquiries in Uttar Pradesh',
+    metaDescription: 'Get in touch with Solar Wallah for rooftop solar panel installations in Uttar Pradesh. Call or WhatsApp +91 95806 59559 or request an on-site survey online.',
     canonicalUrl: '/contact/',
     activeNav: '/contact/',
     breadcrumbs: [{ title: 'Contact Us', url: '/contact/' }],
@@ -2343,7 +2343,7 @@ function buildCompanyPages() {
                   </div>
                   <div>
                     <div style="font-size:0.8rem; color:var(--color-text-subtle); text-transform:uppercase; font-weight:700;">Official WhatsApp</div>
-                    <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20would%20like%20to%20plan%20a%20solar%20installation." target="_blank" rel="noopener noreferrer" style="font-size:1.15rem; font-weight:800; color:var(--color-whatsapp);">${PHONE_NUMBER}</a>
+                    <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20would%20like%20to%20plan%20a%20solar%20installation." target="_blank" rel="noopener noreferrer" style="font-size:1.15rem; font-weight:800; color:var(--color-whatsapp);">${PHONE_NUMBER}</a>
                     <div style="font-size:0.8rem; color:var(--color-text-muted); margin-top:2px;">Quick response for bill assessments & quotes</div>
                   </div>
                 </div>
@@ -2432,14 +2432,14 @@ function buildCompanyPages() {
       items: [
         { question: "How do I know what solar system size is right for my home?", answer: "Look at your electricity bill's total monthly units (kWh) consumed. In UP, divide your average monthly units by 120 to find the recommended kW capacity. For example, consuming 360 units per month indicates a 3 kW system." },
         { question: "Does my roof need to face a specific direction?", answer: "In India (Northern Hemisphere), south-facing rooftops receive maximum solar irradiance throughout the year. However, East and West orientations also deliver high yields (approx 85-90% of south). We conduct a shadow simulation during the site survey to select optimal tilt angles." },
-        { question: "Can solar panels be installed on an elevated structure?", answer: "Yes! Solar Wale frequently installs high-rise galvanized steel pergola structures (7 to 9 feet clearance). This keeps your entire terrace open for daily activities, drying clothes, and family gatherings." }
+        { question: "Can solar panels be installed on an elevated structure?", answer: "Yes! Solar Wallah frequently installs high-rise galvanized steel pergola structures (7 to 9 feet clearance). This keeps your entire terrace open for daily activities, drying clothes, and family gatherings." }
       ]
     },
     {
       category: "Net Metering & Electricity Bills",
       items: [
         { question: "What is net metering and how is it billed in UP?", answer: "A bidirectional net meter records both the units you draw from the grid and the excess solar units you export. Your monthly bill is calculated on the net difference. If you export more than you consume in a sunny month, the extra units roll over as credit on subsequent bills." },
-        { question: "Who handles the DISCOM net meter application?", answer: "Solar Wale handles the complete technical documentation and liaison with your local electricity division (MVVNL / PVVNL in Uttar Pradesh)." }
+        { question: "Who handles the DISCOM net meter application?", answer: "Solar Wallah handles the complete technical documentation and liaison with your local electricity division (MVVNL / PVVNL in Uttar Pradesh)." }
       ]
     },
     {
@@ -2459,7 +2459,7 @@ function buildCompanyPages() {
   ];
 
   const faqPageHtml = renderPage({
-    title: 'Rooftop Solar FAQs | Complete Solar Knowledgebase | Solar Wale',
+    title: 'Rooftop Solar FAQs | Complete Solar Knowledgebase | Solar Wallah',
     metaDescription: 'Frequently asked questions regarding solar panel installation, net metering in Uttar Pradesh, PM Surya Ghar subsidy, maintenance, and system sizing.',
     canonicalUrl: '/faq/',
     activeNav: '/faq/',
@@ -2487,7 +2487,7 @@ function buildCompanyPages() {
         <div style="text-align:center; padding:36px; background:var(--color-bg-surface); border-radius:var(--radius-xl); border:1px solid var(--color-border); max-width:760px; margin:0 auto;">
           <h3 style="margin-bottom:8px;">Have a specific technical question?</h3>
           <p style="font-size:0.95rem; color:var(--color-text-muted); margin-bottom:20px;">Our engineering team in Uttar Pradesh is available to assist you.</p>
-          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20have%20a%20question%20about%20rooftop%20solar." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20have%20a%20question%20about%20rooftop%20solar." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
             ${ICONS.whatsapp}
             <span>Ask Us on WhatsApp</span>
           </a>
@@ -2500,8 +2500,8 @@ function buildCompanyPages() {
 
   // 4.F Thank You Page (/thank-you/)
   const thankYouHtml = renderPage({
-    title: 'Thank You | Enquiry Received | Solar Wale',
-    metaDescription: 'Thank you for reaching out to Solar Wale. Our solar engineering team in Uttar Pradesh will contact you shortly regarding your rooftop solar requirement.',
+    title: 'Thank You | Enquiry Received | Solar Wallah',
+    metaDescription: 'Thank you for reaching out to Solar Wallah. Our solar engineering team in Uttar Pradesh will contact you shortly regarding your rooftop solar requirement.',
     canonicalUrl: '/thank-you/',
     activeNav: '',
     breadcrumbs: [{ title: 'Thank You', url: '/thank-you/' }],
@@ -2519,9 +2519,9 @@ function buildCompanyPages() {
         </p>
 
         <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20just%20submitted%20an%20enquiry%20on%20your%20website." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20just%20submitted%20an%20enquiry%20on%20your%20website." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
             ${ICONS.whatsapp}
-            <span>WhatsApp Solar Wale Now</span>
+            <span>WhatsApp Solar Wallah Now</span>
           </a>
           <a href="/" class="btn btn-outline btn-lg">Return Home</a>
         </div>
@@ -2537,8 +2537,8 @@ function buildCompanyPages() {
 
 function buildLegalPages() {
   const privacyHtml = renderPage({
-    title: 'Privacy Policy | Solar Wale',
-    metaDescription: 'Privacy policy for Solar Wale. Learn how we handle your personal information and contact details safely.',
+    title: 'Privacy Policy | Solar Wallah',
+    metaDescription: 'Privacy policy for Solar Wallah. Learn how we handle your personal information and contact details safely.',
     canonicalUrl: '/privacy-policy/',
     breadcrumbs: [{ title: 'Privacy Policy', url: '/privacy-policy/' }],
     bodyContent: `
@@ -2548,7 +2548,7 @@ function buildLegalPages() {
         <p style="font-size:0.85rem; color:var(--color-text-subtle); margin-bottom:24px;">Last updated: ${new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</p>
 
         <div style="display:flex; flex-direction:column; gap:20px; font-size:0.95rem; line-height:1.7; color:var(--color-text-muted);">
-          <p>At <strong>Solar Wale</strong> (solarwale.online), we respect your privacy and are committed to protecting the personal information you provide when requesting a solar consultation, site assessment, or financial estimate.</p>
+          <p>At <strong>Solar Wallah</strong> (solarwallah.online), we respect your privacy and are committed to protecting the personal information you provide when requesting a solar consultation, site assessment, or financial estimate.</p>
 
           <h3 style="color:var(--color-primary); margin-top:12px;">Information We Collect</h3>
           <p>When you fill out a quote request or contact form on our website, we collect your name, phone number, city, property type, and approximate monthly electricity bill.</p>
@@ -2566,8 +2566,8 @@ function buildLegalPages() {
   writeHtml('privacy-policy/index.html', privacyHtml);
 
   const termsHtml = renderPage({
-    title: 'Terms & Conditions | Solar Wale',
-    metaDescription: 'Terms and conditions governing the use of Solar Wale website and solar consultation services.',
+    title: 'Terms & Conditions | Solar Wallah',
+    metaDescription: 'Terms and conditions governing the use of Solar Wallah website and solar consultation services.',
     canonicalUrl: '/terms-and-conditions/',
     breadcrumbs: [{ title: 'Terms & Conditions', url: '/terms-and-conditions/' }],
     bodyContent: `
@@ -2577,13 +2577,13 @@ function buildLegalPages() {
         <p style="font-size:0.85rem; color:var(--color-text-subtle); margin-bottom:24px;">Last updated: ${new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</p>
 
         <div style="display:flex; flex-direction:column; gap:20px; font-size:0.95rem; line-height:1.7; color:var(--color-text-muted);">
-          <p>Welcome to <strong>Solar Wale</strong> (solarwale.online). By accessing this website and utilizing our consultation services, you agree to these Terms & Conditions.</p>
+          <p>Welcome to <strong>Solar Wallah</strong> (solarwallah.online). By accessing this website and utilizing our consultation services, you agree to these Terms & Conditions.</p>
 
           <h3 style="color:var(--color-primary); margin-top:12px;">Estimations and Proposals</h3>
           <p>All savings calculations, system capacities, and generation values presented on this website are engineering estimates for informational purposes. Formal commercial contracts and guaranteed specifications are established following a comprehensive on-site physical survey and formal technical proposal.</p>
 
           <h3 style="color:var(--color-primary); margin-top:12px;">Intellectual Property</h3>
-          <p>All brand marks, visual imagery, layout architecture, and textual content are property of Solar Wale.</p>
+          <p>All brand marks, visual imagery, layout architecture, and textual content are property of Solar Wallah.</p>
         </div>
       </div>
     </section>
@@ -2592,8 +2592,8 @@ function buildLegalPages() {
   writeHtml('terms-and-conditions/index.html', termsHtml);
 
   const disclaimerHtml = renderPage({
-    title: 'Disclaimer & Subsidy Notice | Solar Wale',
-    metaDescription: 'Regulatory disclaimer and government subsidy notes for Solar Wale rooftop solar solutions in Uttar Pradesh.',
+    title: 'Disclaimer & Subsidy Notice | Solar Wallah',
+    metaDescription: 'Regulatory disclaimer and government subsidy notes for Solar Wallah rooftop solar solutions in Uttar Pradesh.',
     canonicalUrl: '/disclaimer/',
     breadcrumbs: [{ title: 'Disclaimer', url: '/disclaimer/' }],
     bodyContent: `
@@ -2604,11 +2604,11 @@ function buildLegalPages() {
 
         <div style="display:flex; flex-direction:column; gap:20px; font-size:0.95rem; line-height:1.7; color:var(--color-text-muted);">
           <div style="padding:20px; background:var(--color-accent-light); border-radius:var(--radius-md); border:1px solid rgba(229,138,0,0.3); color:#92400E;">
-            <strong>Important Regulatory Notice:</strong> Solar Wale is an independent rooftop solar engineering and installation company. We are not a government agency. Government schemes, eligibility requirements, application portals, and subsidy amounts (such as the PM Surya Ghar: Muft Bijli Yojana or UP State Solar Policy) are regulated by the Ministry of New and Renewable Energy (MNRE), UPNEDA, and respective state DISCOMs.
+            <strong>Important Regulatory Notice:</strong> Solar Wallah is an independent rooftop solar engineering and installation company. We are not a government agency. Government schemes, eligibility requirements, application portals, and subsidy amounts (such as the PM Surya Ghar: Muft Bijli Yojana or UP State Solar Policy) are regulated by the Ministry of New and Renewable Energy (MNRE), UPNEDA, and respective state DISCOMs.
           </div>
 
           <h3 style="color:var(--color-primary); margin-top:12px;">Performance Estimates</h3>
-          <p>Solar energy generation varies across seasons and is subject to local weather conditions, rooftop shadow obstacles, ambient temperature, panel cleanliness, and distribution grid voltage stability. Solar Wale provides realistic engineering projections based on North Indian meteorological datasets, but cannot guarantee identical output every billing cycle.</p>
+          <p>Solar energy generation varies across seasons and is subject to local weather conditions, rooftop shadow obstacles, ambient temperature, panel cleanliness, and distribution grid voltage stability. Solar Wallah provides realistic engineering projections based on North Indian meteorological datasets, but cannot guarantee identical output every billing cycle.</p>
         </div>
       </div>
     </section>
@@ -2617,8 +2617,8 @@ function buildLegalPages() {
   writeHtml('disclaimer/index.html', disclaimerHtml);
 
   const notFoundHtml = renderPage({
-    title: '404 - Page Not Found | Solar Wale',
-    metaDescription: 'The page you requested could not be found. Explore Solar Wale for rooftop solar installation across Uttar Pradesh.',
+    title: '404 - Page Not Found | Solar Wallah',
+    metaDescription: 'The page you requested could not be found. Explore Solar Wallah for rooftop solar installation across Uttar Pradesh.',
     canonicalUrl: '/404.html',
     breadcrumbs: [{ title: '404 Not Found', url: '/404.html' }],
     bodyContent: `
@@ -2659,7 +2659,7 @@ function buildVisualSitemapPage() {
       badge: '3 Hubs',
       pages: [
         {
-          title: 'Solar Wale Homepage',
+          title: 'Solar Wallah Homepage',
           url: '/',
           priority: '1.0',
           desc: 'Main portal with rooftop solar capacity calculator, core service pillars, project showcase, and free quote consultation.'
@@ -2809,7 +2809,7 @@ function buildVisualSitemapPage() {
       badge: '5 Pages',
       pages: [
         {
-          title: 'About Solar Wale',
+          title: 'About Solar Wallah',
           url: '/about/',
           priority: '0.8',
           desc: 'Our engineering-first mission, transparent quality commitments, installation standards, and local team in UP.'
@@ -2827,7 +2827,7 @@ function buildVisualSitemapPage() {
           desc: 'Comprehensive answers to common questions about solar panel efficiency, net meters, payback periods, and costs.'
         },
         {
-          title: 'Contact Solar Wale',
+          title: 'Contact Solar Wallah',
           url: '/contact/',
           priority: '0.8',
           desc: 'Direct consultation booking, site survey scheduling, phone helpline, email contact, and official WhatsApp assistance.'
@@ -2881,9 +2881,9 @@ function buildVisualSitemapPage() {
     <div class="container">
       <div class="section-header text-left" style="max-width: 860px; margin-bottom: 24px;">
         <div class="eyebrow eyebrow-accent">Site Architecture & Directory</div>
-        <h1>Visual Sitemap of Solar Wale</h1>
+        <h1>Visual Sitemap of Solar Wallah</h1>
         <p class="text-lead">
-          Explore the complete structural hierarchy of Solar Wale. Browse all <strong>${totalPages}</strong> pages across our residential and commercial solar solutions, regional Uttar Pradesh city guides, solar calculator tools, company background, and regulatory notices.
+          Explore the complete structural hierarchy of Solar Wallah. Browse all <strong>${totalPages}</strong> pages across our residential and commercial solar solutions, regional Uttar Pradesh city guides, solar calculator tools, company background, and regulatory notices.
         </p>
 
         <div class="sitemap-stats-bar">
@@ -3009,8 +3009,8 @@ function buildVisualSitemapPage() {
   `;
 
   const sitemapHtml = renderPage({
-    title: 'Visual Sitemap & Directory | Solar Wale Uttar Pradesh',
-    metaDescription: 'Complete visual sitemap of Solar Wale. Graphical directory of all rooftop solar solutions, Uttar Pradesh city guides, solar calculator, and company resources.',
+    title: 'Visual Sitemap & Directory | Solar Wallah Uttar Pradesh',
+    metaDescription: 'Complete visual sitemap of Solar Wallah. Graphical directory of all rooftop solar solutions, Uttar Pradesh city guides, solar calculator, and company resources.',
     canonicalUrl: '/sitemap/',
     breadcrumbs: [{ title: 'Visual Sitemap', url: '/sitemap/' }],
     bodyContent
@@ -3036,7 +3036,7 @@ ${canonicalUrls.map(u => `  <url>
   fs.writeFileSync(path.join(ROOT_DIR, 'sitemap.xml'), sitemapXml.trim(), 'utf8');
   console.log(`Generated: sitemap.xml with ${canonicalUrls.length} canonical URLs`);
 
-  const robotsTxt = `# Solar Wale Robots.txt
+  const robotsTxt = `# Solar Wallah Robots.txt
 User-agent: *
 Allow: /
 
@@ -3051,11 +3051,11 @@ Sitemap: ${SITE_DOMAIN}/sitemap.xml
 // ==========================================================================
 // EXECUTE FULL BUILD
 // ==========================================================================
-console.log('--- Starting Solar Wale Production Build ---');
+console.log('--- Starting Solar Wallah Production Build ---');
 buildHomePage();
 buildCityPages();
 buildServicePages();
 buildCompanyPages();
 buildVisualSitemapPage();
 buildTechnicalSeoFiles();
-console.log('--- Solar Wale Build Completed Successfully! ---');
+console.log('--- Solar Wallah Build Completed Successfully! ---');

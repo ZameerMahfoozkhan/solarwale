@@ -1,7 +1,7 @@
 {
-  "name": "solarwale",
+  "name": "solarwallah",
   "version": "1.0.0",
-  "description": "Solar Wale - Official Website for Rooftop Solar Panel Installation in Uttar Pradesh",
+  "description": "Solar Wallah - Official Website for Rooftop Solar Panel Installation in Uttar Pradesh",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,6 @@
     "ayodhya",
     "lucknow"
   ],
-  "author": "Solar Wale",
+  "author": "Solar Wallah",
   "license": "ISC"
 }

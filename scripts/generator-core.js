@@ -1,5 +1,5 @@
 /**
- * SOLAR WALE - STATIC SITE GENERATOR & SEO BUILDER
+ * SOLAR WALLAH - STATIC SITE GENERATOR & SEO BUILDER
  * Generates all 28 production-ready HTML pages, sitemap.xml, and robots.txt
  */
 
@@ -7,11 +7,11 @@ import fs from 'fs';
 import path from 'path';
 
 const ROOT_DIR = process.cwd();
-const SITE_DOMAIN = 'https://solarwale.online';
+const SITE_DOMAIN = 'https://solarwallah.online';
 const PHONE_NUMBER = '+91 95806 59559';
 const PHONE_TEL = 'tel:+919580659559';
 const WHATSAPP_RAW = '919580659559';
-const EMAIL_ADDRESS = 'hello@solarwale.online';
+const EMAIL_ADDRESS = 'hello@solarwallah.online';
 
 // Ensure directory exists
 function ensureDir(filePath) {
@@ -75,10 +75,10 @@ function renderHeader(activePath = '') {
   return `
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="/" class="site-logo" aria-label="Solar Wale Homepage">
-        <img src="/assets/images/logo.png" alt="Solar Wale Logo" width="160" height="48" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <a href="/" class="site-logo" aria-label="Solar Wallah Homepage">
+        <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="site-logo-text" style="display: none;">
-          <div class="brand-name">Solar <span>Wale</span></div>
+          <div class="brand-name">Solar <span>Wallah</span></div>
           <div class="brand-tagline">Clean Energy • Uttar Pradesh</div>
         </div>
       </a>
@@ -129,7 +129,7 @@ function renderHeader(activePath = '') {
       </nav>
 
       <div class="header-actions">
-        <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
+        <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
            class="header-whatsapp-btn" 
            target="_blank" 
            rel="noopener noreferrer"
@@ -160,7 +160,7 @@ function renderMobileDrawer(activePath = '') {
   <div class="mobile-menu-drawer" id="mobile-menu-drawer" aria-label="Mobile Navigation Menu">
     <div class="mobile-drawer-topbar">
       <a href="/" class="mobile-drawer-brand">
-        <img src="/assets/images/logo.png" alt="Solar Wale Logo" height="34" width="120" style="height:34px; width:auto; object-fit:contain;">
+        <img src="/assets/images/logo.png" alt="Solar Wallah Logo" height="34" width="120" style="height:34px; width:auto; object-fit:contain;">
       </a>
       <button type="button" class="mobile-drawer-close-btn" id="mobile-drawer-close" aria-label="Close menu">
         <span>Close</span>
@@ -197,13 +197,13 @@ function renderMobileDrawer(activePath = '') {
         </div>
       </div>
 
-      <div class="mobile-menu-item"><a href="/about/">About Solar Wale</a></div>
+      <div class="mobile-menu-item"><a href="/about/">About Solar Wallah</a></div>
       <div class="mobile-menu-item"><a href="/faq/">Frequently Asked Questions</a></div>
       <div class="mobile-menu-item"><a href="/contact/">Contact Us</a></div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px; padding-bottom:40px;">
-      <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
+      <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
          class="btn btn-whatsapp" 
          target="_blank" 
          rel="noopener noreferrer"
@@ -221,12 +221,12 @@ function renderMobileDrawer(activePath = '') {
 
 function renderMobileBottomBar(cityContext = '') {
   const waText = cityContext 
-    ? encodeURIComponent(`Hi Solar Wale, I am looking for solar panel installation in ${cityContext}. Please share system details and price estimate.`)
-    : encodeURIComponent('Hi Solar Wale, I want to know about solar panel installation for my property.');
+    ? encodeURIComponent(`Hi Solar Wallah, I am looking for solar panel installation in ${cityContext}. Please share system details and price estimate.`)
+    : encodeURIComponent('Hi Solar Wallah, I want to know about solar panel installation for my property.');
   
   return `
   <div class="mobile-bottom-bar" id="mobile-bottom-bar" aria-label="Quick Action Conversion Bar">
-    <a href="${PHONE_TEL}" class="mobile-bar-btn mobile-bar-call" data-location="mobile_bar" aria-label="Call Solar Wale">
+    <a href="${PHONE_TEL}" class="mobile-bar-btn mobile-bar-call" data-location="mobile_bar" aria-label="Call Solar Wallah">
       ${ICONS.phone}
       <span>Call</span>
     </a>
@@ -235,7 +235,7 @@ function renderMobileBottomBar(cityContext = '') {
        target="_blank" 
        rel="noopener noreferrer"
        data-location="mobile_bar" 
-       aria-label="WhatsApp Solar Wale">
+       aria-label="WhatsApp Solar Wallah">
       ${ICONS.whatsapp}
       <span>WhatsApp</span>
     </a>
@@ -327,8 +327,8 @@ function renderFooter(activePath = '') {
         <!-- Col 1: Brand & Identity -->
         <div class="footer-brand">
           <a href="/" class="site-logo" style="color:#FFFFFF;">
-            <img src="/assets/images/logo.png" alt="Solar Wale Logo" width="160" height="48" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div style="display:none; font-size:1.35rem; font-weight:800; color:#FFFFFF;">Solar <span style="color:var(--color-accent);">Wale</span></div>
+            <img src="/assets/images/logo.png" alt="Solar Wallah Logo" width="160" height="48" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div style="display:none; font-size:1.35rem; font-weight:800; color:#FFFFFF;">Solar <span style="color:var(--color-accent);">Wallah</span></div>
           </a>
           <p>
             Complete rooftop solar solutions for homes and businesses across Uttar Pradesh. From site survey and engineering design to commissioning, subsidy liaison, and long-term service.
@@ -345,7 +345,7 @@ function renderFooter(activePath = '') {
               ${ICONS.whatsapp}
               <div>
                 <div style="font-size:0.75rem; color:#64748B;">Official WhatsApp</div>
-                <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wale" target="_blank" rel="noopener noreferrer">${PHONE_NUMBER}</a>
+                <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah" target="_blank" rel="noopener noreferrer">${PHONE_NUMBER}</a>
               </div>
             </div>
             <div class="footer-contact-item">
@@ -386,7 +386,7 @@ function renderFooter(activePath = '') {
         <div>
           <h3 class="footer-heading">Company & Guidance</h3>
           <ul class="footer-links">
-            <li><a href="/about/">About Solar Wale</a></li>
+            <li><a href="/about/">About Solar Wallah</a></li>
             <li><a href="/projects/">Recent Installations</a></li>
             <li><a href="/solar-panel-installation/">Installation Process</a></li>
             <li><a href="/faq/">Frequently Asked Questions</a></li>
@@ -396,7 +396,7 @@ function renderFooter(activePath = '') {
           </ul>
 
           <div style="margin-top:24px;">
-            <div style="font-size:0.8rem; color:#94A3B8; margin-bottom:10px; font-weight:600;">Connect With Solar Wale:</div>
+            <div style="font-size:0.8rem; color:#94A3B8; margin-bottom:10px; font-weight:600;">Connect With Solar Wallah:</div>
             <div class="footer-socials">
               <a href="https://wa.me/${WHATSAPP_RAW}" class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">${ICONS.whatsapp}</a>
               <a href="mailto:${EMAIL_ADDRESS}" class="footer-social-link" aria-label="Email">${ICONS.mail}</a>
@@ -409,7 +409,7 @@ function renderFooter(activePath = '') {
       <!-- Bottom Bar -->
       <div class="footer-bottom">
         <div>
-          © ${new Date().getFullYear()} Solar Wale (solarwale.online). All rights reserved. Professional rooftop solar solutions in Uttar Pradesh.
+          © ${new Date().getFullYear()} Solar Wallah (solarwallah.online). All rights reserved. Professional rooftop solar solutions in Uttar Pradesh.
         </div>
         <div class="footer-legal-links">
           <a href="/sitemap/">Visual Sitemap</a>
@@ -496,12 +496,12 @@ function renderPage({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Solar Wale",
+    "name": "Solar Wallah",
     "url": SITE_DOMAIN,
     "logo": `${SITE_DOMAIN}/assets/images/logo.png`,
     "description": "Professional rooftop solar panel installation and engineering solutions across Uttar Pradesh, India.",
     "telephone": "+91-9580659559",
-    "email": "hello@solarwale.online",
+    "email": "hello@solarwallah.online",
     "areaServed": [
       { "@type": "State", "name": "Uttar Pradesh" },
       ...TARGET_CITIES.map(c => ({ "@type": "City", "name": c.shortName }))
@@ -532,7 +532,7 @@ function renderPage({
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${metaDescription}">
   <meta property="og:image" content="${fullOgImage}">
-  <meta property="og:site_name" content="Solar Wale">
+  <meta property="og:site_name" content="Solar Wallah">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">

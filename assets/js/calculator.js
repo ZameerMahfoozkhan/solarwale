@@ -1,5 +1,5 @@
 /**
- * SOLAR WALE - SOLAR SAVINGS CALCULATOR
+ * SOLAR WALLAH - SOLAR SAVINGS CALCULATOR
  * Real-time estimation based on Uttar Pradesh solar irradiance & tariff models
  */
 
@@ -134,7 +134,7 @@
       // Contextual WhatsApp link
       if (whatsappBtn) {
         const text = encodeURIComponent(
-          'Hi Solar Wale, I used your solar calculator.\n' +
+          'Hi Solar Wallah, I used your solar calculator.\n' +
           '• City: ' + selectedCity + '\n' +
           '• Property: ' + selectedProperty + '\n' +
           '• Monthly Bill: ' + formatCurrency(bill) + '\n' +
@@ -153,7 +153,7 @@
     // Event listeners
     billSlider.addEventListener('input', function () {
       calculate();
-      window.solarWaleTrack('calculator_use', { bill: billSlider.value });
+      window.solarWallahTrack('calculator_use', { bill: billSlider.value });
     });
 
     propertyTypeInputs.forEach(function (radio) {

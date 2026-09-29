@@ -1,5 +1,5 @@
 /**
- * SOLAR WALE - CORE JAVASCRIPT
+ * SOLAR WALLAH - CORE JAVASCRIPT
  * Header scroll, mobile drawer, quote modal, FAQs, WhatsApp routing, analytics
  */
 
@@ -7,7 +7,7 @@
   'use strict';
 
   // --- Safe Analytics Event Dispatcher ---
-  window.solarWaleTrack = function (eventName, eventParams) {
+  window.solarWallahTrack = function (eventName, eventParams) {
     eventParams = eventParams || {};
     try {
       if (typeof window.gtag === 'function') {
@@ -251,16 +251,16 @@
         };
 
         try {
-          const pastLeads = JSON.parse(localStorage.getItem('solarwale_leads') || '[]');
+          const pastLeads = JSON.parse(localStorage.getItem('solarwallah_leads') || '[]');
           pastLeads.push(leadData);
-          localStorage.setItem('solarwale_leads', JSON.stringify(pastLeads));
+          localStorage.setItem('solarwallah_leads', JSON.stringify(pastLeads));
         } catch (err) {
           console.error('Storage error', err);
         }
 
         // 5. Track Analytics Event
         const isQuoteForm = form.getAttribute('data-solar-form') === 'quote';
-        window.solarWaleTrack(isQuoteForm ? 'quote_form_submit' : 'contact_form_submit', {
+        window.solarWallahTrack(isQuoteForm ? 'quote_form_submit' : 'contact_form_submit', {
           city: city,
           property_type: propertyType,
           monthly_bill: monthlyBill
@@ -276,14 +276,14 @@
           monthly_bill: monthlyBill || 'Not specified',
           message: message || '',
           source_page: window.location.href,
-          _subject: `New Solar Wale Lead: ${name} (${city || 'Uttar Pradesh'})`
+          _subject: `New Solar Wallah Lead: ${name} (${city || 'Uttar Pradesh'})`
         };
 
         let redirected = false;
         function proceedToThankYou() {
           if (redirected) return;
           redirected = true;
-          sessionStorage.setItem('solarwale_last_submission', JSON.stringify(leadData));
+          sessionStorage.setItem('solarwallah_last_submission', JSON.stringify(leadData));
           window.location.href = '/thank-you/';
         }
 
@@ -316,7 +316,7 @@
     // WhatsApp clicks
     document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
       link.addEventListener('click', function () {
-        window.solarWaleTrack('whatsapp_click', {
+        window.solarWallahTrack('whatsapp_click', {
           link_location: link.getAttribute('data-location') || 'general',
           url: link.href
         });
@@ -326,7 +326,7 @@
     // Phone call clicks
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
       link.addEventListener('click', function () {
-        window.solarWaleTrack('phone_click', {
+        window.solarWallahTrack('phone_click', {
           link_location: link.getAttribute('data-location') || 'general'
         });
       });
