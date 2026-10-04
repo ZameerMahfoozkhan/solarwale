@@ -496,7 +496,8 @@ function renderPage({
   breadcrumbs = [],
   schema = null,
   bodyContent = '',
-  cityContext = ''
+  cityContext = '',
+  robots = null
 }) {
   const fullCanonical = `${SITE_DOMAIN}${canonicalUrl}`;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_DOMAIN}${ogImage}`;
@@ -521,6 +522,30 @@ function renderPage({
   };
 
   const allSchemas = [organizationSchema];
+
+  // Automatic JSON-LD BreadcrumbList schema
+  if (breadcrumbs && breadcrumbs.length > 0) {
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": SITE_DOMAIN
+        },
+        ...breadcrumbs.map((b, idx) => ({
+          "@type": "ListItem",
+          "position": idx + 2,
+          "name": b.title,
+          "item": `${SITE_DOMAIN}${b.url}`
+        }))
+      ]
+    };
+    allSchemas.push(breadcrumbSchema);
+  }
+
   if (schema) {
     if (Array.isArray(schema)) allSchemas.push(...schema);
     else allSchemas.push(schema);
@@ -534,6 +559,7 @@ function renderPage({
   <title>${title}</title>
   <meta name="description" content="${metaDescription}">
   <link rel="canonical" href="${fullCanonical}">
+  ${robots ? `<meta name="robots" content="${robots}">` : ''}
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -563,9 +589,10 @@ function renderPage({
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Solar Wallah">
 
-  <!-- Preload Critical Google Font -->
+  <!-- Preconnect & High-Performance Google Font Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/assets/css/main.css">

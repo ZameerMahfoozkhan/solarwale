@@ -84,12 +84,12 @@ function buildHomePage() {
           </div>
 
           <h1 class="hero-title">
-            Switch to Solar. <br>
-            <span class="highlight">Save on Electricity.</span>
+            Solar Panel Installation in <br>
+            <span class="highlight">Uttar Pradesh</span>
           </h1>
 
           <p class="hero-subtitle">
-            Complete rooftop solar solutions for homes and businesses — from consultation and site survey to system design, installation and after-sales support.
+            Turnkey rooftop solar solutions for homes and businesses across Uttar Pradesh. Site survey, custom engineering, MVVNL/PVVNL net metering & PM Surya Ghar subsidy support across Ayodhya, Sultanpur, Gonda, and UP.
           </p>
 
           <div class="hero-ctas">
@@ -920,37 +920,109 @@ function buildHomePage() {
   <section class="section section-bg-surface" id="cities-we-serve">
     <div class="container">
       <div class="section-header">
-        <div class="eyebrow">Local Presence</div>
+        <div class="eyebrow">Local Service Coverage</div>
         <h2>Solar Panel Installation Across Uttar Pradesh</h2>
         <p>
-          Solar Wallah provides rooftop solar consultation, engineering, and installation services across selected key cities and nearby districts in Uttar Pradesh.
+          Solar Wallah provides dedicated on-ground solar engineering and site survey teams across Uttar Pradesh, with specialized focus on our primary regional hubs: Ayodhya / Faizabad, Sultanpur, and Gonda.
         </p>
       </div>
 
-      <div class="cities-grid">
-        ${TARGET_CITIES.map(c => `
-          <a href="/cities/${c.slug}/" class="city-card">
+      <!-- Priority Regional Hubs -->
+      <div style="margin-bottom: 24px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--color-accent);"></span>
+          Priority Regional Hubs (Dedicated On-Ground Survey Teams)
+        </div>
+        <div class="cities-grid">
+          <a href="/cities/ayodhya/" class="city-card" style="border: 2px solid var(--color-accent); background: #FFFFFF; position: relative;">
+            <div style="position: absolute; top: -10px; right: 16px; background: var(--color-accent); color: #FFFFFF; font-size: 0.7rem; font-weight: 800; padding: 2px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em;">Priority Hub 1</div>
             <div>
               <div class="city-card-header">
-                <div class="city-card-name">${c.name}</div>
-                <div class="city-card-tag">UP</div>
+                <div class="city-card-name" style="font-size: 1.25rem; color: var(--color-primary);">Ayodhya & Faizabad</div>
+                <div class="city-card-tag">UP Solar City</div>
               </div>
-              <p class="city-card-desc">${c.desc}</p>
+              <p class="city-card-desc">UP's model Solar City. Turnkey rooftop installations for homes, hotels, ashrams & dharamshalas with MVVNL net metering and up to ₹1,08,000 total subsidy.</p>
               <div style="font-size:0.75rem; color:var(--color-text-subtle); margin-bottom:12px;">
-                <strong>DISCOM:</strong> ${c.discom}
+                <strong>DISCOM:</strong> MVVNL (Faizabad Distribution Zone) • <strong>Key Areas:</strong> Civil Lines, Devkali, Rekabganj, Cantt, Ranopali, Naka
               </div>
             </div>
-            <div class="city-card-action">
-              <span>View City Solutions</span>
+            <div class="city-card-action" style="font-weight: 700; color: var(--color-primary);">
+              <span>Explore Solar in Ayodhya & Faizabad</span>
               <span>${ICONS.arrowRight}</span>
             </div>
           </a>
-        `).join('')}
+
+          <a href="/cities/sultanpur/" class="city-card" style="border: 2px solid var(--color-accent); background: #FFFFFF; position: relative;">
+            <div style="position: absolute; top: -10px; right: 16px; background: var(--color-accent); color: #FFFFFF; font-size: 0.7rem; font-weight: 800; padding: 2px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em;">Priority Hub 2</div>
+            <div>
+              <div class="city-card-header">
+                <div class="city-card-name" style="font-size: 1.25rem; color: var(--color-primary);">Sultanpur</div>
+                <div class="city-card-tag">High Yield</div>
+              </div>
+              <p class="city-card-desc">High-efficiency on-grid & hybrid solar with battery backup for independent homes, retail shops, clinics & flour mills. Protect against summer grid outages.</p>
+              <div style="font-size:0.75rem; color:var(--color-text-subtle); margin-bottom:12px;">
+                <strong>DISCOM:</strong> MVVNL Sultanpur Circle • <strong>Key Areas:</strong> Golaghat, Badhaiyabeer, Payagipur, Civil Lines, Amhat, Kurwar Rd
+              </div>
+            </div>
+            <div class="city-card-action" style="font-weight: 700; color: var(--color-primary);">
+              <span>Explore Solar in Sultanpur</span>
+              <span>${ICONS.arrowRight}</span>
+            </div>
+          </a>
+
+          <a href="/cities/gonda/" class="city-card" style="border: 2px solid var(--color-accent); background: #FFFFFF; position: relative;">
+            <div style="position: absolute; top: -10px; right: 16px; background: var(--color-accent); color: #FFFFFF; font-size: 0.7rem; font-weight: 800; padding: 2px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em;">Priority Hub 3</div>
+            <div>
+              <div class="city-card-header">
+                <div class="city-card-name" style="font-size: 1.25rem; color: var(--color-primary);">Gonda</div>
+                <div class="city-card-tag">Devipatan Hub</div>
+              </div>
+              <p class="city-card-desc">Custom rooftop solar engineered with dual surge protection for Terai grid conditions. Residential PM Surya Ghar & commercial setups across Gonda district.</p>
+              <div style="font-size:0.75rem; color:var(--color-text-subtle); margin-bottom:12px;">
+                <strong>DISCOM:</strong> MVVNL Devipatan Zone • <strong>Key Areas:</strong> Balpur, Pant Nagar, Civil Lines, Circular Road, Janki Nagar, Station Rd
+              </div>
+            </div>
+            <div class="city-card-action" style="font-weight: 700; color: var(--color-primary);">
+              <span>Explore Solar in Gonda</span>
+              <span>${ICONS.arrowRight}</span>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <div style="text-align:center; margin-top:32px;">
+      <!-- Additional Serviceable Cities -->
+      <div style="margin-top: 36px;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-subtle); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">
+          Additional Serviceable Cities Across Uttar Pradesh
+        </div>
+        <div class="cities-grid">
+          ${TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda'].includes(c.slug)).map(c => `
+            <a href="/cities/${c.slug}/" class="city-card">
+              <div>
+                <div class="city-card-header">
+                  <div class="city-card-name">${c.name}</div>
+                  <div class="city-card-tag">UP</div>
+                </div>
+                <p class="city-card-desc">${c.desc}</p>
+                <div style="font-size:0.75rem; color:var(--color-text-subtle); margin-bottom:12px;">
+                  <strong>DISCOM:</strong> ${c.discom}
+                </div>
+              </div>
+              <div class="city-card-action">
+                <span>View ${c.shortName} Solutions</span>
+                <span>${ICONS.arrowRight}</span>
+              </div>
+            </a>
+          `).join('')}
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:36px; padding: 20px; background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+        <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom: 8px;">
+          <strong>Expanding Across Uttar Pradesh:</strong> Serving Ayodhya, Sultanpur, Gonda, Lucknow, Barabanki, Amethi, Prayagraj, Gorakhpur, and neighboring districts.
+        </p>
         <p style="font-size:0.85rem; color:var(--color-text-subtle);">
-          Don't see your city? We are actively expanding across Uttar Pradesh. <a href="/contact/" style="color:var(--color-primary); font-weight:700; text-decoration:underline;">Contact us</a> to check feasibility in your area.
+          Don't see your city? <a href="/contact/" style="color:var(--color-primary); font-weight:700; text-decoration:underline;">Contact our engineering desk</a> to check site survey availability in your location.
         </p>
       </div>
     </div>
@@ -1144,8 +1216,11 @@ function buildHomePage() {
 function buildCityPages() {
   // 2.A Cities Hub Page (/cities/)
   const hubTitle = "Solar Panel Installation Cities in Uttar Pradesh | Solar Wallah";
-  const hubDesc = "Solar Wallah provides rooftop solar panel consultation, net metering assistance & turnkey installations across Ayodhya, Lucknow, Sultanpur, Gonda, Barabanki, Amethi, Prayagraj, and Gorakhpur.";
+  const hubDesc = "Solar Wallah provides rooftop solar panel consultation, net metering assistance & turnkey installations across Ayodhya, Sultanpur, Gonda, Lucknow, Barabanki, Amethi, Prayagraj, and Gorakhpur.";
   registerUrl('/cities/', '0.9', 'weekly');
+
+  const priorityCities = TARGET_CITIES.filter(c => ['ayodhya', 'sultanpur', 'gonda'].includes(c.slug));
+  const otherCities = TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda'].includes(c.slug));
 
   const hubBody = `
   <section class="section" style="padding-top: clamp(40px, 5vw, 60px);">
@@ -1154,39 +1229,79 @@ function buildCityPages() {
         <div class="eyebrow eyebrow-accent">Uttar Pradesh Service Coverage</div>
         <h1>Solar Panel Installation Across Selected Cities in Uttar Pradesh</h1>
         <p class="text-lead">
-          Solar Wallah operates dedicated local consultation and engineering installation teams across primary urban and industrial centers in Uttar Pradesh. Select your city below to learn about local DISCOM procedures, net metering, solar irradiance, and tailored rooftop solutions.
+          Solar Wallah operates dedicated on-ground solar engineering and site survey teams across Uttar Pradesh. We place primary strategic focus on East-Central UP — specifically <strong>Ayodhya / Faizabad</strong>, <strong>Sultanpur</strong>, and <strong>Gonda</strong> — alongside established operations in Lucknow and neighboring districts.
         </p>
       </div>
 
-      <div class="cities-grid">
-        ${TARGET_CITIES.map(c => `
-          <div class="card-bezel">
-            <div class="card-bezel-inner">
-              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
-                <h2 style="font-size:1.35rem; color:var(--color-primary);">${c.name}</h2>
-                <span class="badge badge-solar">UP</span>
-              </div>
-              <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:16px; flex-grow:1;">${c.desc}</p>
-              
-              <div style="font-size:0.8rem; color:var(--color-text-subtle); padding:10px; background:var(--color-bg-surface); border-radius:var(--radius-sm); margin-bottom:16px;">
-                <div><strong>Electricity DISCOM:</strong> ${c.discom}</div>
-                <div style="margin-top:4px;"><strong>Key Local Areas:</strong> ${c.areas}</div>
-              </div>
+      <!-- Priority Markets Spotlight -->
+      <div style="margin-bottom: 48px;">
+        <div style="font-size: 0.9rem; font-weight: 800; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+          <span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--color-accent);"></span>
+          Priority Regional Hubs (Immediate Site Survey Available)
+        </div>
+        <div class="cities-grid">
+          ${priorityCities.map((c, idx) => `
+            <div class="card-bezel" style="border: 2px solid var(--color-accent);">
+              <div class="card-bezel-inner" style="position:relative;">
+                <div style="position:absolute; top:-12px; right:16px; background:var(--color-accent); color:#FFFFFF; font-size:0.7rem; font-weight:800; padding:2px 10px; border-radius:999px; text-transform:uppercase;">
+                  Priority Hub ${idx + 1}
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; margin-top:6px;">
+                  <h2 style="font-size:1.4rem; color:var(--color-primary);">${c.name}</h2>
+                  <span class="badge badge-solar">UP</span>
+                </div>
+                <p style="font-size:0.92rem; color:var(--color-text-muted); margin-bottom:16px; flex-grow:1; line-height:1.6;">${c.desc}</p>
+                
+                <div style="font-size:0.8rem; color:var(--color-text-subtle); padding:12px; background:var(--color-bg-surface); border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <div><strong>Electricity DISCOM:</strong> ${c.discom}</div>
+                  <div style="margin-top:4px;"><strong>Key Local Areas:</strong> ${c.areas}</div>
+                </div>
 
-              <a href="/cities/${c.slug}/" class="btn btn-primary btn-sm" style="width:100%;">
-                <span>Explore Solar in ${c.shortName}</span>
-                <span class="btn-icon-circle">${ICONS.arrowRight}</span>
-              </a>
+                <a href="/cities/${c.slug}/" class="btn btn-primary btn-sm" style="width:100%;">
+                  <span>Explore Solar in ${c.shortName}</span>
+                  <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+                </a>
+              </div>
             </div>
-          </div>
-        `).join('')}
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Secondary Markets -->
+      <div style="margin-bottom: 48px;">
+        <div style="font-size: 0.9rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px;">
+          Additional Serviceable Cities Across Uttar Pradesh
+        </div>
+        <div class="cities-grid">
+          ${otherCities.map(c => `
+            <div class="card-bezel">
+              <div class="card-bezel-inner">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;">
+                  <h2 style="font-size:1.3rem; color:var(--color-primary);">${c.name}</h2>
+                  <span class="badge badge-navy">UP</span>
+                </div>
+                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:16px; flex-grow:1;">${c.desc}</p>
+                
+                <div style="font-size:0.8rem; color:var(--color-text-subtle); padding:10px; background:var(--color-bg-surface); border-radius:var(--radius-sm); margin-bottom:16px;">
+                  <div><strong>Electricity DISCOM:</strong> ${c.discom}</div>
+                  <div style="margin-top:4px;"><strong>Key Local Areas:</strong> ${c.areas}</div>
+                </div>
+
+                <a href="/cities/${c.slug}/" class="btn btn-outline btn-sm" style="width:100%;">
+                  <span>Explore Solar in ${c.shortName}</span>
+                  <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
       </div>
 
       <!-- Expansion Note -->
-      <div style="margin-top:60px; padding:32px; background:var(--color-bg-surface); border-radius:var(--radius-xl); border:1px solid var(--color-border); text-align:center;">
-        <h3 style="margin-bottom:10px;">Expanding to More Cities Across Uttar Pradesh</h3>
-        <p style="max-width:680px; margin:0 auto 20px; font-size:0.95rem;">
-          Solar Wallah is progressively expanding operations to neighboring districts including Basti, Rae Bareli, Pratapgarh, and Jaunpur. If your property is near our serviceable cities, our team can arrange a dedicated technical site survey.
+      <div style="padding:32px; background:var(--color-bg-surface); border-radius:var(--radius-xl); border:1px solid var(--color-border); text-align:center;">
+        <h3 style="margin-bottom:10px;">Expanding to More Districts Across Uttar Pradesh</h3>
+        <p style="max-width:680px; margin:0 auto 20px; font-size:0.95rem; color:var(--color-text-muted);">
+          Solar Wallah is progressively expanding operations to neighboring districts including Basti, Rae Bareli, Pratapgarh, and Jaunpur. If your property is near our serviceable cities, our engineering team can arrange a dedicated technical site survey.
         </p>
         <button type="button" class="btn btn-secondary" data-open-modal="quote-modal">
           <span>Inquire About Feasibility in Your Area</span>
@@ -1206,42 +1321,1171 @@ function buildCityPages() {
     bodyContent: hubBody
   }));
 
-  // 2.B Individual City Landing Pages
-  TARGET_CITIES.forEach(city => {
-    const route = `/cities/${city.slug}/`;
-    registerUrl(route, '0.9', 'weekly');
+  // ========================================================================
+  // 2.B PRIORITY CITY 1: AYODHYA & FAIZABAD (/cities/ayodhya/)
+  // ========================================================================
+  registerUrl('/cities/ayodhya/', '1.0', 'weekly');
 
-    let pageTitle = `Solar Panel Installation in ${city.name} | Solar Wallah`;
-    if (city.slug === 'ayodhya') {
-      pageTitle = `Solar Panel Installation in Ayodhya & Faizabad | Solar Wallah`;
+  const ayodhyaFaqs = [
+    {
+      question: "Is Ayodhya eligible for special solar benefits under the UP Solar City initiative?",
+      answer: "Yes. Ayodhya has been designated as Uttar Pradesh's model Solar City by UPNEDA and the state government. Residential consumers can claim up to ₹78,000 central subsidy under the PM Surya Ghar Muft Bijli Yojana plus up to ₹30,000 state financial assistance under the UP Solar Policy (totaling up to ₹1,08,000 for a 3 kW system). Solar Wallah guides homeowners, ashrams, and commercial facilities through the official portal approvals."
+    },
+    {
+      question: "How much can a homeowner in Ayodhya or Faizabad save with a 3 kW solar system?",
+      answer: "In Ayodhya and Faizabad, a 3 kW on-grid solar plant generates approximately 360 to 420 units (kWh) of clean electricity every month. For households with average bi-monthly electricity bills of ₹6,000 to ₹8,000 from MVVNL, this saves roughly ₹35,000 to ₹45,000 annually, offsetting over 85% of grid power charges."
+    },
+    {
+      question: "How does the net metering application work with MVVNL in Ayodhya?",
+      answer: "Solar Wallah handles the entire net metering liaison with the Madhyanchal Vidyut Vitran Nigam Ltd (MVVNL) Ayodhya & Faizabad distribution division. We submit the technical feasibility application on the national portal, coordinate the substation inspection at Devkali or Civil Lines, and install the bidirectional meter once the system is physically mounted."
+    },
+    {
+      question: "Can solar panels be installed on elevated structures to keep my terrace open in Ayodhya?",
+      answer: "Yes! Elevated pergola mounting structures are our most popular option in Ayodhya and Faizabad. We fabricate heavy-duty hot-dip galvanized steel frames with 7 to 9 feet vertical clearance. This keeps your entire terrace fully usable for family gatherings, religious ceremonies, and everyday household activities."
+    },
+    {
+      question: "Do hotels, dharamshalas, and commercial properties in Ayodhya qualify for solar benefits?",
+      answer: "While the PM Surya Ghar subsidy is restricted to domestic residential meters, commercial establishments in Ayodhya (hotels, pilgrim guesthouses, dharamshalas, restaurants, and hospitals) benefit from 40% accelerated tax depreciation, GST input credits, and immediate reduction of high commercial electricity tariffs (which often exceed ₹8.50 per unit)."
     }
+  ];
 
-    const pageDesc = `Looking for rooftop solar panel installation in ${city.shortName}? Solar Wallah offers turnkey residential & commercial solar systems with ${city.discom} net metering & PM Surya Ghar subsidy support.`;
+  const ayodhyaBody = `
+  <!-- City Hero -->
+  <section class="hero-section" style="padding-top: clamp(40px, 5vw, 60px);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-accent">
+            <span class="eyebrow-dot"></span>
+            <span>UP's Flagship Solar City • Ayodhya & Faizabad</span>
+          </div>
 
-    const cityFaqs = [
+          <h1 class="hero-title">
+            Solar Panel Installation in <br>
+            <span class="highlight">Ayodhya & Faizabad</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Looking for solar panel installation in Ayodhya or Faizabad? Solar Wallah delivers turnkey residential and commercial rooftop solar solutions — from engineering shadow surveys to MVVNL net metering and PM Surya Ghar subsidies up to ₹1,08,000.
+          </p>
+
+          <div class="hero-ctas">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Ayodhya">
+              <span>Get Free Quote in Ayodhya</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Ayodhya." 
+               class="btn btn-whatsapp btn-lg" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-location="ayodhya_hero">
+              ${ICONS.whatsapp}
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-micro">
+            <span>MVVNL Net Metering</span>
+            <span class="separator">•</span>
+            <span>PM Surya Ghar Subsidy</span>
+            <span class="separator">•</span>
+            <span>Local Ayodhya Survey Team</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-frame">
+            <picture>
+              <source srcset="/assets/images/project-ayodhya-residential.webp" type="image/webp">
+              <img src="/assets/images/project-ayodhya-residential.jpg" 
+                   alt="Elevated residential rooftop solar panel installation project in Ayodhya & Faizabad, Uttar Pradesh" 
+                   width="720" 
+                   height="480"
+                   fetchpriority="high"
+                   decoding="async">
+            </picture>
+            <div class="hero-tag-badge badge-top-left">
+              <span class="hero-tag-dot green"></span>
+              <span>Active in Ayodhya & Faizabad</span>
+            </div>
+
+            <div class="hero-tag-badge badge-bottom-right">
+              <span class="hero-tag-dot"></span>
+              <span>MVVNL Net Metering Approved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Ayodhya Context & Service Areas -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="grid-cols-2" style="gap:48px; align-items:center;">
+        <div>
+          <div class="eyebrow">Ayodhya Solar City Model</div>
+          <h2>Powering the Holy City with Clean Solar Energy</h2>
+          <p style="margin-bottom:16px;">
+            Ayodhya is rapidly transforming into Uttar Pradesh's landmark <strong>Solar City</strong> under UPNEDA guidelines. With over 300 days of annual sunlight and strong government subsidy support under the PM Surya Ghar Muft Bijli Yojana, switching to rooftop solar provides an immediate, permanent reduction in electricity bills for local residents and business owners alike.
+          </p>
+          <p style="margin-bottom:20px;">
+            Whether you own an independent residence in Faizabad Civil Lines or operate a pilgrim guesthouse, hotel, ashram, or showroom along the Ayodhya-Faizabad bypass, Solar Wallah designs high-efficiency mono PERC and TopCon systems customized to your rooftop dimensions.
+          </p>
+
+          <div style="padding:18px; background:#FFFFFF; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-bottom:24px;">
+            <h4 style="margin-bottom:8px; color:var(--color-primary);">Local Areas & Localities Covered in Ayodhya & Faizabad:</h4>
+            <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.6;">
+              Civil Lines, Devkali, Rekabganj, Cantt, Ranopali, Naka, Faizabad City, Amaniganj, Sahadatganj, Acharyanagar, Ayodhya Dham, and surrounding villages across Ayodhya district.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" data-open-modal="quote-modal" data-city="Ayodhya">
+              <span>Book Ayodhya Site Survey</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+            <a href="tel:+919580659559" class="btn btn-outline">
+              ${ICONS.phone}
+              <span>Call ${PHONE_NUMBER}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lead Form -->
+        <div>
+          <div class="lead-form-card">
+            <h3 style="margin-bottom:6px;">Solar Consultation for Ayodhya & Faizabad</h3>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:20px;">
+              Enter your details to schedule a shadow-free roof survey in Ayodhya district.
+            </p>
+
+            <form data-solar-form="quote" id="city-lead-form-ayodhya" action="https://formspree.io/f/xrpbadnn" method="POST">
+              <input type="text" name="website_shield_trap" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="city" value="Ayodhya">
+
+              <div class="form-group">
+                <label class="form-label" for="ayodhya-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="ayodhya-name" name="full_name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="ayodhya-phone">Mobile Number (+91) <span class="required">*</span></label>
+                <input type="tel" id="ayodhya-phone" name="phone_number" class="form-control" placeholder="10-digit number" pattern="[0-9]{10}" required>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="ayodhya-type">Property Type</label>
+                  <select id="ayodhya-type" name="property_type" class="form-control">
+                    <option value="Home">Home / Residential</option>
+                    <option value="Hotel/Guesthouse">Hotel / Guesthouse</option>
+                    <option value="Ashram/Trust">Ashram / Dharamshala</option>
+                    <option value="Shop/Office">Shop / Office</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="ayodhya-bill">Monthly Bill (₹)</label>
+                  <input type="number" id="ayodhya-bill" name="monthly_bill" class="form-control" placeholder="e.g. 4000">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Get Ayodhya Solar Quote</span>
+                <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+              </button>
+
+              <div class="form-trust-note">
+                ${ICONS.shield}
+                <span>Local Ayodhya engineer callback within 2 business hours.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions for Ayodhya Properties -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Solutions Portfolio</div>
+        <h2>Solar Solutions Tailored for Ayodhya & Faizabad</h2>
+        <p>Engineered for independent homes, religious trusts, commercial hotels, and institutional rooftops.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.home}</div>
+            <h3 style="margin-bottom:8px;">Residential Rooftop Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Designed for independent residences in Devkali, Civil Lines, and Cantt. Claim up to ₹1,08,000 in combined Central and UP State subsidies and export daytime surplus to MVVNL.
+            </p>
+            <a href="/residential-solar/" class="btn btn-outline btn-sm">Residential Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.briefcase}</div>
+            <h3 style="margin-bottom:8px;">Hotels, Ashrams & Dharamshalas</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              High-capacity commercial rooftop solar systems (10 kW to 50 kW+) designed for pilgrim accommodations, cutting daytime cooling and kitchen refrigeration costs by up to 80%.
+            </p>
+            <a href="/commercial-solar/" class="btn btn-outline btn-sm">Commercial Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.shield}</div>
+            <h3 style="margin-bottom:8px;">Hybrid Solar with Battery Backup</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Combines grid-tied solar savings with energy storage. Perfect for neighborhoods and commercial facilities requiring continuous power backup without diesel generator noise.
+            </p>
+            <a href="/hybrid-solar/" class="btn btn-outline btn-sm">Hybrid Systems →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Sizing Guide for Ayodhya -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Sizing & Price Guide</div>
+        <h2>Recommended Solar Sizing for Ayodhya Properties</h2>
+        <p>Compare capacities, generation benchmarks, and roof area requirements.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">3 kW System</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Standard 3-4 BHK Homes in Ayodhya</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~360-400 units/mo. Powers 1 AC, refrigerator, lights, and fans. Qualifies for maximum PM Surya Ghar central subsidy of ₹78,000 + UP assistance.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle); margin-bottom:8px;"><strong>Roof Area:</strong> ~270-300 sq. ft.</div>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>DISCOM:</strong> MVVNL Net Meter Supported</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">5 kW System</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Large Homes & Small Guesthouses</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~600-650 units/mo. Powers 2 to 3 air conditioners, water motor, and continuous load. Full subsidy on first 3 kW capacity.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle); margin-bottom:8px;"><strong>Roof Area:</strong> ~450-500 sq. ft.</div>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>DISCOM:</strong> MVVNL Net Meter Supported</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">10 kW to 25 kW+</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Hotels, Ashrams & Commercial Premises</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates 1,200 to 3,000+ units/mo. Drastically cuts peak commercial tariffs and provides 40% accelerated tax depreciation.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle); margin-bottom:8px;"><strong>Roof Area:</strong> ~900 to 2,500+ sq. ft.</div>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Structure:</strong> High-Rise Galvanized Steel</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="/solar-calculator/" class="btn btn-secondary">
+          <span>Calculate Your Ayodhya Savings with Our Solar Calculator</span>
+          <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ayodhya FAQs -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Local Knowledge</div>
+        <h2>Frequently Asked Questions in Ayodhya & Faizabad</h2>
+        <p>Specific questions from property owners regarding solar installation, net metering, and subsidies in Ayodhya.</p>
+      </div>
+
+      ${renderFaqAccordion(ayodhyaFaqs)}
+    </div>
+  </section>
+
+  <!-- Nearby City Links & Internal Mesh -->
+  <section class="section section-bg-surface" style="padding: 40px 0; border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <h3 style="font-size: 1.15rem; color: var(--color-primary); margin-bottom: 16px;">Solar Solutions in Neighboring Districts</h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Solar Wallah also provides dedicated on-site solar engineering and installation teams in nearby districts:
+      </p>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="/cities/sultanpur/" class="btn btn-outline btn-sm">Solar in Sultanpur →</a>
+        <a href="/cities/gonda/" class="btn btn-outline btn-sm">Solar in Gonda →</a>
+        <a href="/cities/lucknow/" class="btn btn-outline btn-sm">Solar in Lucknow →</a>
+        <a href="/cities/barabanki/" class="btn btn-outline btn-sm">Solar in Barabanki →</a>
+        <a href="/solar-subsidy/" class="btn btn-outline btn-sm">UP Solar Subsidy Guide →</a>
+        <a href="/solar-panel-installation/" class="btn btn-outline btn-sm">Installation Process →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ayodhya Conversion Banner -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+        <h2 style="color:#FFFFFF; margin-bottom:16px;">Ready to Switch to Solar in Ayodhya or Faizabad?</h2>
+        <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
+          Connect directly with Solar Wallah's local engineering team for an on-site shadow survey and customized financial proposal.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
+            ${ICONS.phone}
+            <span>Call: ${PHONE_NUMBER}</span>
+          </a>
+
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Ayodhya." 
+             class="btn btn-whatsapp btn-lg" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            ${ICONS.whatsapp}
+            <span>WhatsApp: ${PHONE_NUMBER}</span>
+          </a>
+
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Ayodhya">
+            <span>Get Free Solar Quote</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+
+  writeHtml('cities/ayodhya/index.html', renderPage({
+    title: 'Solar Panel Installation in Ayodhya & Faizabad | Solar Wallah',
+    metaDescription: 'Looking for solar panel installation in Ayodhya or Faizabad? Explore rooftop solar solutions for homes & businesses from Solar Wallah. Get a free quote & subsidy support.',
+    canonicalUrl: '/cities/ayodhya/',
+    activeNav: '/cities/',
+    breadcrumbs: [
+      { title: 'Cities We Serve', url: '/cities/' },
+      { title: 'Ayodhya & Faizabad', url: '/cities/ayodhya/' }
+    ],
+    cityContext: 'Ayodhya',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Solar Panel Installation in Ayodhya & Faizabad",
+      "serviceType": "Rooftop Solar Installation",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solar Wallah",
+        "url": SITE_DOMAIN,
+        "telephone": "+91-9580659559",
+        "email": "hello@solarwallah.online"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Ayodhya" },
+        { "@type": "City", "name": "Faizabad" }
+      ],
+      "description": "Professional rooftop solar panel installation, MVVNL net metering, and PM Surya Ghar subsidy processing for residential and commercial properties in Ayodhya and Faizabad, Uttar Pradesh."
+    },
+    bodyContent: ayodhyaBody
+  }));
+
+  // ========================================================================
+  // 2.C PRIORITY CITY 2: SULTANPUR (/cities/sultanpur/)
+  // ========================================================================
+  registerUrl('/cities/sultanpur/', '0.95', 'weekly');
+
+  const sultanpurFaqs = [
+    {
+      question: "Should I choose an on-grid or hybrid solar system in Sultanpur?",
+      answer: "If your primary goal is slashing electricity bills to nearly zero and your locality experiences stable grid power during daytime, an on-grid system with MVVNL net metering offers the fastest financial payback (3 to 4 years). However, if your neighborhood in Sultanpur suffers frequent summer power outages, a hybrid solar system equipped with lithium or tubular battery storage ensures uninterrupted power for your fans, lights, and refrigerator without requiring an expensive diesel generator."
+    },
+    {
+      question: "What is the payback period for a residential 3 kW solar system in Sultanpur?",
+      answer: "In Sultanpur, a 3 kW on-grid rooftop solar system typically pays for itself within 3.2 to 4 years. With the PM Surya Ghar Central subsidy of ₹78,000 plus UP state assistance, the homeowner's net out-of-pocket cost is reduced by more than 40%, while monthly electricity bill savings exceed ₹3,000 to ₹3,800."
+    },
+    {
+      question: "How does MVVNL Sultanpur handle the net meter installation and inspection?",
+      answer: "Net metering in Sultanpur is administered through the Madhyanchal Vidyut Vitran Nigam Ltd (MVVNL) Sultanpur circle. After Solar Wallah completes the structural mounting and electrical testing, our team coordinates the joint inspection with local MVVNL engineers and ensures the bidirectional meter is installed and synchronized."
+    },
+    {
+      question: "How does the PM Surya Ghar subsidy get credited to Sultanpur homeowners?",
+      answer: "Under the PM Surya Ghar scheme, the subsidy is credited via Direct Benefit Transfer (DBT) directly into your Aadhaar-linked bank account. Solar Wallah completes the national portal documentation, upload of the joint inspection report, and bank verification paperwork on your behalf."
+    },
+    {
+      question: "Which localities in Sultanpur district are eligible for a Solar Wallah on-site survey?",
+      answer: "We provide comprehensive on-site roof assessments across all urban and suburban parts of Sultanpur, including Golaghat, Badhaiyabeer, Payagipur, Civil Lines, Amhat, Kurwar Road, Kadipur, and Musafirkhana border, as well as institutional premises across Sultanpur district."
+    }
+  ];
+
+  const sultanpurBody = `
+  <!-- City Hero -->
+  <section class="hero-section" style="padding-top: clamp(40px, 5vw, 60px);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-accent">
+            <span class="eyebrow-dot"></span>
+            <span>Local Solar Specialists • Sultanpur</span>
+          </div>
+
+          <h1 class="hero-title">
+            Solar Panel Installation in <br>
+            <span class="highlight">Sultanpur</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Looking for rooftop solar panel installation in Sultanpur? Solar Wallah delivers engineered residential and commercial solar systems — featuring MVVNL net metering, high-efficiency panels, and complete PM Surya Ghar subsidy assistance.
+          </p>
+
+          <div class="hero-ctas">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Sultanpur">
+              <span>Get Free Quote in Sultanpur</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Sultanpur." 
+               class="btn btn-whatsapp btn-lg" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-location="sultanpur_hero">
+              ${ICONS.whatsapp}
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-micro">
+            <span>MVVNL Sultanpur Circle</span>
+            <span class="separator">•</span>
+            <span>PM Surya Ghar Subsidy</span>
+            <span class="separator">•</span>
+            <span>On-Grid & Hybrid Options</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-frame">
+            <picture>
+              <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+              <img src="/assets/images/hero-rooftop-solar.jpg" 
+                   alt="Rooftop solar panel installation on residential terrace in Sultanpur, Uttar Pradesh" 
+                   width="720" 
+                   height="480"
+                   fetchpriority="high"
+                   decoding="async">
+            </picture>
+            <div class="hero-tag-badge badge-top-left">
+              <span class="hero-tag-dot green"></span>
+              <span>Active in Sultanpur</span>
+            </div>
+
+            <div class="hero-tag-badge badge-bottom-right">
+              <span class="hero-tag-dot"></span>
+              <span>MVVNL Net Metering Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Sultanpur Overview -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="grid-cols-2" style="gap:48px; align-items:center;">
+        <div>
+          <div class="eyebrow">Smart Energy for Sultanpur</div>
+          <h2>Eliminate Power Bills & Summer Outages in Sultanpur</h2>
+          <p style="margin-bottom:16px;">
+            Sultanpur enjoys abundant solar radiation (~4.8 kWh/m²/day across 300 clear sunny days annually). However, property owners across the district often grapple with high peak electricity rates and seasonal summer grid power interruptions. Rooftop solar offers an ideal, permanent solution that simultaneously cuts your monthly bill and provides continuous power resilience.
+          </p>
+          <p style="margin-bottom:20px;">
+            Solar Wallah provides turnkey installation for independent residences in Badhaiyabeer and Payagipur, as well as commercial enterprises, retail shops, clinics, workshops, and flour mills (chakki) throughout Sultanpur district.
+          </p>
+
+          <div style="padding:18px; background:#FFFFFF; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-bottom:24px;">
+            <h4 style="margin-bottom:8px; color:var(--color-primary);">Local Areas & Key Neighborhoods Served in Sultanpur:</h4>
+            <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.6;">
+              Golaghat, Badhaiyabeer, Payagipur, Civil Lines, Amhat, Kurwar Road, Kadipur, Musafirkhana border, Dubeypur, and surrounding areas across Sultanpur district.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" data-open-modal="quote-modal" data-city="Sultanpur">
+              <span>Schedule Sultanpur Roof Survey</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+            <a href="tel:+919580659559" class="btn btn-outline">
+              ${ICONS.phone}
+              <span>Call ${PHONE_NUMBER}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sultanpur Lead Form -->
+        <div>
+          <div class="lead-form-card">
+            <h3 style="margin-bottom:6px;">Solar Consultation for Sultanpur</h3>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:20px;">
+              Request a free on-site roof survey and customized quotation in Sultanpur.
+            </p>
+
+            <form data-solar-form="quote" id="city-lead-form-sultanpur" action="https://formspree.io/f/xrpbadnn" method="POST">
+              <input type="text" name="website_shield_trap" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="city" value="Sultanpur">
+
+              <div class="form-group">
+                <label class="form-label" for="sultanpur-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="sultanpur-name" name="full_name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sultanpur-phone">Mobile Number (+91) <span class="required">*</span></label>
+                <input type="tel" id="sultanpur-phone" name="phone_number" class="form-control" placeholder="10-digit number" pattern="[0-9]{10}" required>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="sultanpur-type">Property Type</label>
+                  <select id="sultanpur-type" name="property_type" class="form-control">
+                    <option value="Home">Home / Residential</option>
+                    <option value="Clinic/Hospital">Clinic / Hospital</option>
+                    <option value="Shop/Showroom">Shop / Showroom</option>
+                    <option value="Flour Mill/Workshop">Flour Mill / Workshop</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="sultanpur-bill">Monthly Bill (₹)</label>
+                  <input type="number" id="sultanpur-bill" name="monthly_bill" class="form-control" placeholder="e.g. 3500">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Get Sultanpur Solar Quote</span>
+                <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+              </button>
+
+              <div class="form-trust-note">
+                ${ICONS.shield}
+                <span>Local UP engineer callback within 2 business hours.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions for Sultanpur Properties -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Tailored Solutions</div>
+        <h2>Solar Solutions Engineered for Sultanpur</h2>
+        <p>Proven solar power technologies configured for Sultanpur's residential colonies and commercial hubs.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.home}</div>
+            <h3 style="margin-bottom:8px;">Residential On-Grid Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Designed for independent residences in Badhaiyabeer, Payagipur, and Civil Lines. Maximize PM Surya Ghar subsidies and eliminate up to 90% of your power bill with MVVNL net metering.
+            </p>
+            <a href="/residential-solar/" class="btn btn-outline btn-sm">Residential Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.shield}</div>
+            <h3 style="margin-bottom:8px;">Hybrid Solar with Battery Backup</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Combines net-metered solar generation with lithium or C10 tubular battery storage. Protects your family or clinic against Sultanpur's seasonal power interruptions.
+            </p>
+            <a href="/hybrid-solar/" class="btn btn-outline btn-sm">Hybrid Systems →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.briefcase}</div>
+            <h3 style="margin-bottom:8px;">Commercial & Retail Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Engineered for retail showrooms, hospitals, schools, and workshops along Kurwar Road and the highway. Offset high daytime commercial rates and claim 40% depreciation.
+            </p>
+            <a href="/commercial-solar/" class="btn btn-outline btn-sm">Commercial Guide →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Sizing for Sultanpur -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Capacity Guide</div>
+        <h2>Recommended Solar Sizing for Sultanpur</h2>
+        <p>Choose the capacity matching your daily power consumption and appliance load.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">3 kW On-Grid</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Standard 3-4 BHK Sultanpur Homes</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~360 units/mo. Covers 1 AC, refrigerator, lights, and fans. Qualifies for maximum PM Surya Ghar central subsidy of ₹78,000.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~270-300 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">5 kW Hybrid</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Clinics, Diagnostic Labs & Large Homes</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~600 units/mo with continuous battery backup. Keeps vital medical equipment, refrigeration, and 2 ACs powered during outages.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~450-500 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">10 kW+ Commercial</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Showrooms, Workshops & Flour Mills</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates 1,200+ units/mo. Offsets expensive daytime commercial units and reduces diesel generator operating hours.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~900+ sq. ft.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="/solar-calculator/" class="btn btn-secondary">
+          <span>Calculate Your Sultanpur Savings with Our Solar Calculator</span>
+          <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sultanpur FAQs -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Local Knowledge</div>
+        <h2>Frequently Asked Questions in Sultanpur</h2>
+        <p>Clear answers to key questions from Sultanpur homeowners and business managers.</p>
+      </div>
+
+      ${renderFaqAccordion(sultanpurFaqs)}
+    </div>
+  </section>
+
+  <!-- Nearby City Links & Internal Mesh -->
+  <section class="section section-bg-surface" style="padding: 40px 0; border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <h3 style="font-size: 1.15rem; color: var(--color-primary); margin-bottom: 16px;">Solar Solutions in Neighboring Districts</h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Explore Solar Wallah engineering solutions in adjacent districts:
+      </p>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Solar in Ayodhya & Faizabad →</a>
+        <a href="/cities/amethi/" class="btn btn-outline btn-sm">Solar in Amethi →</a>
+        <a href="/cities/prayagraj/" class="btn btn-outline btn-sm">Solar in Prayagraj →</a>
+        <a href="/solar-subsidy/" class="btn btn-outline btn-sm">UP Solar Subsidy Guide →</a>
+        <a href="/hybrid-solar/" class="btn btn-outline btn-sm">Hybrid Solar Solutions →</a>
+        <a href="/solar-panel-installation/" class="btn btn-outline btn-sm">Installation Process →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sultanpur Conversion Banner -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+        <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in Sultanpur?</h2>
+        <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
+          Connect directly with Solar Wallah for an on-site survey and customized quotation for your property in Sultanpur district.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
+            ${ICONS.phone}
+            <span>Call: ${PHONE_NUMBER}</span>
+          </a>
+
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Sultanpur." 
+             class="btn btn-whatsapp btn-lg" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            ${ICONS.whatsapp}
+            <span>WhatsApp: ${PHONE_NUMBER}</span>
+          </a>
+
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Sultanpur">
+            <span>Get Free Solar Quote</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+
+  writeHtml('cities/sultanpur/index.html', renderPage({
+    title: 'Solar Panel Installation in Sultanpur | Solar Wallah',
+    metaDescription: 'Expert rooftop solar panel installation in Sultanpur by Solar Wallah. Maximize PM Surya Ghar subsidies, MVVNL net metering & hybrid solar for homes and businesses.',
+    canonicalUrl: '/cities/sultanpur/',
+    activeNav: '/cities/',
+    breadcrumbs: [
+      { title: 'Cities We Serve', url: '/cities/' },
+      { title: 'Sultanpur', url: '/cities/sultanpur/' }
+    ],
+    cityContext: 'Sultanpur',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Solar Panel Installation in Sultanpur",
+      "serviceType": "Rooftop Solar Installation",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solar Wallah",
+        "url": SITE_DOMAIN,
+        "telephone": "+91-9580659559",
+        "email": "hello@solarwallah.online"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Sultanpur"
+      },
+      "description": "Turnkey rooftop solar installation, MVVNL net metering, and PM Surya Ghar subsidy guidance for residential, hybrid, and commercial properties in Sultanpur, Uttar Pradesh."
+    },
+    bodyContent: sultanpurBody
+  }));
+
+  // ========================================================================
+  // 2.D PRIORITY CITY 3: GONDA (/cities/gonda/)
+  // ========================================================================
+  registerUrl('/cities/gonda/', '0.95', 'weekly');
+
+  const gondaFaqs = [
+    {
+      question: "How do solar panels perform during Gonda's hot summers and winter fog?",
+      answer: "Gonda receives over 300 days of bright sunshine annually, with peak generation during summer and post-monsoon months. During winter fog periods (typically 3 to 4 weeks in December-January), solar panels continue generating diffuse daylight power (~30% to 40% of peak). Over a 12-month period, the net-metered banking mechanism with MVVNL ensures summer surplus generation offsets any winter dips."
+    },
+    {
+      question: "How does Solar Wallah protect solar installations against voltage fluctuations in Gonda?",
+      answer: "In Gonda's peripheral lines and rural feeders, voltage spikes can sometimes occur. Solar Wallah installs grid inverters with wide operating voltage ranges, dual Type-II Surge Protection Devices (SPDs) on both DC and AC sides, and three independent chemical earthing pits (structure, lightning arrester, and AC inverter earth) to protect your electronic appliances."
+    },
+    {
+      question: "What is the total subsidy available for a residential solar plant in Gonda?",
+      answer: "Under the PM Surya Ghar Muft Bijli Yojana, eligible residential homeowners in Gonda can receive up to ₹30,000 for 1 kW, ₹60,000 for 2 kW, and up to ₹78,000 for 3 kW from the Central Government. In addition, Uttar Pradesh state financial assistance under the UP Solar Policy (up to ₹30,000) can be claimed, yielding a combined incentive of up to ₹1,08,000."
+    },
+    {
+      question: "How long does the MVVNL Gonda net meter connection process take?",
+      answer: "Once the on-site physical mounting is completed (2 to 3 days), Solar Wallah submits the completion report and testing certificate to the MVVNL Gonda Devipatan division. The official bidirectional net meter installation and portal approval typically takes 2 to 3 weeks."
+    },
+    {
+      question: "Can solar power run commercial machinery and water pumps in Gonda?",
+      answer: "Yes. For agro-processing units, cold storages, grain processing facilities, private schools, and commercial clinics along Circular Road and Utraula Road, we engineer 3-phase grid-tied and hybrid solar installations capable of powering motor loads, heavy refrigeration, and commercial cooling."
+    }
+  ];
+
+  const gondaBody = `
+  <!-- City Hero -->
+  <section class="hero-section" style="padding-top: clamp(40px, 5vw, 60px);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-accent">
+            <span class="eyebrow-dot"></span>
+            <span>Devipatan Regional Hub • Gonda</span>
+          </div>
+
+          <h1 class="hero-title">
+            Solar Panel Installation in <br>
+            <span class="highlight">Gonda</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Professional rooftop solar panel installation in Gonda by Solar Wallah. Engineered for high solar yield, MVVNL net metering, dual surge protection, and complete PM Surya Ghar subsidy processing.
+          </p>
+
+          <div class="hero-ctas">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Gonda">
+              <span>Get Free Quote in Gonda</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Gonda." 
+               class="btn btn-whatsapp btn-lg" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-location="gonda_hero">
+              ${ICONS.whatsapp}
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-micro">
+            <span>MVVNL Devipatan Zone</span>
+            <span class="separator">•</span>
+            <span>PM Surya Ghar Subsidy</span>
+            <span class="separator">•</span>
+            <span>Surge-Protected Systems</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-frame">
+            <picture>
+              <source srcset="/assets/images/solar-engineer-survey.webp" type="image/webp">
+              <img src="/assets/images/solar-engineer-survey.jpg" 
+                   alt="Solar installation survey and engineering team in Gonda, Uttar Pradesh" 
+                   width="720" 
+                   height="480"
+                   fetchpriority="high"
+                   decoding="async">
+            </picture>
+            <div class="hero-tag-badge badge-top-left">
+              <span class="hero-tag-dot green"></span>
+              <span>Active in Gonda</span>
+            </div>
+
+            <div class="hero-tag-badge badge-bottom-right">
+              <span class="hero-tag-dot"></span>
+              <span>MVVNL Net Metering Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Gonda Overview -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="grid-cols-2" style="gap:48px; align-items:center;">
+        <div>
+          <div class="eyebrow">Reliable Solar for Terai Region</div>
+          <h2>Harnessing Gonda's High Solar Insolation</h2>
+          <p style="margin-bottom:16px;">
+            Gonda district enjoys some of the highest solar insolation in North-Central Uttar Pradesh (~4.9 kWh/m²/day). However, property owners on peripheral feeders often experience voltage dips during evening peak hours. Solar Wallah engineers rooftop systems with wide-operating inverters, heavy-duty hot-dip galvanized mounting structures, and multi-point earthing to guarantee safe, long-term electricity generation.
+          </p>
+          <p style="margin-bottom:20px;">
+            We serve independent homeowners in Pant Nagar, Civil Lines, and Janki Nagar, alongside healthcare clinics, diagnostic centers, retail showrooms, schools, and agro-processing units across Gonda district.
+          </p>
+
+          <div style="padding:18px; background:#FFFFFF; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-bottom:24px;">
+            <h4 style="margin-bottom:8px; color:var(--color-primary);">Local Areas & Key Neighborhoods Served in Gonda:</h4>
+            <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.6;">
+              Balpur, Pant Nagar, Civil Lines, Circular Road, Janki Nagar, Station Road, Utraula Road, Colonelganj, Mankapur Road, Nawabganj, and surrounding localities in Gonda district.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" data-open-modal="quote-modal" data-city="Gonda">
+              <span>Book Gonda Site Survey</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+            <a href="tel:+919580659559" class="btn btn-outline">
+              ${ICONS.phone}
+              <span>Call ${PHONE_NUMBER}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gonda Lead Form -->
+        <div>
+          <div class="lead-form-card">
+            <h3 style="margin-bottom:6px;">Solar Consultation for Gonda</h3>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:20px;">
+              Request a free shadow-free rooftop assessment and price quotation in Gonda.
+            </p>
+
+            <form data-solar-form="quote" id="city-lead-form-gonda" action="https://formspree.io/f/xrpbadnn" method="POST">
+              <input type="text" name="website_shield_trap" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="city" value="Gonda">
+
+              <div class="form-group">
+                <label class="form-label" for="gonda-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="gonda-name" name="full_name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="gonda-phone">Mobile Number (+91) <span class="required">*</span></label>
+                <input type="tel" id="gonda-phone" name="phone_number" class="form-control" placeholder="10-digit number" pattern="[0-9]{10}" required>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="gonda-type">Property Type</label>
+                  <select id="gonda-type" name="property_type" class="form-control">
+                    <option value="Home">Home / Residential</option>
+                    <option value="Shop/Showroom">Shop / Showroom</option>
+                    <option value="Clinic/Diagnostic">Clinic / Diagnostic</option>
+                    <option value="Agro/Processing">Agro-Processing / Cold Storage</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="gonda-bill">Monthly Bill (₹)</label>
+                  <input type="number" id="gonda-bill" name="monthly_bill" class="form-control" placeholder="e.g. 3500">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Get Gonda Solar Quote</span>
+                <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+              </button>
+
+              <div class="form-trust-note">
+                ${ICONS.shield}
+                <span>Local engineer callback within 2 business hours.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions for Gonda Properties -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Local Solutions</div>
+        <h2>Solar Solutions Engineered for Gonda</h2>
+        <p>Built with heavy-duty components tested for long-term durability in Gonda's local grid conditions.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.home}</div>
+            <h3 style="margin-bottom:8px;">Residential Rooftop Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Designed for independent houses in Pant Nagar, Civil Lines, and Janki Nagar. Offset expensive domestic electricity tiers and claim up to ₹1,08,000 in PM Surya Ghar & UP subsidies.
+            </p>
+            <a href="/residential-solar/" class="btn btn-outline btn-sm">Residential Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.briefcase}</div>
+            <h3 style="margin-bottom:8px;">Commercial & Retail Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Engineered for clinics, private schools, retail shops, and commercial offices on Circular Road and Station Road. Offset high commercial tariffs and claim 40% depreciation.
+            </p>
+            <a href="/commercial-solar/" class="btn btn-outline btn-sm">Commercial Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.shield}</div>
+            <h3 style="margin-bottom:8px;">Surge-Protected Hybrid Solar</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Features dual SPDs, multi-point chemical earthing, and battery storage to safeguard sensitive electronics against Gonda's suburban grid fluctuations.
+            </p>
+            <a href="/hybrid-solar/" class="btn btn-outline btn-sm">Hybrid Systems →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Sizing for Gonda -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Capacity Guide</div>
+        <h2>Recommended Solar Sizing for Properties in Gonda</h2>
+        <p>Explore recommended system capacities for homes, commercial establishments, and institutions.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">3 kW On-Grid</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Standard 3-4 BHK Homes in Gonda</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~360-400 units/mo. Covers 1 AC, refrigerator, lights, and fans. Qualifies for maximum PM Surya Ghar central subsidy of ₹78,000.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~270-300 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">5 kW System</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Clinics, Retail Stores & Large Residences</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~600-650 units/mo. Powers 2 to 3 air conditioners, water motor, and continuous daytime load with app monitoring.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~450-500 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">10 kW to 25 kW+</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Agro-Processing, Cold Storage & Schools</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates 1,200 to 3,000+ units/mo. High-yield commercial solar cutting peak daytime industrial tariff rates.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~900 to 2,500+ sq. ft.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="/solar-calculator/" class="btn btn-secondary">
+          <span>Calculate Your Gonda Savings with Our Solar Calculator</span>
+          <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gonda FAQs -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Local Knowledge</div>
+        <h2>Frequently Asked Questions in Gonda</h2>
+        <p>Practical answers to common solar questions from property owners across Gonda district.</p>
+      </div>
+
+      ${renderFaqAccordion(gondaFaqs)}
+    </div>
+  </section>
+
+  <!-- Nearby City Links & Internal Mesh -->
+  <section class="section section-bg-surface" style="padding: 40px 0; border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <h3 style="font-size: 1.15rem; color: var(--color-primary); margin-bottom: 16px;">Solar Solutions in Neighboring Districts</h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Explore Solar Wallah engineering solutions in adjacent regional hubs:
+      </p>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Solar in Ayodhya & Faizabad →</a>
+        <a href="/cities/lucknow/" class="btn btn-outline btn-sm">Solar in Lucknow →</a>
+        <a href="/cities/barabanki/" class="btn btn-outline btn-sm">Solar in Barabanki →</a>
+        <a href="/solar-subsidy/" class="btn btn-outline btn-sm">UP Solar Subsidy Guide →</a>
+        <a href="/solar-inverter/" class="btn btn-outline btn-sm">Inverter Technology →</a>
+        <a href="/solar-panel-installation/" class="btn btn-outline btn-sm">Installation Process →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gonda Conversion Banner -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+        <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in Gonda?</h2>
+        <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
+          Connect directly with Solar Wallah for an on-site survey and customized quotation for your property in Gonda.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
+            ${ICONS.phone}
+            <span>Call: ${PHONE_NUMBER}</span>
+          </a>
+
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Gonda." 
+             class="btn btn-whatsapp btn-lg" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            ${ICONS.whatsapp}
+            <span>WhatsApp: ${PHONE_NUMBER}</span>
+          </a>
+
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Gonda">
+            <span>Get Free Solar Quote</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+
+  writeHtml('cities/gonda/index.html', renderPage({
+    title: 'Solar Panel Installation in Gonda | Solar Wallah',
+    metaDescription: 'Professional rooftop solar panel installation in Gonda. Reliable solar solutions for homes & businesses with MVVNL net metering and PM Surya Ghar subsidy support.',
+    canonicalUrl: '/cities/gonda/',
+    activeNav: '/cities/',
+    breadcrumbs: [
+      { title: 'Cities We Serve', url: '/cities/' },
+      { title: 'Gonda', url: '/cities/gonda/' }
+    ],
+    cityContext: 'Gonda',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Solar Panel Installation in Gonda",
+      "serviceType": "Rooftop Solar Installation",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solar Wallah",
+        "url": SITE_DOMAIN,
+        "telephone": "+91-9580659559",
+        "email": "hello@solarwallah.online"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Gonda"
+      },
+      "description": "Professional rooftop solar panel installation, MVVNL net metering, and PM Surya Ghar subsidy assistance for residential and commercial properties in Gonda, Uttar Pradesh."
+    },
+    bodyContent: gondaBody
+  }));
+
+  // ========================================================================
+  // 2.E SECONDARY CITIES: LUCKNOW, BARABANKI, AMETHI, PRAYAGRAJ, GORAKHPUR
+  // ========================================================================
+  otherCities.forEach(city => {
+    const route = `/cities/${city.slug}/`;
+    registerUrl(route, '0.85', 'weekly');
+
+    const pageTitle = `Solar Panel Installation in ${city.name} | Solar Wallah`;
+    const pageDesc = `Looking for rooftop solar panel installation in ${city.shortName}? Solar Wallah provides turnkey solar engineering, ${city.discom} net metering & PM Surya Ghar subsidy support.`;
+
+    const secondaryFaqs = [
       {
         question: `How much does rooftop solar installation cost in ${city.shortName}?`,
-        answer: `The cost of rooftop solar in ${city.shortName} depends on system capacity, inverter type, and structure height. A standard 3 kW residential on-grid system generally ranges between ₹1,80,000 to ₹2,20,000 before government subsidy. With the PM Surya Ghar Central subsidy of ₹78,000 plus UP state assistance, the effective homeowner expense is substantially lower.`
+        answer: `The cost of rooftop solar in ${city.shortName} depends on system capacity (typically 3 kW to 10 kW for homes) and structure type. A standard 3 kW residential on-grid system generally ranges between ₹1,80,000 to ₹2,20,000 before government assistance. With the PM Surya Ghar central subsidy of ₹78,000 plus UP state assistance, the effective homeowner expense is substantially lower.`
       },
       {
         question: `How does net metering work with ${city.discom} in ${city.shortName}?`,
-        answer: `In ${city.shortName}, net metering is facilitated through ${city.discom}. Once your solar system is installed, a joint inspection is performed and a bidirectional meter is installed. Units produced by your panels are first consumed by your building, and any surplus units are fed back into the grid, offsetting your electricity bill.`
+        answer: `In ${city.shortName}, net metering is facilitated through ${city.discom}. Once Solar Wallah installs the rooftop system, a joint inspection is performed with electricity board engineers and a bidirectional meter is connected. Solar power is consumed first by your property, and surplus units flow to the grid, offsetting your electricity bills.`
       },
       {
-        question: `Can Solar Wallah help with the PM Surya Ghar subsidy application in ${city.shortName}?`,
-        answer: `Yes. Solar Wallah manages the complete documentation process on the national portal for consumers in ${city.shortName}, including consumer number validation, feasibility submission, vendor agreement, net meter application, and final subsidy disbursement paperwork.`
+        question: `Can Solar Wallah handle the PM Surya Ghar subsidy paperwork in ${city.shortName}?`,
+        answer: `Yes. Solar Wallah manages the complete documentation process on the national portal for consumers in ${city.shortName}, including DISCOM consumer number link, feasibility approval, joint inspection coordination, and subsidy disbursement verification.`
       },
       {
         question: `How long does an installation take in ${city.shortName}?`,
-        answer: `Site surveys in ${city.shortName} are typically scheduled within 24 to 48 hours. Physical mounting on your terrace takes 2 to 3 days, followed by DISCOM net meter processing.`
+        answer: `Site surveys in ${city.shortName} are scheduled within 24 to 48 hours. Physical mounting on your roof takes 2 to 3 days, followed by DISCOM net meter synchronization.`
       },
       {
-        question: `Which neighborhoods in ${city.shortName} does Solar Wallah cover?`,
-        answer: `We serve all primary localities across ${city.shortName} including ${city.areas}, as well as immediate peripheral residential and industrial hubs.`
+        question: `Which neighborhoods in ${city.shortName} are covered by Solar Wallah?`,
+        answer: `We serve primary residential and commercial localities across ${city.shortName} including ${city.areas}, as well as immediate peripheral suburbs.`
       }
     ];
 
-    const cityBody = `
+    const secondaryBody = `
     <!-- City Hero -->
     <section class="hero-section" style="padding-top: clamp(40px, 5vw, 60px);">
       <div class="container">
@@ -1258,7 +2502,7 @@ function buildCityPages() {
             </h1>
 
             <p class="hero-subtitle">
-              Solar Wallah provides rooftop solar consultation, customized engineering, and complete turnkey installation services for homes and businesses in ${city.name} and nearby areas.
+              Solar Wallah provides rooftop solar consultation, customized engineering, and turnkey installation services for residential and commercial properties in ${city.name} and surrounding areas.
             </p>
 
             <div class="hero-ctas">
@@ -1289,15 +2533,15 @@ function buildCityPages() {
           <div class="hero-visual-wrapper">
             <div class="hero-image-frame">
               <picture>
-                <source srcset="${city.slug === 'ayodhya' ? '/assets/images/project-ayodhya-residential.webp' : '/assets/images/hero-rooftop-solar.webp'}" type="image/webp">
-                <img src="${city.slug === 'ayodhya' ? '/assets/images/project-ayodhya-residential.jpg' : '/assets/images/hero-rooftop-solar.jpg'}" 
+                <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+                <img src="/assets/images/hero-rooftop-solar.jpg" 
                      alt="Rooftop solar panel installation project in ${city.name}, Uttar Pradesh" 
                      width="720" 
                      height="480"
                      fetchpriority="high"
                      decoding="async">
               </picture>
-<div class="hero-tag-badge badge-top-left">
+              <div class="hero-tag-badge badge-top-left">
                 <span class="hero-tag-dot green"></span>
                 <span>Active in ${city.shortName}</span>
               </div>
@@ -1320,7 +2564,7 @@ function buildCityPages() {
             <div class="eyebrow">Local Rooftop Solar</div>
             <h2>Why Solar Makes Sense for Properties in ${city.shortName}</h2>
             <p style="margin-bottom:16px;">
-              ${city.shortName} receives approximately 300 days of bright sunshine annually, with an average solar irradiance of 4.5 to 5.0 kWh/m²/day. With domestic and commercial power tariffs in Uttar Pradesh, switching to rooftop solar provides an immediate monthly reduction in electricity bills while protecting against seasonal power outages.
+              ${city.shortName} receives approximately 300 days of bright sunshine annually, with an average solar irradiance of 4.6 to 5.0 kWh/m²/day. Switching to rooftop solar provides an immediate monthly reduction in electricity bills while protecting against seasonal power outages.
             </p>
             <p style="margin-bottom:20px;">
               Whether you own an independent house in a residential colony or operate a commercial showroom, school, or workshop, Solar Wallah engineers system layouts that maximize terrace space utility through elevated galvanized structures.
@@ -1405,7 +2649,7 @@ function buildCityPages() {
         <div class="section-header">
           <div class="eyebrow">Solutions Portfolio</div>
           <h2>Solar Solutions Available in ${city.shortName}</h2>
-          <p>We deploy proven rooftop solar technologies suited for ${city.shortName}'s grid conditions and electrical infrastructure.</p>
+          <p>Proven rooftop solar technologies suited for ${city.shortName}'s grid conditions and electrical infrastructure.</p>
         </div>
 
         <div class="grid-cols-3">
@@ -1436,7 +2680,7 @@ function buildCityPages() {
               <div class="card-icon-box">${ICONS.shield}</div>
               <h3 style="margin-bottom:8px;">Hybrid Solar with Battery</h3>
               <p style="font-size:0.9rem; margin-bottom:16px;">
-                Combines grid-tied solar savings with energy storage. Perfect for ${city.shortName} neighborhoods with periodic grid fluctuations and power cuts.
+                Combines grid-tied solar savings with energy storage. Perfect for ${city.shortName} properties with periodic grid fluctuations and power cuts.
               </p>
               <a href="/hybrid-solar/" class="btn btn-outline btn-sm">Hybrid Systems →</a>
             </div>
@@ -1494,12 +2738,26 @@ function buildCityPages() {
           <p>Common questions from property owners in ${city.name} regarding solar installation and net metering.</p>
         </div>
 
-        ${renderFaqAccordion(cityFaqs)}
+        ${renderFaqAccordion(secondaryFaqs)}
+      </div>
+    </section>
+
+    <!-- Cross-links to Priority Hubs -->
+    <section class="section section-bg-surface" style="padding: 36px 0; border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h3 style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 14px;">Explore Solar in Our Primary Regional Hubs</h3>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Ayodhya & Faizabad Hub →</a>
+          <a href="/cities/sultanpur/" class="btn btn-outline btn-sm">Sultanpur Hub →</a>
+          <a href="/cities/gonda/" class="btn btn-outline btn-sm">Gonda Hub →</a>
+          <a href="/solar-subsidy/" class="btn btn-outline btn-sm">PM Surya Ghar Subsidy →</a>
+          <a href="/solar-calculator/" class="btn btn-outline btn-sm">Solar Savings Calculator →</a>
+        </div>
       </div>
     </section>
 
     <!-- Local City Conversion Banner -->
-    <section class="section section-bg-surface" style="border-top:1px solid var(--color-border);">
+    <section class="section" style="padding-top: 20px;">
       <div class="container">
         <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
           <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in ${city.name}?</h2>
@@ -1508,7 +2766,7 @@ function buildCityPages() {
           </p>
 
           <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-            <a href="tel:+919580659559" class="btn btn-white btn-lg">
+            <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
               ${ICONS.phone}
               <span>Call: ${PHONE_NUMBER}</span>
             </a>
@@ -1543,18 +2801,23 @@ function buildCityPages() {
       cityContext: city.shortName,
       schema: {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": `Solar Wallah - Solar Panel Installation ${city.shortName}`,
-        "telephone": "+91-9580659559",
-        "email": "hello@solarwallah.online",
-        "url": `${SITE_DOMAIN}${route}`,
+        "@type": "Service",
+        "name": `Solar Panel Installation in ${city.shortName}`,
+        "serviceType": "Rooftop Solar Installation",
+        "provider": {
+          "@type": "Organization",
+          "name": "Solar Wallah",
+          "url": SITE_DOMAIN,
+          "telephone": "+91-9580659559",
+          "email": "hello@solarwallah.online"
+        },
         "areaServed": {
           "@type": "City",
           "name": city.shortName
         },
-        "description": `Professional rooftop solar panel installation and ${city.discom} net metering solutions in ${city.name}, Uttar Pradesh.`
+        "description": `Professional rooftop solar panel installation, ${city.discom} net metering, and PM Surya Ghar subsidy assistance in ${city.name}, Uttar Pradesh.`
       },
-      bodyContent: cityBody
+      bodyContent: secondaryBody
     });
 
     writeHtml(`cities/${city.slug}/index.html`, cityHtml);
@@ -2568,6 +3831,7 @@ function buildCompanyPages() {
     metaDescription: 'Thank you for reaching out to Solar Wallah. Our solar engineering team in Uttar Pradesh will contact you shortly regarding your rooftop solar requirement.',
     canonicalUrl: '/thank-you/',
     activeNav: '',
+    robots: 'noindex, nofollow',
     breadcrumbs: [{ title: 'Thank You', url: '/thank-you/' }],
     bodyContent: `
     <section class="section" style="padding: clamp(60px, 10vw, 120px) 0; text-align:center;">
@@ -2600,6 +3864,10 @@ function buildCompanyPages() {
 }
 
 function buildLegalPages() {
+  registerUrl('/privacy-policy/', '0.3', 'yearly');
+  registerUrl('/terms-and-conditions/', '0.3', 'yearly');
+  registerUrl('/disclaimer/', '0.3', 'yearly');
+
   const privacyHtml = renderPage({
     title: 'Privacy Policy | Solar Wallah',
     metaDescription: 'Privacy policy for Solar Wallah. Learn how we handle your personal information and contact details safely.',
@@ -2684,6 +3952,7 @@ function buildLegalPages() {
     title: '404 - Page Not Found | Solar Wallah',
     metaDescription: 'The page you requested could not be found. Explore Solar Wallah for rooftop solar installation across Uttar Pradesh.',
     canonicalUrl: '/404.html',
+    robots: 'noindex, follow',
     breadcrumbs: [{ title: '404 Not Found', url: '/404.html' }],
     bodyContent: `
     <section class="section" style="padding: 80px 0; text-align: center;">
