@@ -1166,13 +1166,13 @@ function buildHomePage() {
   <!-- Final Call to Action -->
   <section class="section section-bg-surface" style="border-top:1px solid var(--color-border);">
     <div class="container">
-      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 64px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+      <div class="conversion-banner-card">
         <h2 style="color:#FFFFFF; margin-bottom:16px;">Ready to Power Your Property with Solar?</h2>
         <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
           Schedule your free rooftop site survey with Solar Wallah. We analyze your electricity usage and engineer a customized solar proposal.
         </p>
 
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <div class="banner-cta-group">
           <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal">
             <span>Get Free Solar Quote</span>
             <span class="btn-icon-circle">${ICONS.arrowRight}</span>
@@ -1298,13 +1298,13 @@ function buildCityPages() {
       </div>
 
       <!-- Expansion Note -->
-      <div style="padding:32px; background:var(--color-bg-surface); border-radius:var(--radius-xl); border:1px solid var(--color-border); text-align:center;">
+      <div class="expansion-note-card">
         <h3 style="margin-bottom:10px;">Expanding to More Districts Across Uttar Pradesh</h3>
         <p style="max-width:680px; margin:0 auto 20px; font-size:0.95rem; color:var(--color-text-muted);">
           Solar Wallah is progressively expanding operations to neighboring districts including Basti, Rae Bareli, Pratapgarh, and Jaunpur. If your property is near our serviceable cities, our engineering team can arrange a dedicated technical site survey.
         </p>
         <button type="button" class="btn btn-secondary" data-open-modal="quote-modal">
-          <span>Inquire About Feasibility in Your Area</span>
+          <span>Check Feasibility in Your Area</span>
           <span class="btn-icon-circle">${ICONS.arrowRight}</span>
         </button>
       </div>
@@ -1598,7 +1598,7 @@ function buildCityPages() {
 
       <div style="text-align:center; margin-top:32px;">
         <a href="/solar-calculator/" class="btn btn-secondary">
-          <span>Calculate Your Ayodhya Savings with Our Solar Calculator</span>
+          <span>Calculate Ayodhya Solar Savings</span>
           <span class="btn-icon-circle">${ICONS.arrowRight}</span>
         </a>
       </div>
@@ -1625,7 +1625,7 @@ function buildCityPages() {
       <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
         Solar Wallah also provides dedicated on-site solar engineering and installation teams in nearby districts:
       </p>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="nearby-cities-list">
         <a href="/cities/sultanpur/" class="btn btn-outline btn-sm">Solar in Sultanpur →</a>
         <a href="/cities/gonda/" class="btn btn-outline btn-sm">Solar in Gonda →</a>
         <a href="/cities/lucknow/" class="btn btn-outline btn-sm">Solar in Lucknow →</a>
@@ -1639,13 +1639,13 @@ function buildCityPages() {
   <!-- Ayodhya Conversion Banner -->
   <section class="section" style="padding-top: 20px;">
     <div class="container">
-      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+      <div class="conversion-banner-card">
         <h2 style="color:#FFFFFF; margin-bottom:16px;">Ready to Switch to Solar in Ayodhya or Faizabad?</h2>
         <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
           Connect directly with Solar Wallah's local engineering team for an on-site shadow survey and customized financial proposal.
         </p>
 
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <div class="banner-cta-group">
           <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
             ${ICONS.phone}
             <span>Call: ${PHONE_NUMBER}</span>
@@ -1974,7 +1974,7 @@ function buildCityPages() {
 
       <div style="text-align:center; margin-top:32px;">
         <a href="/solar-calculator/" class="btn btn-secondary">
-          <span>Calculate Your Sultanpur Savings with Our Solar Calculator</span>
+          <span>Calculate Sultanpur Solar Savings</span>
           <span class="btn-icon-circle">${ICONS.arrowRight}</span>
         </a>
       </div>
@@ -2001,7 +2001,7 @@ function buildCityPages() {
       <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
         Explore Solar Wallah engineering solutions in adjacent districts:
       </p>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="nearby-cities-list">
         <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Solar in Ayodhya & Faizabad →</a>
         <a href="/cities/amethi/" class="btn btn-outline btn-sm">Solar in Amethi →</a>
         <a href="/cities/prayagraj/" class="btn btn-outline btn-sm">Solar in Prayagraj →</a>
@@ -2015,13 +2015,13 @@ function buildCityPages() {
   <!-- Sultanpur Conversion Banner -->
   <section class="section" style="padding-top: 20px;">
     <div class="container">
-      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+      <div class="conversion-banner-card">
         <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in Sultanpur?</h2>
         <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
           Connect directly with Solar Wallah for an on-site survey and customized quotation for your property in Sultanpur district.
         </p>
 
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <div class="banner-cta-group">
           <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
             ${ICONS.phone}
             <span>Call: ${PHONE_NUMBER}</span>
@@ -2350,7 +2350,7 @@ function buildCityPages() {
 
       <div style="text-align:center; margin-top:32px;">
         <a href="/solar-calculator/" class="btn btn-secondary">
-          <span>Calculate Your Gonda Savings with Our Solar Calculator</span>
+          <span>Calculate Gonda Solar Savings</span>
           <span class="btn-icon-circle">${ICONS.arrowRight}</span>
         </a>
       </div>
@@ -2377,7 +2377,7 @@ function buildCityPages() {
       <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
         Explore Solar Wallah engineering solutions in adjacent regional hubs:
       </p>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <div class="nearby-cities-list">
         <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Solar in Ayodhya & Faizabad →</a>
         <a href="/cities/lucknow/" class="btn btn-outline btn-sm">Solar in Lucknow →</a>
         <a href="/cities/barabanki/" class="btn btn-outline btn-sm">Solar in Barabanki →</a>
@@ -2391,13 +2391,13 @@ function buildCityPages() {
   <!-- Gonda Conversion Banner -->
   <section class="section" style="padding-top: 20px;">
     <div class="container">
-      <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+      <div class="conversion-banner-card">
         <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in Gonda?</h2>
         <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
           Connect directly with Solar Wallah for an on-site survey and customized quotation for your property in Gonda.
         </p>
 
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <div class="banner-cta-group">
           <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
             ${ICONS.phone}
             <span>Call: ${PHONE_NUMBER}</span>
@@ -2746,7 +2746,7 @@ function buildCityPages() {
     <section class="section section-bg-surface" style="padding: 36px 0; border-top: 1px solid var(--color-border);">
       <div class="container">
         <h3 style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 14px;">Explore Solar in Our Primary Regional Hubs</h3>
-        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+        <div class="nearby-cities-list">
           <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Ayodhya & Faizabad Hub →</a>
           <a href="/cities/sultanpur/" class="btn btn-outline btn-sm">Sultanpur Hub →</a>
           <a href="/cities/gonda/" class="btn btn-outline btn-sm">Gonda Hub →</a>
@@ -2759,13 +2759,13 @@ function buildCityPages() {
     <!-- Local City Conversion Banner -->
     <section class="section" style="padding-top: 20px;">
       <div class="container">
-        <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; max-width:960px; margin:0 auto; box-shadow:var(--shadow-lg);">
+        <div class="conversion-banner-card">
           <h2 style="color:#FFFFFF; margin-bottom:16px;">Looking for Solar Panel Installation in ${city.name}?</h2>
           <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
             Connect directly with Solar Wallah's engineering team for an on-site survey and customized quotation for your property.
           </p>
 
-          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <div class="banner-cta-group">
             <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
               ${ICONS.phone}
               <span>Call: ${PHONE_NUMBER}</span>
@@ -3261,12 +3261,12 @@ function buildServicePages() {
         </div>
 
         <!-- Conversion Banner -->
-        <div style="background:var(--color-primary); border-radius:var(--radius-xl); padding:clamp(36px, 6vw, 56px); color:#FFFFFF; text-align:center; box-shadow:var(--shadow-lg);">
+        <div class="conversion-banner-card">
           <h2 style="color:#FFFFFF; margin-bottom:14px;">Plan Your Solar Installation with Solar Wallah</h2>
           <p style="color:#CBD5E1; max-width:600px; margin:0 auto 24px; font-size:1.05rem;">
             Schedule a free site survey in Uttar Pradesh. Transparent technical guidance and competitive project pricing.
           </p>
-          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <div class="banner-cta-group">
             <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal">
               <span>Get Free Solar Quote</span>
               <span class="btn-icon-circle">${ICONS.arrowRight}</span>

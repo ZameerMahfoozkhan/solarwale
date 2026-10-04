@@ -208,7 +208,7 @@ function renderMobileDrawer(activePath = '') {
       <div class="mobile-menu-item"><a href="/contact/">Contact Us</a></div>
     </div>
 
-    <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px; padding-bottom:40px;">
+    <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px; padding:0 18px 40px; box-sizing:border-box; width:100%;">
       <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20want%20to%20know%20about%20solar%20panel%20installation." 
          class="btn btn-whatsapp" 
          target="_blank" 
