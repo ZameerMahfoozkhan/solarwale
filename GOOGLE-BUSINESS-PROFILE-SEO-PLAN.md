@@ -5,8 +5,8 @@
 **Primary Phone:** +91 95806 59559  
 **Primary Email:** hello@solarwallah.online  
 **Target Market:** Uttar Pradesh, India  
-**Priority Service Cities:** Ayodhya / Faizabad (Priority 1), Sultanpur (Priority 2), Gonda (Priority 3)  
-**Secondary Service Cities:** Lucknow, Barabanki, Amethi, Prayagraj, Gorakhpur  
+**Priority Service Cities:** Ayodhya / Faizabad (Priority 1), Sultanpur (Priority 2), Gonda (Priority 3), Lucknow (Priority 4 — State Capital Hub)  
+**Secondary Service Cities:** Barabanki, Amethi, Prayagraj, Gorakhpur  
 
 ---
 
@@ -43,7 +43,7 @@ Add the following designated districts and cities in the GBP Service Areas field
 2. **Faizabad, Uttar Pradesh** (Priority 1)
 3. **Sultanpur District** (Priority 2)
 4. **Gonda District** (Priority 3)
-5. **Lucknow District**
+5. **Lucknow District** (Priority 4 — State Capital Hub)
 6. **Barabanki District**
 7. **Amethi District**
 8. **Prayagraj District**

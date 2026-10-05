@@ -497,7 +497,8 @@ function renderPage({
   schema = null,
   bodyContent = '',
   cityContext = '',
-  robots = null
+  robots = null,
+  faqs = null
 }) {
   const fullCanonical = `${SITE_DOMAIN}${canonicalUrl}`;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${SITE_DOMAIN}${ogImage}`;
@@ -544,6 +545,23 @@ function renderPage({
       ]
     };
     allSchemas.push(breadcrumbSchema);
+  }
+
+  // Automatic JSON-LD FAQPage schema for mobile SERP rich snippets
+  if (faqs && Array.isArray(faqs) && faqs.length > 0) {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(f => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    };
+    allSchemas.push(faqSchema);
   }
 
   if (schema) {

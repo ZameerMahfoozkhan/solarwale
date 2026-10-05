@@ -233,3 +233,59 @@
 3. `SEO-AUDIT-AFTER.md` (Post-implementation scorecard, page-by-page inventory table, and technical QA report)
 4. `SEO-CHANGELOG.md` (This file: structured change log categorized across 7 core pillars)
 5. `SEO-90-DAY-PLAN.md` (Strategic 3-month growth roadmap for rankings, citations, and reviews)
+
+---
+
+## 9. October 5, 2026: Google Search Console Performance Audit & Lucknow Priority Elevation
+
+### GSC Performance Audit Findings (`solarwallah.online-Performance-on-Search-2026-10-05.zip`):
+1. **Core Metrics:** 41 impressions, 4 clicks, 9.76% overall CTR. 73.2% impressions and 100% of clicks originated from **Mobile devices**.
+2. **The "Ranked on Page 5 to 10" Problem (Lucknow):**
+   - Queries like `solar panel in lucknow` (pos 45.5), `solar in lucknow` (pos 55), `solar company in lucknow` (pos 61), `solar finance in lucknow` (pos 71), `solar power loans in lucknow` (pos 83) were ranking on Google Pages 5 to 9.
+   - Impressions were registering, but clicks were zero because searchers virtually never visit Page 5+.
+   - Crucial user-intent discovery: Multiple queries targeted **solar finance, loans, and financing companies in Lucknow**, a topic previously unaddressed in generic templates.
+3. **The "Ranked on Page 1 with Low CTR" Problem:**
+   - Queries like `pm surya ghar uttar pradesh` ranked at **Position 3.0**, but yielded 0 clicks.
+   - Pages like `/cities/gonda/` (pos 7.25), `/cities/barabanki/` (pos 8.0), `/cities/amethi/` (pos 9.6) had impressions on Page 1 but 0 clicks.
+   - Root Causes: Missing mobile rich snippet real estate (Search appearance report was completely empty), lack of `FAQPage` JSON-LD structured data, and generic snippet titles lacking freshness anchors (`2026`), concrete numbers (`₹1,08,000 Subsidy`), or fast-survey hooks (`24-Hour Survey`).
+
+### Implemented Solutions:
+
+#### Change GSC-01: Elevation of Lucknow to Priority Hub 4 & Bespoke City Page Generator
+- **Date:** 2026-10-05
+- **Files:** `scripts/build.js`, `index.html`, `cities/index.html`, `cities/lucknow/index.html`, `GOOGLE-BUSINESS-PROFILE-SEO-PLAN.md`
+- **Actions:**
+  - Removed Lucknow from generic secondary city loop; elevated to **Priority Hub 4 (State Capital Hub)** with maximum sitemap priority (`1.0`).
+  - Added dedicated Priority Hub 4 feature card on the Homepage (`index.html`) and Cities Hub (`cities/index.html`).
+  - Built a comprehensive bespoke landing page for Lucknow (`/cities/lucknow/`):
+    - **Dedicated Solar Financing & Bank Loans Section:** Details on SBI Surya Ghar loan (~7% collateral-free up to ₹2L), Canara Bank/PNB, JanSamarth portal, and cash-positive zero-down EMI options.
+    - **Local DISCOM & Administrative Depth:** MVVNL Head Office (4-A Gokhale Marg) and UPNEDA (Vibhuti Khand, Gomti Nagar) liaison, division-by-division net metering (Gomti Nagar, Indira Nagar, Aliganj, Chowk, Residency, Alambagh).
+    - **Locality Coverage:** 14+ Lucknow sectors (Gomti Nagar, Indira Nagar, Aliganj, Ashiyana, Mahanagar, Hazratganj, Shaheed Path, Sushant Golf City, Jankipuram, Vikas Nagar, Kakori, Dubagga).
+    - **Custom Lucknow Lead Form:** Capturing property type (Home/Villa, Shop/Office, Coaching/School, Hospital/Clinic, Banquet/Hotel) and monthly bills.
+    - **Elevated Pergola Structures:** Preserving usable terrace space for Lucknow independent kothis and LDA residences.
+
+#### Change GSC-02: Sitewide Automated JSON-LD FAQPage Schema Engine
+- **Date:** 2026-10-05
+- **Files:** `scripts/generator-core.js`, `scripts/build.js`
+- **Actions:**
+  - Enhanced `renderPage()` in `generator-core.js` to accept `faqs` and automatically compile Google-compliant JSON-LD `FAQPage` schema into `<script type="application/ld+json">`.
+  - Injected `FAQPage` schema into: `/cities/lucknow/`, `/cities/ayodhya/`, `/cities/sultanpur/`, `/cities/gonda/`, all secondary cities (`/cities/barabanki/`, `/cities/amethi/`, `/cities/prayagraj/`, `/cities/gorakhpur/`), `/solar-subsidy/`, `/residential-solar/`, `/commercial-solar/`, `/on-grid-solar/`, `/hybrid-solar/`, `/off-grid-solar/`, `/solar-inverter/`, `/solar-battery/`, `/solar-maintenance/`, and `/faq/`.
+  - **Expected Benefit:** Triggers Google FAQ rich snippets on mobile search results, expanding SERP screen height by 2.5x and increasing mobile CTR.
+
+#### Change GSC-03: High-CTR SERP Title & Meta Description Optimization
+- **Date:** 2026-10-05
+- **Files:** `scripts/build.js`
+- **Actions:**
+  - Realignment of target page titles and descriptions to include:
+    - **Year Freshness:** `(2026)` to capture recent policy seekers.
+    - **Concrete Value Numbers:** `₹1,08,000 Subsidy`, `7% Solar Loans`, `80% Bill Savings`.
+    - **Actionable Intent Triggers:** `Apply Online`, `Free 24-hr Survey`, `Calculate Savings`.
+  - Target Pages Optimized:
+    - `/solar-subsidy/`: `PM Surya Ghar Yojana UP (2026): ₹1,08,000 Subsidy & Apply Online`
+    - `/cities/lucknow/`: `Solar Panel Installation in Lucknow (2026) | ₹1,08,000 Subsidy & 7% Solar Loans`
+    - `/cities/ayodhya/`: `Solar Panel Installation in Ayodhya & Faizabad (2026) | ₹1,08,000 Subsidy`
+    - `/cities/sultanpur/`: `Solar Panel Installation in Sultanpur (2026) | ₹1,08,000 Subsidy & Hybrid Solar`
+    - `/cities/gonda/`: `Solar Panel Installation in Gonda (2026) | ₹1,08,000 Subsidy & Surge Protection`
+    - `/commercial-solar/`: `Commercial Rooftop Solar in Uttar Pradesh (2026) | 40% Tax Depreciation`
+    - `/solar-calculator/`: `Solar Calculator Uttar Pradesh (2026) — Sizing, Subsidy & ROI Estimate`
+    - Secondary city pages: `Solar Panel Installation in [City] (2026) | ₹1,08,000 Subsidy`

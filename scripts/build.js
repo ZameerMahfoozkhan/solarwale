@@ -923,7 +923,7 @@ function buildHomePage() {
         <div class="eyebrow">Local Service Coverage</div>
         <h2>Solar Panel Installation Across Uttar Pradesh</h2>
         <p>
-          Solar Wallah provides dedicated on-ground solar engineering and site survey teams across Uttar Pradesh, with specialized focus on our primary regional hubs: Ayodhya / Faizabad, Sultanpur, and Gonda.
+          Solar Wallah provides dedicated on-ground solar engineering and site survey teams across Uttar Pradesh, with specialized focus on our primary regional hubs: Ayodhya / Faizabad, Sultanpur, Gonda, and Lucknow (State Capital Hub).
         </p>
       </div>
 
@@ -987,6 +987,24 @@ function buildHomePage() {
               <span>${ICONS.arrowRight}</span>
             </div>
           </a>
+
+          <a href="/cities/lucknow/" class="city-card" style="border: 2px solid var(--color-accent); background: #FFFFFF; position: relative;">
+            <div style="position: absolute; top: -10px; right: 16px; background: var(--color-accent); color: #FFFFFF; font-size: 0.7rem; font-weight: 800; padding: 2px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.05em;">Priority Hub 4</div>
+            <div>
+              <div class="city-card-header">
+                <div class="city-card-name" style="font-size: 1.25rem; color: var(--color-primary);">Lucknow</div>
+                <div class="city-card-tag">State Capital Hub</div>
+              </div>
+              <p class="city-card-desc">Urban rooftop solar with MVVNL & LESCO net metering, ₹1,08,000 PM Surya Ghar subsidy, elevated terrace pergola structures, and low-interest bank solar financing.</p>
+              <div style="font-size:0.75rem; color:var(--color-text-subtle); margin-bottom:12px;">
+                <strong>DISCOM:</strong> MVVNL / LESCO (4-A Gokhale Marg) • <strong>Key Areas:</strong> Gomti Nagar, Indira Nagar, Aliganj, Ashiyana, Hazratganj, Shaheed Path
+              </div>
+            </div>
+            <div class="city-card-action" style="font-weight: 700; color: var(--color-primary);">
+              <span>Explore Solar in Lucknow</span>
+              <span>${ICONS.arrowRight}</span>
+            </div>
+          </a>
         </div>
       </div>
 
@@ -996,7 +1014,7 @@ function buildHomePage() {
           Additional Serviceable Cities Across Uttar Pradesh
         </div>
         <div class="cities-grid">
-          ${TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda'].includes(c.slug)).map(c => `
+          ${TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda', 'lucknow'].includes(c.slug)).map(c => `
             <a href="/cities/${c.slug}/" class="city-card">
               <div>
                 <div class="city-card-header">
@@ -1219,8 +1237,8 @@ function buildCityPages() {
   const hubDesc = "Solar Wallah provides rooftop solar panel consultation, net metering assistance & turnkey installations across Ayodhya, Sultanpur, Gonda, Lucknow, Barabanki, Amethi, Prayagraj, and Gorakhpur.";
   registerUrl('/cities/', '0.9', 'weekly');
 
-  const priorityCities = TARGET_CITIES.filter(c => ['ayodhya', 'sultanpur', 'gonda'].includes(c.slug));
-  const otherCities = TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda'].includes(c.slug));
+  const priorityCities = TARGET_CITIES.filter(c => ['ayodhya', 'sultanpur', 'gonda', 'lucknow'].includes(c.slug));
+  const otherCities = TARGET_CITIES.filter(c => !['ayodhya', 'sultanpur', 'gonda', 'lucknow'].includes(c.slug));
 
   const hubBody = `
   <section class="section" style="padding-top: clamp(40px, 5vw, 60px);">
@@ -1229,7 +1247,7 @@ function buildCityPages() {
         <div class="eyebrow eyebrow-accent">Uttar Pradesh Service Coverage</div>
         <h1>Solar Panel Installation Across Selected Cities in Uttar Pradesh</h1>
         <p class="text-lead">
-          Solar Wallah operates dedicated on-ground solar engineering and site survey teams across Uttar Pradesh. We place primary strategic focus on East-Central UP — specifically <strong>Ayodhya / Faizabad</strong>, <strong>Sultanpur</strong>, and <strong>Gonda</strong> — alongside established operations in Lucknow and neighboring districts.
+          Solar Wallah operates dedicated on-ground solar engineering and site survey teams across Uttar Pradesh. We place primary strategic focus on East-Central UP — specifically <strong>Ayodhya / Faizabad</strong>, <strong>Sultanpur</strong>, <strong>Gonda</strong>, and <strong>Lucknow</strong> — alongside established operations across neighboring districts.
         </p>
       </div>
 
@@ -1670,8 +1688,8 @@ function buildCityPages() {
   `;
 
   writeHtml('cities/ayodhya/index.html', renderPage({
-    title: 'Solar Panel Installation in Ayodhya & Faizabad | Solar Wallah',
-    metaDescription: 'Looking for solar panel installation in Ayodhya or Faizabad? Explore rooftop solar solutions for homes & businesses from Solar Wallah. Get a free quote & subsidy support.',
+    title: 'Solar Panel Installation in Ayodhya & Faizabad (2026) | ₹1,08,000 Subsidy',
+    metaDescription: 'Rooftop solar panel installation in Ayodhya & Faizabad. Claim up to ₹1,08,000 PM Surya Ghar subsidy, MVVNL net metering & elevated terrace pergola frames. Free 24-hr site survey!',
     canonicalUrl: '/cities/ayodhya/',
     activeNav: '/cities/',
     breadcrumbs: [
@@ -1679,6 +1697,7 @@ function buildCityPages() {
       { title: 'Ayodhya & Faizabad', url: '/cities/ayodhya/' }
     ],
     cityContext: 'Ayodhya',
+    faqs: ayodhyaFaqs,
     schema: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -2046,8 +2065,8 @@ function buildCityPages() {
   `;
 
   writeHtml('cities/sultanpur/index.html', renderPage({
-    title: 'Solar Panel Installation in Sultanpur | Solar Wallah',
-    metaDescription: 'Expert rooftop solar panel installation in Sultanpur by Solar Wallah. Maximize PM Surya Ghar subsidies, MVVNL net metering & hybrid solar for homes and businesses.',
+    title: 'Solar Panel Installation in Sultanpur (2026) | ₹1,08,000 Subsidy & Hybrid Solar',
+    metaDescription: 'Looking for solar installation in Sultanpur? High-yield rooftop solar with MVVNL net metering, PM Surya Ghar ₹1,08,000 subsidy & battery power backup. Book free site survey!',
     canonicalUrl: '/cities/sultanpur/',
     activeNav: '/cities/',
     breadcrumbs: [
@@ -2055,6 +2074,7 @@ function buildCityPages() {
       { title: 'Sultanpur', url: '/cities/sultanpur/' }
     ],
     cityContext: 'Sultanpur',
+    faqs: sultanpurFaqs,
     schema: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -2422,8 +2442,8 @@ function buildCityPages() {
   `;
 
   writeHtml('cities/gonda/index.html', renderPage({
-    title: 'Solar Panel Installation in Gonda | Solar Wallah',
-    metaDescription: 'Professional rooftop solar panel installation in Gonda. Reliable solar solutions for homes & businesses with MVVNL net metering and PM Surya Ghar subsidy support.',
+    title: 'Solar Panel Installation in Gonda (2026) | ₹1,08,000 Subsidy & Surge Protection',
+    metaDescription: 'Rooftop solar panel installation in Gonda. Get up to ₹1,08,000 PM Surya Ghar subsidy, MVVNL net metering & engineered surge-protected systems. Request a free quote!',
     canonicalUrl: '/cities/gonda/',
     activeNav: '/cities/',
     breadcrumbs: [
@@ -2431,6 +2451,7 @@ function buildCityPages() {
       { title: 'Gonda', url: '/cities/gonda/' }
     ],
     cityContext: 'Gonda',
+    faqs: gondaFaqs,
     schema: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -2453,14 +2474,452 @@ function buildCityPages() {
   }));
 
   // ========================================================================
-  // 2.E SECONDARY CITIES: LUCKNOW, BARABANKI, AMETHI, PRAYAGRAJ, GORAKHPUR
+  // 2.E PRIORITY CITY 4: LUCKNOW (/cities/lucknow/)
+  // ========================================================================
+  registerUrl('/cities/lucknow/', '1.0', 'weekly');
+
+  const lucknowFaqs = [
+    {
+      question: "What is the maximum subsidy available for rooftop solar in Lucknow under PM Surya Ghar?",
+      answer: "Residential homeowners in Lucknow can receive up to ₹78,000 in Central subsidy under the PM Surya Ghar Muft Bijli Yojana for a 3 kW system, plus an additional state financial subsidy of up to ₹30,000 under the Uttar Pradesh State Solar Policy. This provides a total combined incentive of up to ₹1,08,000, deposited directly into your bank account via DBT."
+    },
+    {
+      question: "How do low-interest solar loans and EMI work for Lucknow homeowners?",
+      answer: "Homeowners in Lucknow can access collateral-free solar financing under the SBI Surya Ghar scheme and other public sector banks (Canara Bank, PNB, Bank of Baroda) at attractive interest rates starting around 7% per annum. With repayment tenures up to 10 years, monthly EMIs (typically ₹1,800 to ₹2,400) are often lower than the monthly electricity bill savings, making your solar system cash-flow positive from month one."
+    },
+    {
+      question: "How does MVVNL / LESCO net metering work across Lucknow?",
+      answer: "Solar Wallah coordinates directly with the Madhyanchal Vidyut Vitran Nigam Ltd (MVVNL) head office at 4-A Gokhale Marg and your local LESCO division (Gomti Nagar, Indira Nagar, Aliganj, Chowk, Residency, or Alambagh). After system mounting, a joint inspection is scheduled, the bi-directional net meter is installed and tested, and surplus units exported to the grid are credited against your monthly LESCO bill."
+    },
+    {
+      question: "Can solar panels be installed on elevated structures to preserve my Lucknow terrace?",
+      answer: "Yes! In residential areas like Gomti Nagar, Indira Nagar, and LDA Colony, elevated pergola mounting frames (7 to 9 feet vertical clearance) are our top recommendation. Engineered from heavy-gauge hot-dip galvanized steel, these structures keep your entire terrace completely open and usable for morning strolls, family gatherings, and everyday terrace activities."
+    },
+    {
+      question: "Are commercial properties, coaching centres, and hospitals in Lucknow eligible for solar benefits?",
+      answer: "Yes. While domestic subsidies apply to residential meters, commercial establishments in Lucknow (coaching institutes in Hazratganj and Kapoorathala, private hospitals, hotels, banquet lawns, and corporate offices along Shaheed Path) benefit from 40% accelerated tax depreciation under Section 32, GST input credits, and immediate reduction of high daytime commercial tariffs (often exceeding ₹8.50 to ₹10.50 per unit)."
+    },
+    {
+      question: "How fast can Solar Wallah conduct a site survey in Lucknow?",
+      answer: "Because Lucknow is a primary operational hub for Solar Wallah, our dedicated local engineering team can perform an on-site shadow analysis, structural feasibility assessment, and electrical load survey within 24 to 48 hours of your request."
+    }
+  ];
+
+  const lucknowBody = `
+  <!-- City Hero -->
+  <section class="hero-section" style="padding-top: clamp(40px, 5vw, 60px);">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-accent">
+            <span class="eyebrow-dot"></span>
+            <span>State Capital Solar Specialists • Lucknow & LESCO Region</span>
+          </div>
+
+          <h1 class="hero-title">
+            Solar Panel Installation & Solar Finance in <br>
+            <span class="highlight">Lucknow</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Looking for top-rated solar panel installation in Lucknow? Solar Wallah delivers turnkey residential and commercial rooftop solar systems — featuring complete MVVNL / LESCO net metering, PM Surya Ghar subsidies up to ₹1,08,000, and low-interest bank solar financing.
+          </p>
+
+          <div class="hero-ctas">
+            <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Lucknow">
+              <span>Get Free Quote in Lucknow</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+
+            <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Lucknow." 
+               class="btn btn-whatsapp btn-lg" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               data-location="lucknow_hero">
+              ${ICONS.whatsapp}
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-micro">
+            <span>MVVNL / LESCO Approved</span>
+            <span class="separator">•</span>
+            <span>Up to ₹1,08,000 Subsidy</span>
+            <span class="separator">•</span>
+            <span>7% Bank Solar Loans</span>
+            <span class="separator">•</span>
+            <span>24-Hr Site Survey</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-frame">
+            <picture>
+              <source srcset="/assets/images/hero-rooftop-solar.webp" type="image/webp">
+              <img src="/assets/images/hero-rooftop-solar.jpg" 
+                   alt="Elevated residential rooftop solar panel installation on a villa in Lucknow, Uttar Pradesh" 
+                   width="720" 
+                   height="480"
+                   fetchpriority="high"
+                   decoding="async">
+            </picture>
+            <div class="hero-tag-badge badge-top-left">
+              <span class="hero-tag-dot green"></span>
+              <span>Active in Lucknow</span>
+            </div>
+
+            <div class="hero-tag-badge badge-bottom-right">
+              <span class="hero-tag-dot"></span>
+              <span>LESCO Net Metering Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lucknow Solar Overview & Lead Capture -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="grid-cols-2" style="gap:48px; align-items:center;">
+        <div>
+          <div class="eyebrow">State Capital Clean Energy Hub</div>
+          <h2>Powering Lucknow Homes & Businesses with Smart Rooftop Solar</h2>
+          <p style="margin-bottom:16px;">
+            As Uttar Pradesh's capital, Lucknow has one of the highest per-capita residential electricity consumption rates in the state. Hot summers drive intensive air conditioning loads, pushing monthly LESCO electricity bills for 3-4 BHK homes to ₹6,000–₹18,000. 
+          </p>
+          <p style="margin-bottom:20px;">
+            Solar Wallah engineers high-efficiency on-grid solar power systems that eliminate up to 90% of your power bill. From initial digital shadow modeling to liaison with MVVNL Head Office (Gokhale Marg) and UPNEDA (Vibhuti Khand), our engineers deliver a seamless, hassle-free solar transition.
+          </p>
+
+          <div style="padding:18px; background:#FFFFFF; border-radius:var(--radius-md); border:1px solid var(--color-border); margin-bottom:24px;">
+            <h4 style="margin-bottom:8px; color:var(--color-primary);">Key Localities & Residential Sectors Served Across Lucknow:</h4>
+            <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.6;">
+              Gomti Nagar, Gomti Nagar Extension, Indira Nagar, Aliganj, Ashiyana, Mahanagar, Hazratganj, Shaheed Path, Sushant Golf City, Jankipuram, Vikas Nagar, LDA Colony, Telibagh, Kakori, Dubagga, and neighboring areas across Lucknow district.
+            </p>
+          </div>
+
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" data-open-modal="quote-modal" data-city="Lucknow">
+              <span>Book Lucknow Site Survey</span>
+              <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+            </button>
+            <a href="tel:+919580659559" class="btn btn-outline">
+              ${ICONS.phone}
+              <span>Call ${PHONE_NUMBER}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lucknow Lead Form -->
+        <div>
+          <div class="lead-form-card">
+            <h3 style="margin-bottom:6px;">Solar Consultation for Lucknow</h3>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:20px;">
+              Request a free shadow-free rooftop assessment and pricing estimate in Lucknow.
+            </p>
+
+            <form data-solar-form="quote" id="city-lead-form-lucknow" action="https://formspree.io/f/xrpbadnn" method="POST">
+              <input type="text" name="website_shield_trap" class="form-honeypot" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="city" value="Lucknow">
+
+              <div class="form-group">
+                <label class="form-label" for="lucknow-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="lucknow-name" name="full_name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="lucknow-phone">Mobile Number (+91) <span class="required">*</span></label>
+                <input type="tel" id="lucknow-phone" name="phone_number" class="form-control" placeholder="10-digit number" pattern="[0-9]{10}" required>
+              </div>
+
+              <div class="form-grid-2col">
+                <div class="form-group">
+                  <label class="form-label" for="lucknow-type">Property Type</label>
+                  <select id="lucknow-type" name="property_type" class="form-control">
+                    <option value="Home">Home / Kothi / Villa</option>
+                    <option value="Shop/Showroom">Shop / Commercial Office</option>
+                    <option value="Coaching/School">Coaching / School / College</option>
+                    <option value="Hospital/Clinic">Hospital / Clinic</option>
+                    <option value="Banquet/Hotel">Hotel / Banquet Lawn</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="lucknow-bill">Monthly Bill (₹)</label>
+                  <input type="number" id="lucknow-bill" name="monthly_bill" class="form-control" placeholder="e.g. 5000">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Get Lucknow Solar Quote</span>
+                <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+              </button>
+
+              <div class="form-trust-note">
+                ${ICONS.shield}
+                <span>Local Lucknow engineer callback within 2 business hours.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicated Solar Finance & Loans Section in Lucknow -->
+  <section class="section" id="lucknow-finance">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow eyebrow-accent">Easy Financing</div>
+        <h2>Solar Finance & Low-Interest Rooftop Solar Loans in Lucknow</h2>
+        <p>
+          Switch to solar with zero stress. Lucknow property owners can take advantage of government-backed, low-interest bank solar loans with minimal documentation.
+        </p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.calculator}</div>
+            <h3 style="margin-bottom:8px;">SBI Surya Ghar Solar Loan</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Collateral-free loan from State Bank of India up to ₹2,00,000 at ~7% p.a. interest. Designed specifically for PM Surya Ghar rooftop systems with zero margin money requirement up to 3 kW.
+            </p>
+            <div style="font-size:0.82rem; color:var(--color-text-subtle); margin-top:auto;">
+              <strong>Repayment Tenure:</strong> Up to 10 Years (120 Months)
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.briefcase}</div>
+            <h3 style="margin-bottom:8px;">Canara Bank & PNB Solar Schemes</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Fast-track digital sanction via JanSamarth and National Solar Portal. Solar Wallah assists you with direct quotation upload and technical verification for instant bank processing.
+            </p>
+            <div style="font-size:0.82rem; color:var(--color-text-subtle); margin-top:auto;">
+              <strong>Speed:</strong> Sanction in 3 to 5 business days
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.shield}</div>
+            <h3 style="margin-bottom:8px;">Cash-Flow Positive From Day 1</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Your monthly electricity bill savings (typically ₹3,500 to ₹5,500) exceed the loan EMI (approx ₹1,800 to ₹2,400). The solar system pays for itself while putting extra cash in your pocket every month.
+            </p>
+            <div style="font-size:0.82rem; color:var(--color-text-subtle); margin-top:auto;">
+              <strong>Net Benefit:</strong> Immediate monthly savings
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions for Lucknow Properties -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Tailored Solutions</div>
+        <h2>Solar Solutions Engineered for Lucknow Properties</h2>
+        <p>Premium components designed for Lucknow's urban residences, commercial establishments, and institutions.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.home}</div>
+            <h3 style="margin-bottom:8px;">Residential Kothis & Villas</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Turnkey on-grid rooftop solar for independent kothis and villas in Gomti Nagar, Indira Nagar, and Aliganj. Maximize the ₹1,08,000 PM Surya Ghar and UP state subsidy.
+            </p>
+            <a href="/residential-solar/" class="btn btn-outline btn-sm">Residential Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.briefcase}</div>
+            <h3 style="margin-bottom:8px;">Commercial, Coaching & Hospitals</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              High-capacity solar for coaching hubs in Hazratganj, private clinics, schools, and corporate towers along Shaheed Path. Offset high commercial tariffs and claim 40% depreciation.
+            </p>
+            <a href="/commercial-solar/" class="btn btn-outline btn-sm">Commercial Guide →</a>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div class="card-icon-box">${ICONS.sun}</div>
+            <h3 style="margin-bottom:8px;">Elevated Pergola Structures</h3>
+            <p style="font-size:0.9rem; margin-bottom:16px;">
+              Heavy-duty hot-dip galvanized steel structures with 7 to 9 feet vertical clearance. Keep your entire terrace open for family gatherings, gardening, and leisure.
+            </p>
+            <a href="/solar-panel-installation/" class="btn btn-outline btn-sm">Structure Specs →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Sizing for Lucknow -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Capacity Guide</div>
+        <h2>Recommended Solar Sizing for Properties in Lucknow</h2>
+        <p>Explore recommended system capacities for homes, commercial establishments, and institutions in Lucknow.</p>
+      </div>
+
+      <div class="grid-cols-3">
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">3 kW On-Grid</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Standard 3-4 BHK Homes in Lucknow</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~360-420 units/mo. Covers 1-2 split ACs, refrigerator, and lights. Qualifies for up to ₹1,08,000 total combined subsidy.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~250-300 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">5 kW to 8 kW</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Large Duplexes & Joint Families</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates ~600-960 units/mo. Powers multiple air conditioners, water pumps, and high-wattage daytime loads with real-time app monitoring.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~400-750 sq. ft.</div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-bezel-inner">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--color-primary); margin-bottom:4px;">10 kW to 25 kW+</div>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-accent); margin-bottom:12px;">Coaching Hubs, Hospitals & Offices</div>
+            <p style="font-size:0.875rem; margin-bottom:14px;">Generates 1,200 to 3,000+ units/mo. Substantially reduces high commercial tariffs (₹8.50+/unit) with 40% tax depreciation.</p>
+            <div style="font-size:0.8rem; color:var(--color-text-subtle);"><strong>Roof Area Needed:</strong> ~900 to 2,500+ sq. ft.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="/solar-calculator/" class="btn btn-secondary">
+          <span>Calculate Lucknow Solar Savings</span>
+          <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lucknow FAQs -->
+  <section class="section section-bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Local Knowledge</div>
+        <h2>Frequently Asked Questions in Lucknow</h2>
+        <p>Clear answers to common questions about rooftop solar, LESCO net metering, and solar loans in Lucknow.</p>
+      </div>
+
+      ${renderFaqAccordion(lucknowFaqs)}
+    </div>
+  </section>
+
+  <!-- Nearby City Links & Internal Mesh -->
+  <section class="section" style="padding: 40px 0; border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <h3 style="font-size: 1.15rem; color: var(--color-primary); margin-bottom: 16px;">Solar Solutions Across Connected Regional Hubs</h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Explore Solar Wallah engineering solutions in neighboring districts:
+      </p>
+      <div class="nearby-cities-list">
+        <a href="/cities/ayodhya/" class="btn btn-outline btn-sm">Solar in Ayodhya & Faizabad →</a>
+        <a href="/cities/barabanki/" class="btn btn-outline btn-sm">Solar in Barabanki →</a>
+        <a href="/cities/sultanpur/" class="btn btn-outline btn-sm">Solar in Sultanpur →</a>
+        <a href="/cities/gonda/" class="btn btn-outline btn-sm">Solar in Gonda →</a>
+        <a href="/solar-subsidy/" class="btn btn-outline btn-sm">UP Solar Subsidy Guide →</a>
+        <a href="/solar-calculator/" class="btn btn-outline btn-sm">Solar Savings Calculator →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lucknow Conversion Banner -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="conversion-banner-card">
+        <h2 style="color:#FFFFFF; margin-bottom:16px;">Ready to Switch to Solar in Lucknow?</h2>
+        <p style="color:#CBD5E1; max-width:600px; margin:0 auto 28px; font-size:1.05rem;">
+          Connect with Solar Wallah's Lucknow engineering team for an on-site shadow assessment, net metering clearance, and custom quotation.
+        </p>
+
+        <div class="banner-cta-group">
+          <a href="${PHONE_TEL}" class="btn btn-white btn-lg">
+            ${ICONS.phone}
+            <span>Call: ${PHONE_NUMBER}</span>
+          </a>
+
+          <a href="https://wa.me/${WHATSAPP_RAW}?text=Hi%20Solar%20Wallah,%20I%20am%20looking%20for%20solar%20panel%20installation%20in%20Lucknow." 
+             class="btn btn-whatsapp btn-lg" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            ${ICONS.whatsapp}
+            <span>WhatsApp: ${PHONE_NUMBER}</span>
+          </a>
+
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="quote-modal" data-city="Lucknow">
+            <span>Get Free Solar Quote</span>
+            <span class="btn-icon-circle">${ICONS.arrowRight}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+
+  writeHtml('cities/lucknow/index.html', renderPage({
+    title: 'Solar Panel Installation in Lucknow (2026) | ₹1,08,000 Subsidy & 7% Solar Loans',
+    metaDescription: 'Rooftop solar panel installation in Lucknow. Claim up to ₹1,08,000 PM Surya Ghar subsidy, MVVNL/LESCO net metering & 7% bank solar loans. Free 24-hr site survey!',
+    canonicalUrl: '/cities/lucknow/',
+    activeNav: '/cities/',
+    breadcrumbs: [
+      { title: 'Cities We Serve', url: '/cities/' },
+      { title: 'Lucknow', url: '/cities/lucknow/' }
+    ],
+    cityContext: 'Lucknow',
+    faqs: lucknowFaqs,
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Solar Panel Installation in Lucknow",
+      "serviceType": "Rooftop Solar Installation & Solar Finance",
+      "provider": {
+        "@type": "Organization",
+        "name": "Solar Wallah",
+        "url": SITE_DOMAIN,
+        "telephone": "+91-9580659559",
+        "email": "hello@solarwallah.online"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Lucknow"
+      },
+      "description": "Professional rooftop solar panel installation, MVVNL / LESCO net metering, low-interest bank solar loans, and PM Surya Ghar subsidy assistance for homes and businesses in Lucknow, Uttar Pradesh."
+    },
+    bodyContent: lucknowBody
+  }));
+
+  // ========================================================================
+  // 2.F ADDITIONAL SERVICEABLE CITIES: BARABANKI, AMETHI, PRAYAGRAJ, GORAKHPUR
   // ========================================================================
   otherCities.forEach(city => {
     const route = `/cities/${city.slug}/`;
     registerUrl(route, '0.85', 'weekly');
 
-    const pageTitle = `Solar Panel Installation in ${city.name} | Solar Wallah`;
-    const pageDesc = `Looking for rooftop solar panel installation in ${city.shortName}? Solar Wallah provides turnkey solar engineering, ${city.discom} net metering & PM Surya Ghar subsidy support.`;
+    const pageTitle = `Solar Panel Installation in ${city.name} (2026) | ₹1,08,000 Subsidy`;
+    const pageDesc = `Rooftop solar panel installation in ${city.shortName}. Claim up to ₹1,08,000 PM Surya Ghar subsidy, ${city.discom} net metering & expert local installation. Free site survey!`;
 
     const secondaryFaqs = [
       {
@@ -2799,6 +3258,7 @@ function buildCityPages() {
         { title: city.shortName, url: route }
       ],
       cityContext: city.shortName,
+      faqs: secondaryFaqs,
       schema: {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -2919,8 +3379,8 @@ function buildServicePages() {
     },
     {
       slug: 'commercial-solar',
-      title: 'Commercial & Industrial Solar Solutions in Uttar Pradesh | Solar Wallah',
-      metaDesc: 'Commercial rooftop solar systems for offices, schools, shops, and factories in Uttar Pradesh. Lower operational power costs and claim 40% accelerated tax depreciation.',
+      title: 'Commercial Rooftop Solar in Uttar Pradesh (2026) | 40% Tax Depreciation',
+      metaDesc: 'Cut commercial electricity tariffs by up to 80% with industrial & commercial rooftop solar in UP. 40% accelerated tax depreciation, MVVNL/PVVNL net metering & fast ROI!',
       h1: 'Commercial & Industrial Solar Solutions in Uttar Pradesh',
       lead: 'Engineered solar plants for commercial buildings, retail showrooms, schools, hospitals, and manufacturing units. High ROI, peak demand reduction, and accelerated tax depreciation benefits.',
       content: `
@@ -3164,8 +3624,8 @@ function buildServicePages() {
     },
     {
       slug: 'solar-subsidy',
-      title: 'PM Surya Ghar & Uttar Pradesh Solar Subsidy Guide | Solar Wallah',
-      metaDesc: 'Complete guide to rooftop solar subsidies in Uttar Pradesh under PM Surya Ghar Muft Bijli Yojana. Check eligibility, subsidy rates up to ₹1,08,000, documentation, and application steps.',
+      title: 'PM Surya Ghar Yojana UP (2026): ₹1,08,000 Subsidy & Apply Online',
+      metaDesc: 'Claim up to ₹1,08,000 rooftop solar subsidy in Uttar Pradesh under PM Surya Ghar Muft Bijli Yojana (Central ₹78k + UP State ₹30k). Check eligibility, DISCOM steps & apply online!',
       h1: 'PM Surya Ghar & Uttar Pradesh Solar Subsidy Guide',
       lead: 'Comprehensive, transparent guidance on Central and State government solar subsidies for residential homeowners in Uttar Pradesh. Understand eligibility, documentation, and the application process.',
       content: `
@@ -3290,6 +3750,7 @@ function buildServicePages() {
         { title: 'Solar Solutions', url: '/solar-panel-installation/' },
         { title: sp.slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()), url: route }
       ],
+      faqs: sp.faqs,
       schema: {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -3319,8 +3780,8 @@ function buildCompanyPages() {
   // 4.A Solar Calculator Page (/solar-calculator/)
   registerUrl('/solar-calculator/', '0.8', 'monthly');
   const calcHtml = renderPage({
-    title: 'Solar Calculator Uttar Pradesh | Solar Savings & Sizing Estimate',
-    metaDescription: 'Calculate your rooftop solar capacity, monthly electricity generation, annual bill savings, and PM Surya Ghar subsidy in Uttar Pradesh with Solar Wallah calculator.',
+    title: 'Solar Calculator Uttar Pradesh (2026) — Sizing, Subsidy & ROI Estimate',
+    metaDescription: 'Calculate rooftop solar capacity, units generated, PM Surya Ghar subsidy (up to ₹1,08,000), and annual savings in Uttar Pradesh with Solar Wallah calculator.',
     canonicalUrl: '/solar-calculator/',
     activeNav: '/solar-calculator/',
     breadcrumbs: [{ title: 'Solar Calculator', url: '/solar-calculator/' }],
@@ -3791,6 +4252,7 @@ function buildCompanyPages() {
     canonicalUrl: '/faq/',
     activeNav: '/faq/',
     breadcrumbs: [{ title: 'FAQs', url: '/faq/' }],
+    faqs: faqCategories.flatMap(c => c.items),
     bodyContent: `
     <section class="section" style="padding-top: clamp(40px, 5vw, 60px);">
       <div class="container">
