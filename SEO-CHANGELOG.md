@@ -5,6 +5,14 @@
 **Scope:** Sitewide Static Codebase, Build System, Stylesheets, Meta Directives, Local Content Engine, and Structured Data  
 **Primary Canonical Domain:** `https://solarwallah.online/`  
 
+## 3. Lead Conversion and Privacy Update (October 6, 2026)
+
+- Quote and contact conversions are now recorded only after the lead endpoint returns a successful response. A rejected or timed-out submission stays on the form, shows a retry/contact message, and does not redirect to the thank-you page.
+- Conversion attribution is sent from the thank-you page using form type, city, property type, and source page. Names, phone numbers, and electricity bills are excluded from browser storage and analytics events.
+- Removed the unused local storage of complete lead records. Lead details continue to be sent directly to the configured form endpoint.
+- WhatsApp click events no longer include the destination URL, which can contain calculator selections and bill details in its message text.
+- The site exposes conversion events through its existing `solarWallahTrack` adapter. A GA4/GTM measurement ID still needs to be configured before those events can appear in analytics reports.
+
 ---
 
 ## 1. Technical SEO Changes
