@@ -30,6 +30,7 @@
     initFaqAccordion();
     initLeadForms();
     initAnalyticsTriggers();
+    initThankYouConversion();
   });
 
   // --- 1. Sticky Compact Header on Scroll ---
@@ -191,7 +192,7 @@
     if (!forms.length) return;
 
     forms.forEach(function (form) {
-      form.addEventListener('submit', function (e) {
+      form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
         // 1. Honeypot check
@@ -238,35 +239,22 @@
           submitBtn.innerHTML = 'Submitting your enquiry...';
         }
 
-        // 4. Save lead data locally
-        const leadData = {
-          name,
-          phone,
-          city,
-          propertyType,
-          monthlyBill,
-          message,
-          sourcePage: window.location.pathname,
-          submittedAt: new Date().toISOString()
-        };
-
-        try {
-          const pastLeads = JSON.parse(localStorage.getItem('solarwallah_leads') || '[]');
-          pastLeads.push(leadData);
-          localStorage.setItem('solarwallah_leads', JSON.stringify(pastLeads));
-        } catch (err) {
-          console.error('Storage error', err);
+        // 4. Prepare a status message so failed submissions remain recoverable.
+        let status = form.querySelector('[data-form-status]');
+        if (!status) {
+          status = document.createElement('p');
+          status.setAttribute('data-form-status', '');
+          status.setAttribute('role', 'status');
+          status.setAttribute('aria-live', 'polite');
+          status.style.marginTop = '12px';
+          form.appendChild(status);
         }
+        status.textContent = 'Sending your enquiry securely…';
+        status.style.color = '';
 
-        // 5. Track Analytics Event
+        // 5. Submit to the configured lead endpoint. Never report a conversion
+        // or show the confirmation page until the endpoint confirms receipt.
         const isQuoteForm = form.getAttribute('data-solar-form') === 'quote';
-        window.solarWallahTrack(isQuoteForm ? 'quote_form_submit' : 'contact_form_submit', {
-          city: city,
-          property_type: propertyType,
-          monthly_bill: monthlyBill
-        });
-
-        // 6. Send to Formspree endpoint (https://formspree.io/f/xrpbadnn)
         const endpoint = form.getAttribute('action') || 'https://formspree.io/f/xrpbadnn';
         const payload = {
           name: name,
@@ -276,39 +264,70 @@
           monthly_bill: monthlyBill || 'Not specified',
           message: message || '',
           source_page: window.location.href,
+          source_form: form.id || 'unidentified_form',
           _subject: `New Solar Wallah Lead: ${name} (${city || 'Uttar Pradesh'})`
         };
 
-        let redirected = false;
-        function proceedToThankYou() {
-          if (redirected) return;
-          redirected = true;
-          sessionStorage.setItem('solarwallah_last_submission', JSON.stringify(leadData));
+        const controller = new AbortController();
+        const timeout = setTimeout(function () { controller.abort(); }, 12000);
+        try {
+          const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(payload),
+            signal: controller.signal
+          });
+
+          if (!response.ok) {
+            throw new Error('Lead endpoint returned ' + response.status);
+          }
+
+          // Store attribution only; never persist names, phone numbers, or bills.
+          try {
+            sessionStorage.setItem('solarwallah_form_success', JSON.stringify({
+              form_type: isQuoteForm ? 'quote' : 'contact',
+              city: city,
+              property_type: propertyType,
+              source_page: window.location.pathname
+            }));
+          } catch (storageError) {
+            // Confirmation still works when browser storage is unavailable.
+          }
           window.location.href = '/thank-you/';
+        } catch (err) {
+          console.warn('Lead submission was not confirmed', err);
+          status.textContent = 'We could not confirm your enquiry was sent. Please try again, or call/WhatsApp us if you may have already submitted it.';
+          status.style.color = 'var(--color-danger, #B42318)';
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          }
+        } finally {
+          clearTimeout(timeout);
         }
-
-        // Safety timeout so user is never stuck if network is delayed
-        const safetyTimer = setTimeout(proceedToThankYou, 3500);
-
-        fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        })
-        .then(function (res) {
-          clearTimeout(safetyTimer);
-          proceedToThankYou();
-        })
-        .catch(function (err) {
-          console.warn('Formspree submission error, proceeding to thank-you fallback', err);
-          clearTimeout(safetyTimer);
-          proceedToThankYou();
-        });
       });
     });
+  }
+
+  // Fire the conversion on the confirmation page, after the user has actually
+  // received a successful response from the lead endpoint.
+  function initThankYouConversion() {
+    if (window.location.pathname.replace(/\/$/, '') !== '/thank-you') return;
+    try {
+      const attribution = JSON.parse(sessionStorage.getItem('solarwallah_form_success') || 'null');
+      if (!attribution) return;
+      sessionStorage.removeItem('solarwallah_form_success');
+      window.solarWallahTrack(attribution.form_type === 'quote' ? 'quote_form_submit' : 'contact_form_submit', {
+        city: attribution.city,
+        property_type: attribution.property_type,
+        source_page: attribution.source_page
+      });
+    } catch (err) {
+      // Conversion tracking must never block the confirmation page.
+    }
   }
 
   // --- 6. Analytics Click Triggers ---
@@ -318,7 +337,7 @@
       link.addEventListener('click', function () {
         window.solarWallahTrack('whatsapp_click', {
           link_location: link.getAttribute('data-location') || 'general',
-          url: link.href
+          destination: 'whatsapp'
         });
       });
     });
